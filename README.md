@@ -3,7 +3,6 @@
 
 ## Link
 리뉴얼 사이트(web-site): https://zhaeees.github.io/koreanairport-Renewal/ <br/>
-기획서(Figma-slide): <br/>
 디자인시안(figma): https://www.figma.com/design/vWrPlSnYOOtSFLhJWrxSbt/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=1-32&t=DLOKfLYf2d4HIvBr-1
 
 ## 리뉴얼 이유
