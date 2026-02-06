@@ -112,7 +112,7 @@ function selectAirport(id) {
 
   const img = document.createElement('img');
   img.className = 'pin-img';
-  img.src = '../images/mainvisual/dot.png';
+  img.src = './images/mainvisual/dot.png';
   img.alt = `${item.name} 아이콘`;
 
   selectedLabel.querySelector('.pin-slot')?.appendChild(img);
