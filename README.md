@@ -25,3 +25,32 @@
 * 반응형·접근성 강화
 
 ## 개선 방향
+### ✅ 메인페이지
+&nbsp;&nbsp;&nbsp;1️⃣ 메인 역할 재정의 : 정보 나열 → 행동 유도
+  
+&nbsp;&nbsp;&nbsp;2️⃣ 콘텐츠 우선순위 시각화
+
+&nbsp;&nbsp;&nbsp;3️⃣ 사용자 목적별 UI 분리
+     
+&nbsp;&nbsp;&nbsp;4️⃣ 탐색 동선 단순화
+   
+&nbsp;&nbsp;&nbsp;5️⃣ 반응형 기준 재정비  
+
+&nbsp;&nbsp;&nbsp;6️⃣ 공공기관 브랜드 신뢰도 강화  
+
+### ✅ 서브페이지 1
+&nbsp;&nbsp;&nbsp;1️⃣ 진입 목적 명확화 (지원 vs 탐색)
+
+&nbsp;&nbsp;&nbsp;2️⃣ 채용공고 가독성 개선
+
+&nbsp;&nbsp;&nbsp;3️⃣ Jobs(근무지) 섹션 목적 강화
+
+### ✅ 서브페이지 2
+&nbsp;&nbsp;&nbsp;1️⃣ 페이지 성격 명확화 (정보 허브)
+
+&nbsp;&nbsp;&nbsp;2️⃣ 이용 흐름 시각화 강화
+
+&nbsp;&nbsp;&nbsp;3️⃣ 아이콘 기반 정보 구조 통일
+
+&nbsp;&nbsp;&nbsp;4️⃣ 실시간 정보의 신뢰도 강조
+
