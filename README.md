@@ -30,9 +30,9 @@
 이를 통해 사용자는 불필요한 판단 과정을 줄이고, 각 페이지에서 기대하는 행동과 정보를 빠르게 인지할 수 있도록 개선가능.
 
 ## Before & After
-### Before
-### After
-<img width="500" height="auto" alt="Image" src="https://github.com/user-attachments/assets/800a6d05-2830-4277-a6ce-63bd8c9a29f5" />
-<img width="150" height="auto" alt="Image" src="https://github.com/user-attachments/assets/807dbdb2-8719-4b06-9b84-c9638d98dcf6" />
+| Before | After |
+|--------|-------|
+| 비포이미지 | 에프터이미지 |
+| <img width="300" height="auto" alt="Image" src="https://github.com/user-attachments/assets/041344cb-92fb-4bf3-9551-5b2dc2d54588" /><img width="80" height="auto" alt="Image" src="https://github.com/user-attachments/assets/2e1f2ea6-96b6-4118-8945-3c9e2bad0294" /> | <img width="300" height="auto" alt="Image" src="https://github.com/user-attachments/assets/800a6d05-2830-4277-a6ce-63bd8c9a29f5" /><img width="80" height="auto" alt="Image" src="https://github.com/user-attachments/assets/807dbdb2-8719-4b06-9b84-c9638d98dcf6" /> |
 
 
