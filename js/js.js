@@ -211,7 +211,7 @@ console.log(weatherMap)
 function getWeatherInfo(iconCode) {
   return weatherMap[iconCode] || {
     text: '날씨 정보 없음',
-    icon: 'weather/no_img.jpg'
+    icon: './images/weather/no_img.jpg'
   };
 }
 
