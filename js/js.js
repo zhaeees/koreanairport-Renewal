@@ -191,26 +191,26 @@ const API_KEY = '8ae590bac9a62fee70da4890ce212c7f';
 /* 날씨 통합 관리 */
 // 아이콘 코드 기준으로 텍스트 + 이미지 한 번에 관리
 const weatherMap = {
-  '01d': { text: '맑음', icon: '../images/weather/01d.svg' },
-  '01n': { text: '맑은 밤', icon: '../images/weather/01n.svg' },
-  '02d': { text: '구름 조금', icon: '../images/weather/02d.svg' },
-  '02n': { text: '구름 조금', icon: '../images/weather/02n.svg' },
-  '03d': { text: '구름 많음', icon: '../images/weather/03d.svg' },
-  '03n': { text: '구름 많은 밤', icon: '../images/weather/03d.svg' },
-  '04d': { text: '흐림', icon: '../images/weather/04d.svg' },
-  '04n': { text: '흐린밤', icon: '../images/weather/04d.svg' },
-  '09d': { text: '소나기', icon: '../images/weather/09d.svg' },
-  '10d': { text: '비', icon: '../images/weather/10d.svg' },
-  '11d': { text: '번개', icon: '../images/weather/11d.svg' },
-  '13d': { text: '눈', icon: '../images/weather/13d.svg' },
-  '50d': { text: '안개', icon: '../images/weather/50d.svg' }
+  '01d': { text: '맑음', icon: 'weather/01d.svg' },
+  '01n': { text: '맑은 밤', icon: 'weather/01n.svg' },
+  '02d': { text: '구름 조금', icon: 'weather/02d.svg' },
+  '02n': { text: '구름 조금', icon: 'weather/02n.svg' },
+  '03d': { text: '구름 많음', icon: 'weather/03d.svg' },
+  '03n': { text: '구름 많은 밤', icon: 'weather/03d.svg' },
+  '04d': { text: '흐림', icon: 'weather/04d.svg' },
+  '04n': { text: '흐린밤', icon: 'weather/04d.svg' },
+  '09d': { text: '소나기', icon: 'weather/09d.svg' },
+  '10d': { text: '비', icon: 'weather/10d.svg' },
+  '11d': { text: '번개', icon: 'weather/11d.svg' },
+  '13d': { text: '눈', icon: 'weather/13d.svg' },
+  '50d': { text: '안개', icon: 'weather/50d.svg' }
 };
 console.log(weatherMap)
 // 아이콘 코드로 날씨 정보 반환
 function getWeatherInfo(iconCode) {
   return weatherMap[iconCode] || {
     text: '날씨 정보 없음',
-    icon: '../images/weather/no_img.jpg'
+    icon: 'weather/no_img.jpg'
   };
 }
 
