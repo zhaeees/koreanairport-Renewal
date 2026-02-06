@@ -190,6 +190,7 @@ const API_KEY = '8ae590bac9a62fee70da4890ce212c7f';
 
 /* 날씨 통합 관리 */
 // 아이콘 코드 기준으로 텍스트 + 이미지 한 번에 관리
+const weatchrIconBase = '../images/weather/';
 const weatherMap = {
   '01d': { text: '맑음', icon: 'weather/01d.svg' },
   '01n': { text: '맑은 밤', icon: 'weather/01n.svg' },
