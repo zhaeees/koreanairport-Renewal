@@ -1,0 +1,391 @@
+ /* 모바일&테블릿 */
+ @media (max-width : 768px) {
+  
+  section {margin-bottom: 100px;}
+  h4 {font-size: var(--mtext-title-xs);}
+  h2 {font-size: var(--mtext-title-l);}
+  .container{width: 90%; margin: auto;}
+  .title > p {font-size: var(--mtext-m); font-weight: 500;}
+  /* ========================= 
+    main-visual
+  ============================ */
+  .main-visual {
+     padding-top: 60px;
+     margin-bottom: 650px;
+   }
+  .main-bg {width: 100%; height: 326px;}
+  .main-bg img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+  .main-title h1{font-size: var(--mtext-title-xxl);}
+  /* 모바일화면에서 통합 배경만들기 */
+  .main-search{ 
+    width: 90%; margin: auto;
+    position: absolute;
+    top: 85%; left: 5%;
+    border-radius: 40px;
+    background: rgba(250, 250, 248, 0.795);
+    box-shadow: var(--shadow-black-xs);
+  }
+  .main-search .title{padding: 10px; font-weight: 500;}
+  .search-wrap img{display: none;}
+  .search-wrap{
+    width: 100%; height: 620px;
+    flex-direction: column-reverse;
+    justify-content: start;
+    gap: 20px;
+  }
+  /* 왼쪽 출도착 -> 하단으로 이동*/
+  .search-category{
+    padding: 25px 0;
+    justify-content: center;
+  }
+  .search-category span{
+    font-size: var(--mtext-title-l);
+  }
+  .search-box-wrap{
+    margin-top: 200px;
+  }
+  .search-box-content{
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .search-inner {
+    gap: 5px;
+
+  }
+  .search-inner i{
+    font-size: var(--mtext-title-xxl);
+  }
+  .search-text label{font-size: var(--mtext-s);}
+  .search-text input{
+    padding: 5px 10px;
+    width: 280px;
+    
+  }
+  .search-btn{
+    background: var(--color-logo);
+    width: 200px; padding: 10px 0;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: var(--mtext-xl);
+  }
+  .search-btn svg{width: 28px; height: 28px;}
+  .search-btn:hover i > svg path{stroke: var(--color-white);}
+  .search-btn:hover{background: var(--color-point);}
+  
+  /* 오른쪽 날씨 -> 상단으로 이동 */
+  .search-right{
+    align-items: center;
+    justify-content: center;
+  }
+  .weather-box{
+    gap: 0;
+    position: static;
+  }
+  .weather-today p{display: none;}
+  .weather-data{ 
+    flex-direction: column;
+  }
+  .weatherTxt{
+    flex-direction: row;
+    gap: 20px;
+  }
+  /* ========================= 
+    탑승수속 대기시간
+  ============================ */
+  .boarding-bg-wrap img{display: none;}
+  .person{display: none;}
+  .flow-wrap{
+    width: 100%;
+  }
+  .flow-steps{
+    display: flex;
+    flex-direction: column;
+  }
+  .step{
+    border-bottom: none;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+  }
+  .step::after{
+    content: ''; position: absolute;
+    width: 10%;
+    right: 0;
+    border: 1px dashed;
+    color: #CAE5ED;
+  }
+  .step span img{
+    display: block;
+    width: 32px;
+  }
+  .step-time{
+    padding: 5px 15px;
+    border-radius: 30px;
+    background: #CAE5ED;
+    position: relative;
+  }
+  .step-time::after{
+    content: '▶'; position: absolute;
+    right: -8px; top: 50%; transform: translateY(-50%);
+    color: #CAE5ED;
+    font-size: var(--mtext-xl);
+  }
+  .bording-text li{
+    font-size: var( --mtext-s);
+  }
+  .bording-text li::before{
+    top: 20%; 
+  }
+  /* ========================= 
+    airport guide
+  ============================ */
+  .guide-content{position: relative;}
+  .swiper {
+    width: 80%; height: 440px;
+    margin: 22px;
+  } 
+  .swiper-wrapper{
+    height: 98%;
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    position: absolute; top: 50%; 
+  }
+  
+  .content-box{height: 420px;}
+  .content-box-top{
+    height: 90px;
+    line-height: 90px;
+  }
+  .content-box-bottom{
+    width: 100%; height: calc(440px - 100px);
+  }
+   .content-card{
+    height: auto;
+    font-size: var(--mtext-s);
+   }
+  .content-card svg{
+    width: 60px; height: 60px;
+  }
+ 
+  .content-card-text {
+    position: static;
+    width: 100px;
+    font-size: var(--mtext-xs);
+  }
+
+
+  /* ========================= 
+    traffic guide
+  ============================ */
+  .traffic-content{
+    flex-direction: column;
+  }
+  /* 왼쪽 주차장안내 -> 위로 */
+  .parking-wrap{padding: 0;}
+  .parking h3{
+    font-size: var(--mtext-title-m);
+  }
+  .parking-top{width: 100%;}
+  .parking-top h5{
+    font-size: var(--mtext-title-m);
+  }
+  .parking-top p{
+    width: 97px; height: 37px;
+    line-height: 37px; font-size: 15px;
+    font-weight: 500;
+  }
+  .parking-bottom{
+    width: 100%; height: 22px;
+     margin-top: 10px
+  }
+  .parking-p2{
+    margin-bottom: 30px;
+  }
+  .traffic-guide{display: none;}
+
+  /* 오른쪽 교통안내 -> 아래로 */
+  .traffic-cards-wrap{gap: 18px; margin-top: 60px;}
+  .traffic-card{width: 25%;}
+  .cards{gap: 10px;}
+  .traffic-card{height: 118px;}
+  .card-text h6{font-size: var(--mtext-s); margin-bottom: 3px;}
+  .card-text p{display: none;}
+  .card-icon img{width: 70px; height: 70px;}
+
+  /* ========================================
+      항공권 예약
+  ======================================== */
+ 
+  .book-wrap{ 
+    padding: 0;
+    position: relative;
+  }
+  
+  .book-content{
+    width: 100%; height: 100%;
+    padding: 30px;
+  }
+ 
+  
+  .book-top-category span{
+    font-size: var(--mtext-xl);
+    margin-right: 25px;
+  }
+  .book-top-category span::before{
+    height: 2px;
+  }
+  .book-top-category span::after{
+    right: -22px;
+  }
+  .book-top-category span.active::after{
+    font-size: var(--mtext-xl);
+  }
+  .book-top-flight form span{
+    margin-right: 5px;
+  }
+  /* 출도착 날짜 */
+ 
+  .book-area{flex-direction: column; gap: 0;}
+  .book-area > div{padding: 20px 0 ;}
+  .book-left{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .book-left form label span{
+    display: block;
+    font-size: var(--mtext-xxl);
+    font-weight: 700;
+  }
+  .book-left form{ 
+    font-size: var(--mtext-m);
+    text-align: center;
+    
+  }
+  .book-left form select{
+    height: 30px;
+    font-size: var(--mtext-s);
+    padding: 0 10px;
+  }
+  .book-left i{
+    display: block;
+    font-size: var(--mtext-title-xl);
+  }
+  
+  .book-right form{
+    font-size: var(--mtext-xl);
+    gap: 10px;
+  }
+  .book-date{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .book-date input{
+    justify-content: space-between;
+    height: 40px;
+    font-size: var(--mtext-s);
+    width: 100%;
+    gap: 0;
+  }
+  /* 탑승수속 */
+  .book-detail{
+    gap: 20px; flex-direction: column;
+    margin-top: 30px;
+
+  }
+  .option-item{
+    font-size: var(--mtext-xl);
+    gap: 10px;
+  }
+  .list-age li{
+    width: 100%; padding: 0 15px;
+  }
+  .list-age li b{font-size: var(--mtext-m)}
+  .list-age li b em{font-size: var(--mtext-xs);}
+  .setClass{
+    font-size: var(--mtext-xl);
+  }
+  .closeBtn button{
+    padding: 10px 30px;
+    font-size: var(--mtext-s);
+  }
+  .book-btn{
+    width: 105px; height: 60px;
+    font-size: var(--mtext-xl);
+  }
+  /* ========================= 
+    Travel Jeju
+  ============================ */
+  .travel-box{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .travel-map-wrap{
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .travel-content h4{
+    font-size: var(--mtext-title-m);
+    margin-bottom: 20px;
+  }
+  .filter-controls{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filter-controls button{
+    font-size: var(--mtext-l);
+  }
+  .filter-controls button.active i{font-size: var(--mtext-xl)}
+   
+  .travel-label {
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+  }
+
+  /* 주소 말풍선 완전 제거 */
+  .address-bubble {
+    display: none !important;
+  }
+
+  .label-bubble{
+    display: none;
+  }
+  .travel-label.active .label-bubble{
+    display: block;
+  }
+  .travel-label{
+    background: transparent;
+    border: none;
+  }
+  
+}
+
+
+/* 스마트폰 (가로/세로): */
+ @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   .book-date{font-size: var(--mtext-xs);}
+   .traffic-card{width: 29%;}
+   .card-icon img{ width: 50px ; height: 50px;}
+ }
+
+ /* iPad mini / iPad / Galaxy Tab */
+ @media (min-width: 768px) and (max-width: 1023px) {
+  .traffic-content{
+    flex-direction: column;
+  }
+  .content-card svg {width: 80px; height: 80px;}
+ }
+

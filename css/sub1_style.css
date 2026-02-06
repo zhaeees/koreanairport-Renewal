@@ -1,0 +1,482 @@
+.container {width: 85%; margin: auto;}
+.title {margin-bottom: 30px;}
+.title>p {font-size: var(--text-m); font-weight: 600;}
+h2 {
+  margin: 20px 0;
+  font-size: var(--text-title-xl);
+  font-weight: 700;
+}
+h4 {
+  font-size: var(--text-title-xs);
+  font-weight: 600;
+  margin-bottom: var(--space-xxs);
+  color: var(--color-primary-dark);
+}
+.title-wrap{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.plus-Btn{
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.plus-Btn span{
+  text-transform: uppercase;
+}
+.plus-Btn:hover span{color: var(--color-logo); }
+.plus-Btn:hover i{color: var(--color-point); font-size: var(--text-m);}
+/* ========================= 
+    main-visual
+============================ */
+.main-visual {
+  padding-top: 100px;
+  position: relative;
+  width: 100%; height: 100vh;
+  margin-bottom: 0;
+}
+/* 스와이퍼 배경 */
+.visual-swiper::after{
+  content: ''; position: absolute;
+  width: 100%; height: 100%;
+  background: linear-gradient(rgba(250, 250, 248, 0.356)66%, rgba(0, 87, 168, 0.35));
+  top: 0; left: 0;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.visual-util{
+  position: absolute;
+  z-index: 9999999;
+  left: 0;
+  bottom: 8%;
+  width: 100%;
+  text-align: center;
+}
+.inner{
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+.box-util{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+}
+.paging{
+  display: flex;
+  align-items: center;
+}
+.visual-util .paging span {
+    margin-right: 10px;
+    background: transparent;
+    opacity: 1;
+}
+.visual-util .paging span.swiper-pagination-bullet {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+}
+.visual-util .paging span::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 100%;
+}
+.visual-util .paging span.swiper-pagination-bullet-active {
+    border: 1px solid #ffc64a5d;
+    border-radius: 100%;
+}
+.control{
+  display: flex;
+  align-items: center;
+}
+.control button{
+  background: none;
+  color: var(--color-white);
+  font-size: var(--text-m);
+}
+.control button:hover{
+  color: var(--color-logo);
+}
+.control .stop.paused{
+  color: var(--color-point);
+}
+/* 비주얼 타이틀 */
+
+.main-visual .container{
+  position: absolute; 
+  top: 20%; left: 12%;
+  z-index: 999;
+}
+.main-title h1{
+  font-size: var(--text-title-xxl);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.main-title h1 a{
+  color: var(--color-text-darkgray);
+  z-index: 10;
+}
+.main-title p{
+  font-size: var(--text-title-l);
+  font-weight: 500;
+  color: var(--color-text-darkgray);
+}
+.main-search{
+  margin-top: 30px;
+  border: 1px solid var(--color-text-gray);
+  border-radius: 50px;
+  width: 460px; height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background: #fafaf846;
+}
+.search-jobs{
+  width: 170px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-jobs::after{
+  content: ''; position: absolute;
+  width: 1px; height: 100%; 
+  background: var(--color-text-gray);
+  right: 0;
+}
+
+.search-jobs select{
+  background: transparent;
+  font-size: var(--text-m);
+}
+.search-jobs select:focus{
+  outline: none;
+}
+.input-search{
+  margin-left: 15px;
+  display: flex;
+ 
+  justify-content: space-between;
+  align-items: center;
+}
+.input-search input{
+  background: transparent;
+  font-size: var(--text-s);
+}
+.input-search input:focus{
+  outline-color: transparent;
+  outline: none;
+  border-bottom: 1px solid var(--color-white);
+}
+.input-search button{
+  background: transparent;
+}
+.input-search button i{
+  font-size: var(--text-s);
+}
+.input-search button:hover i{
+  color: var(--color-point);
+}
+/* ========================= 
+    quick-btn
+============================ */
+.quick-btn{
+  width: 100%;
+  background: var(--color-logo);
+  height: 244px;
+}
+.quick-btn-inner{
+  width: 75%; margin: auto;
+  display: flex; height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+.quick-btn-link{width: 100%;}
+.quick-btn-link a{
+  height: 168px;
+  display: flex;
+  border-radius: 20px;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-primary-mlight);
+  background: var(--color-white);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.quick-btn-link .star{
+  position: absolute;
+  right: 20px; top: 15%;
+}
+.quick-btn-link a:hover {
+  background: var(--color-primary-middle);
+  box-shadow: var(--shadow-white);
+  color: var(--color-white);
+}
+.quick-btn-link a:hover .star{
+  opacity: 1; display: block;
+}
+
+/* ========================= 
+    채용 공고
+============================ */
+
+
+.jobSwiper{
+  flex: 1; 
+  width: 100%; height: 350px;
+}
+.swiper-wrapper{ 
+  display: flex; align-items: center;
+}
+.jobSwiper .swiper-slide{height: 300px;}
+.jobs-card{
+  box-shadow: var(--shadow-black-xs);
+  border-radius: 10px;
+  padding: 30px 40px;
+  position: relative;
+  background: var(--color-white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.jobs-card .star{
+  position: absolute;
+  right: 20px; 
+}
+.jobs-card .star img{
+  width: 50px; height: 50px;
+}
+.jobs-current{
+  width: 100px; height: 40px;
+  background: var(--color-primary-middle);
+  border-radius: 25px;
+  text-align: center;
+  line-height: 40px;
+  color: var(--color-white);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.jobs-content{
+  text-align: left;
+}
+.jobs-content .card-main-text{
+  font-size: var(--text-m);
+  line-height: 1.5;
+}
+.jobs-content .jobs-date{
+  position: absolute;
+  line-height: 2;
+  bottom: 20px;
+  color: var(--color-text-darkgray);
+}
+/* 카드 호버했을때 */
+.jobs-card:hover{
+  background: var(--color-primary-middle);
+  box-shadow: var(--shadow-black-m);
+}
+.jobs-card.swiper-slide:hover {
+  transform: translateY(-5px);
+}
+.jobs-card:hover .star{
+  opacity: 1; display: block;
+}
+.jobs-card:hover .jobs-current{
+  background: var(--color-white); 
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+.jobs-card:hover .card-main-text{
+  color: var(--color-white);
+}
+.jobs-card:hover .jobs-date{
+  color: var(--color-text-lightgray);
+}
+
+
+/* ========================= 
+    working at kac
+============================ */
+.working-wrap{
+  width: 100%;
+  height: 500px;
+  
+}
+.working-wrap .swiper-wrapper{
+  height: 400px;
+  padding: 20px 0px;
+}
+.working-card{
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow-black-xs);
+  transition: 0.5s;
+}
+.working-img{
+  position: relative;
+}
+.working-img::before{
+  content: '';
+  position: absolute;
+  width: 100%; height: 100%;
+  background: linear-gradient(#d9d9d994, #737373b0);
+  left: 0; top: 0;
+}
+.working-img::after{
+  content: '\f144';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  position: absolute;
+  width: 100%; height: 100%;
+  left: 50%; top: 40%;
+  font-size: var(--text-title-l);
+  transform: translate(-50%);
+}
+.working-text{
+  padding: 20px 10px;
+  width: 100%; height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+}
+.working-text svg{
+  position: absolute;
+  right: 0; top: 0;
+}
+.working-text .title-sub{
+  margin-top: 5px;
+  width: 80%;
+  text-align: left;
+}
+.working-text .text-sub{
+  position: absolute;
+  top: 35%; transform: translateY(-35%);
+  font-size: var(--text-xs);
+}
+/* hover했을때 */
+.working-card.swiper-slide:hover{
+  box-shadow: 0 10px 5px #374676;
+  transform: translateY(-10px);
+}
+.working-card.swiper-slide:hover .working-img::before{
+  background: linear-gradient(#fafaf871, #d9d9d994);
+}
+.working-card.swiper-slide:hover .working-img::after{
+  color: var(--color-white);
+}
+.working-card.swiper-slide:hover svg{
+  scale: 1.2;
+}
+.working-card.swiper-slide:hover svg path{
+  stroke: var(--color-point);
+}
+
+/* ========================= 
+   jobs
+============================ */
+.jobs-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.jobs-title p{
+  font-size: var(--text-s);
+}
+.jobs-title p strong{
+  color: var(--color-primary-light);
+  font-size: var(--text-l);
+}
+.jobs-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px 0;
+}
+.jobs-postion-card{
+  width: 32%;
+  height: 130px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+  overflow: hidden;
+  position: relative;
+  padding: 0 30px;
+  border-radius: 10px;
+}
+.jobs-postion-card strong{
+  font-size: var(--text-l);
+  font-weight: 600;
+  z-index: 1;
+}
+.jobs-postion-card > span{
+  font-size: var(--text-s);
+  z-index: 1;
+}
+.jobs-postion-card b{
+  font-size: var(--text-l);
+  color: var(--color-primary-light);
+}
+.jobs-postion-card .effect{
+  height: 100%; width: 100%;
+  left: 0; top: 0;
+  position: absolute;
+}
+.jobs-postion-card .effect img{
+  height: 100%; opacity: 0;
+}
+.jobs-postion-card .effect img.back{
+  display: inline-block;
+  transform: translate3d(-100%, 0, 0);
+  transition: 0.4s;
+  width: 72%;
+}
+.jobs-postion-card .effect img.mask{
+  position: absolute;
+  transform: translate3d(100%, 0, 0);
+  top: 0; right: 0;
+  width: 56%;
+  transition: 0.4s;
+}
+/* hover */
+.jobs-postion-card:hover {
+  color: var(--color-text-lightgray);
+}
+.jobs-postion-card:hover b{
+  color: var(--color-white);
+}
+.jobs-postion-card:hover .effect img.back,
+.jobs-postion-card:hover .effect img.mask{
+  opacity: 1; transform: translate3d(0, 0, 0);
+}

@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한국공항공사 인재채용</title>
+  <link rel="icon" type="image/x-icon" href="images/ico_logo.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/sub1_style.css">
+  <link rel="stylesheet" href="css/header&footer.css">
+  <link rel="stylesheet" href="css/sub1_responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ========================= header ========================= -->
+
+  <!-- 보여지는 내비 - 메인내비 -->
+  <header>
+    <div class="header-top">
+      <a href="login.html" target='_blank' class="login clickPoint">로그인</a>
+      <a href="#none" id="familyBtn" class="clickPoint">패밀리사이트</a>
+      <!-- 패밀리사이트 -->
+   <div class="family">
+    <div class="family-wrap">
+      <a href="#none">김포국제공항</a>
+      <a href="#none" class="gimhae">김해국제공항</a>
+      <a href="sub2.html" class="jeju clickPoint">제주국제공항</a>
+      <a href="#none" class="daegu">대구국제공항</a>
+      <a href="#none" class="cheongju">청주국제공항</a>
+      <a href="#none" class="muan">무안국제공항</a>
+      <a href="#none" class="yangyang">양양국제공항</a>
+      <a href="#none" class="ulsan">울산공항</a>
+      <a href="#none" class="gwangju">광주공항</a>
+      <a href="#none" class="yeosu">여수공항</a>
+      <a href="#none" class="pohang">포항경주공항</a>
+      <a href="#none" class="sacheon">사천공항</a>
+      <a href="#none" class="gunsan">군산공항</a>
+      <a href="#none" class="wonju">원주공항</a>
+      <a href="#none">Clean Airport</a>
+      <a href="#none">항로시설본부</a>
+      <a href="#none">항공기술훈련원</a>
+      <a href="#none">항우회</a>
+      <a href="#none">이동지역 운전자 교육</a>
+    </div>
+   </div>
+      <a href="#none">KOR</a>
+    </div>
+    <nav class="main-nav">
+      <div class="header-logo">
+        <a href="index.html">
+          <div class="logo-img"></div>
+        </a>
+      </div>
+      <div class="main-menu">
+        <ul>
+          <li class="menu-item" data-target="submenu1"><a href="#none">KAC소개</a></li>
+          <li class="menu-item" data-target="submenu2"><a href="#none">ESG경영</a></li>
+          <li class="menu-item" data-target="submenu3"><a href="#none">정보공개</a></li>
+          <li class="menu-item" data-target="submenu4"><a href="#none">열린경영</a></li>
+          <li class="menu-item" data-target="submenu5"><a href="#none">업무지원</a></li>
+          <li class="menu-item" data-target="submenu6"><a href="#none">고객소통</a></li>
+          <li class="menu-item" data-target="submenu7"><a href="#none">인재채용</a></li>
+        </ul>
+      </div>
+      <div class="header-utils">
+        <a href="#none" class="searchBtn" id="searchBtn">
+          <svg width="35px" height="35px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+            <g id="SVGRepo_iconCarrier">
+              <title>Search</title>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Search">
+                  <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"> </rect>
+                  <circle id="Oval" stroke="#666" stroke-width="2" stroke-linecap="round" cx="11" cy="11" r="7">
+                  </circle>
+                  <line x1="16" y1="17" x2="19" y2="20" id="Path" stroke="#666" stroke-width="2" stroke-linecap="round">
+                  </line>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <!-- 검색창 -->
+          <div class="search-bar" id="searchBar">
+            <div class="search-box">
+              <input type="text" placeholder="검색어를 입력하세요" id="searchInput">
+            </div>
+          </div>
+        </a>
+         <!-- 햄버거 -->
+        <div class="menu-toggle click-Point" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+
+  <!-- 사라지는 내비 - 서브메뉴들 -->
+  <div class="submenu-wrapper">
+    <!-- 메뉴 1 -->
+    <div class="submenu" id="submenu1">
+      <div class="submenu-content">
+        <div class="submenu-title">KAC소개</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">공사소개</a></h4>
+            <ul>
+              <li><a href="#none">공사소개</a></li>
+              <li><a href="#none">경영진소개</a></li>
+              <li><a href="#none">연혁</a></li>
+              <li><a href="#none">조직현황</a></li>
+              <li><a href="#none">CI 및 캐릭터</a></li>
+              <li><a href="#none">오시는 길</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">CEO 인사말</a></h4>
+            <ul>
+              <li><a href="#none">CEO 인사말</a></li>
+              <li><a href="#none">CEO 프로필</a></li>
+              <li><a href="#none">역대 CEO </a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">KAC 경영전략·혁신</a></h4>
+            <ul>
+              <li><a href="#none">미션</a></li>
+              <li><a href="#none">비젼2030</a></li>
+              <li><a href="#none">핵심가치</a></li>
+              <li><a href="#none">KAC 혁신체계</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 2 -->
+    <div class="submenu" id="submenu2">
+      <div class="submenu-content">
+        <div class="submenu-title">ESG경영</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">KAC ESG</a></h4>
+            <ul>
+              <li><a href="#none">KAC ESG</a></li>
+              <li><a href="#none">이해관계자 참여</a></li>
+              <li><a href="#none">지속가능경영보고서</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">환경(E)</a></h4>
+            <ul>
+              <li><a href="#none">공항환경관리</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">사회(S)</a></h4>
+            <ul>
+              <li><a href="#none">산업안전보건</a></li>
+              <li><a href="#none">사회공헌</a></li>
+              <li><a href="#none">일자리창출</a></li>
+              <li><a href="#none">동반성장</a></li>
+              <li><a href="#none">인권경영</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">지배구조(G)</a></h4>
+            <ul>
+              <li><a href="#none">윤리경영</a></li>
+              <li><a href="#none">공정거래 자율준수</a></li>
+              <li><a href="#none">KAC 신문고</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">ESG DATA</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 3 -->
+    <div class="submenu" id="submenu3">
+      <div class="submenu-content">
+        <div class="submenu-title">정보공개</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">정보공개제도</a></h4>
+            <ul>
+              <li><a href="#none">제도안내</a></li>
+              <li><a href="#none">정보공개절차</a></li>
+              <li><a href="#none">정보공개청구</a></li>
+              <li><a href="#none">불복구제절차</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">사진정보 공개</a></h4>
+            <ul>
+              <li><a href="#none">사전정보공표</a></li>
+              <li><a href="#none">사전정보공표 제안 게시판</a></li>
+              <li><a href="#none">행정정보목록</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">공공데이터개방</a></h4>
+            <ul>
+              <li><a href="#none">공공데이터소개</a></li>
+              <li><a href="#none">Open API</a></li>
+              <li><a href="#none">파일데이터</a></li>
+              <li><a href="#none">공공데이터 소통창구</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">사업실명제</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">항공통계</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">A-CDM</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 4 -->
+    <div class="submenu" id="submenu4">
+      <div class="submenu-content">
+        <div class="submenu-title">열린경영</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">경영공시</a></h4>
+            <ul>
+              <li><a href="#none">경영공시 목차</a></li>
+              <li><a href="#none">경영공시 개요</a></li>
+              <li><a href="#none">경영공시 FAQ</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">입찰정보</a></h4>
+            <ul>
+              <li><a href="#none">입찰공지</a></li>
+              <li><a href="#none">계약절차</a></li>
+              <li><a href="#none">구매규격사전공개</a></li>
+              <li><a href="#none">공사/용역/물품 입찰공고</a></li>
+              <li><a href="#none">공사/용역/물품 개찰결과</a></li>
+              <li><a href="#none">자산임대/매각 입찰공고</a></li>
+              <li><a href="#none">공항입점 사업제안</a></li>
+              <li><a href="#none">규정 및 계약조건</a></li>
+              <li><a href="#none">입찰 및 계약 사용서식</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">계약정보</a></h4>
+            <ul>
+              <li><a href="#none">수의계약 정보공개</a></li>
+              <li><a href="#none">공항별 임대현황</a></li>
+              <li><a href="#none">하도급계약자료 공개</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">직원 국외출방정보</a></h4>
+            <ul>
+              <li><a href="#none">해외출장보고</a></li>
+              <li><a href="#none">임원해외출장현황</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 5 -->
+    <div class="submenu" id="submenu5">
+      <div class="submenu-content">
+        <div class="submenu-title">업무지원</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">보호구역출입증</a></h4>
+            <ul>
+              <li><a href="#none">보호구역출입증 안내</a></li>
+              <li><a href="#none">보호구역출입증 규정</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">공항 시설사용</a></h4>
+            <ul>
+              <li><a href="#none">공항시설사용료</a></li>
+              <li><a href="#none">공항시설사용료 후불계약</a></li>
+              <li><a href="#none">임대시설 사용안내</a></li>
+              <li><a href="#none">이동지역</a></li>
+              <li><a href="#none">항공장애물 제한 및 관리</a></li>
+              <li><a href="#none">계류장관제</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">안전관리시스템</a></h4>
+            <ul>
+              <li><a href="#none">개요</a></li>
+              <li><a href="#none">안전정책</a></li>
+              <li><a href="#none">안전성과지표 관리대상</a></li>
+              <li><a href="#none">안전자료</a></li>
+              <li><a href="#none">자발적 비밀보고</a></li>
+              <li><a href="#none">관련사이트</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">특허이전</a></h4>
+            <ul>
+              <li><a href="#none">KAC 특허보유현황</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">공항소방 구조대</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">전자고지</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">월정기권 납부</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">사규</a></h4>
+            <ul>
+              <li><a href="#none">정관 및 사규</a></li>
+              <li><a href="#none">제개정 예정 사규</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 6 -->
+    <div class="submenu" id="submenu6">
+      <div class="submenu-content">
+        <div class="submenu-title">고객소통</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">공지사항</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">보도자료</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">민원 및 서식</a></h4>
+            <ul>
+              <li><a href="#none">민원안내</a></li>
+              <li><a href="#none">서식안내</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">고객의 소리</a></h4>
+            <ul>
+              <li><a href="#none">일반고객</a></li>
+              <li><a href="#none">Airport Community</a></li>
+              <li><a href="#none">KAC 안전신문고</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">간행물</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">갤러리</a></h4>
+            <ul>
+              <li><a href="#none">동영상</a></li>
+              <li><a href="#none">사진</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">기업규제개선 플랫폼</a></h4>
+            <ul>
+              <li><a href="#none">기업규제개선 플랫폼 안내</a></li>
+              <li><a href="#none">규제·애로 제안</a></li>
+              <li><a href="#none">기업민원 보호·서비스 헌장</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">중소기업마켓</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">설문조사</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 7 -->
+    <div class="submenu" id="submenu7">
+      <div class="submenu-content">
+        <div class="submenu-title">
+          인재채용
+          <p class="jobs-link"><a href="sub1.html" id="clickPoint">인재채용바로가기</a></p>
+        </div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">KAC 인재상</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">인사관리</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">인재육성</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">급여 및 복리후생 </a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">채용공지</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">채용정보</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모바일 메뉴 -->
+  <div class="mobile-menu" id="mobileMenu">
+    <!-- 상단 header-top메뉴 -->
+    <div class="accordion-top">
+      <ul>
+        <li><a href="login.html" target='_blank' class="login clickPoint">로그인</a></li>
+        <li class="family-site">
+          <a href="#none">패밀리사이트</a>
+          <div class="family-content">
+            <div class="mobile-close-btn" id="mobileCloseSearch"><img src="../images/mobile/media_closesuare.svg"
+                alt="닫기아이콘"></div>
+            <div class="family-content-list">
+              <a href="#none">Clean Airport</a>
+              <a href="#none">항로시설본부</a>
+              <a href="#none">항공기술훈련원</a>
+              <a href="#none">항우회</a>
+              <a href="#none">이동지역 운전자 교육</a>
+            </div>
+
+          </div>
+        </li>
+        <li><a href="#none">KOR</a></li>
+      </ul>
+    </div>
+    <!-- 메뉴들 -->
+    <div class="accordion-wrap">
+      <div class="airport-pot" id="clickPoint">
+        <a href="#none" id="airportPot">공항이동</a>
+        <div class="airport-pot-wrap">
+          <div class="closeAirportBtn" id="closeAirportBtn">
+            <img src="../images/mobile/media_closesuare.svg" alt="닫기아이콘">
+          </div>
+          <div class="airport-pot-container">
+            <a href="#none" class="gimpo">김포국제공항</a>
+            <a href="#none" class="gimhae">김해국제공항</a>
+            <a href="sub2.html" class="jeju clickPoint">제주국제공항</a>
+            <a href="#none" class="daegu">대구국제공항</a>
+            <a href="#none" class="cheongju">청주국제공항</a>
+            <a href="#none" class="muan">무안국제공항</a>
+            <a href="#none" class="yangyang">양양국제공항</a>
+          </div>
+          <div class="airport-pot-container">
+            <a href="#none" class="ulsan">울산공항</a>
+            <a href="#none" class="gwangju">광주공항</a>
+            <a href="#none" class="yeosu">여수공항</a>
+            <a href="#none" class="pohang">포항경주공항</a>
+            <a href="#none" class="sacheon">사천공항</a>
+            <a href="#none" class="gunsan">군산공항</a>
+            <a href="#none" class="wonju">원주공항</a>
+          </div>
+          <div class="airport-pot-img">
+            <img src="../images/mobile/media_navi_airport.svg" alt="공항아이콘">
+          </div>
+
+        </div>
+      </div>
+      <!-- 메뉴1 -->
+      <div class="accordion-item">
+        <div class="accordion-title">KAC소개</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">공사소개</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">공사소개</a></li>
+                <li><a href="#none">경영진소개</a></li>
+                <li><a href="#none">연혁</a></li>
+                <li><a href="#none">조직현황</a></li>
+                <li><a href="#none">CI 및 캐릭터</a></li>
+                <li><a href="#none">오시는 길</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">CEO 인사말</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">CEO 인사말</a></li>
+                <li><a href="#none">CEO 프로필</a></li>
+                <li><a href="#none">역대 CEO</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">KAC 경영전략·혁신</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">미션</a></li>
+                <li><a href="#none">비젼2030</a></li>
+                <li><a href="#none">핵심가치</a></li>
+                <li><a href="#none">KAC 혁신체계</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴2 -->
+      <div class="accordion-item">
+        <div class="accordion-title">ESG경영</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">KAC ESG</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">KAC ESG</a></li>
+                <li><a href="#none">이해관계자 참여</a></li>
+                <li><a href="#none">지속가능경영보고서</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">환경(E)</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">공항환경관리</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">사회(S)</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">산업안전보건</a></li>
+                <li><a href="#none">사회공헌</a></li>
+                <li><a href="#none">일자리창출</a></li>
+                <li><a href="#none">동반성장</a></li>
+                <li><a href="#none">인권경영</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">지배구조(G)</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">윤리경영</a></li>
+                <li><a href="#none">공정거래 자율준수</a></li>
+                <li><a href="#none">KAC 신문고</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">ESG DATA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴3 -->
+      <div class="accordion-item">
+        <div class="accordion-title">정보공개</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">정보공개제도</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">제도안내</a></li>
+                <li><a href="#none">정보공개절차</a></li>
+                <li><a href="#none">정보공개청구</a></li>
+                <li><a href="#none">불복구제절차</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">사진정보 공개</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">사전정보공표</a></li>
+                <li><a href="#none">사전정보공표 제안 게시판</a></li>
+                <li><a href="#none">행정정보목록</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">공공데이터개방</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">공공데이터소개</a></li>
+                <li><a href="#none">Open API</a></li>
+                <li><a href="#none">파일데이터</a></li>
+                <li><a href="#none">공공데이터 소통창구</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">사업실명제</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">항공통계</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">A-CDM</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴4 -->
+      <div class="accordion-item">
+        <div class="accordion-title">열린경영</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">경영공시</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">경영공시 목차</a></li>
+                <li><a href="#none">경영공시 개요</a></li>
+                <li><a href="#none">경영공시 FAQ</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">입찰정보</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">입찰공지</a></li>
+                <li><a href="#none">계약절차</a></li>
+                <li><a href="#none">구매규격사전공개</a></li>
+                <li><a href="#none">공사/용역/물품 입찰공고</a></li>
+                <li><a href="#none">공사/용역/물품 개찰결과</a></li>
+                <li><a href="#none">자산임대/매각 입찰공고</a></li>
+                <li><a href="#none">공항입점 사업제안</a></li>
+                <li><a href="#none">규정 및 계약조건</a></li>
+                <li><a href="#none">입찰 및 계약 사용서식</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">계약정보</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">수의계약 정보공개</a></li>
+                <li><a href="#none">공항별 임대현황</a></li>
+                <li><a href="#none">하도급계약자료 공개</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">직원 국외출방정보</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">해외출장보고</a></li>
+                <li><a href="#none">임원해외출장현황</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴5 -->
+      <div class="accordion-item">
+        <div class="accordion-title">업무지원</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">보호구역출입증</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">보호구역출입증 안내</a></li>
+                <li><a href="#none">보호구역출입증 규정</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">공항 시설사용</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">공항시설사용료</a></li>
+                <li><a href="#none">공항시설사용료 후불계약</a></li>
+                <li><a href="#none">임대시설 사용안내</a></li>
+                <li><a href="#none">이동지역</a></li>
+                <li><a href="#none">항공장애물 제한 및 관리</a></li>
+                <li><a href="#none">계류장관제</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">안전관리시스템</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">개요</a></li>
+                <li><a href="#none">안전정책</a></li>
+                <li><a href="#none">안전성과지표 관리대상</a></li>
+                <li><a href="#none">안전자료</a></li>
+                <li><a href="#none">자발적 비밀보고</a></li>
+                <li><a href="#none">관련사이트</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">특허이전</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">KAC 특허보유현황</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">공항소방 구조대</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">전자고지</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">월정기권 납부</a>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">사규</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">정관 및 사규</a></li>
+                <li><a href="#none">제개정 예정 사규</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴6 -->
+      <div class="accordion-item">
+        <div class="accordion-title">고객소통</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub none-after">
+              <a href="#none">공지사항</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">보도자료</a>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">민원 및 서식</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">민원안내</a></li>
+                <li><a href="#none">서식안내</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">고객의 소리</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">일반고객</a></li>
+                <li><a href="#none">Airport Community</a></li>
+                <li><a href="#none">KAC 안전신문고</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">간행물</a>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">갤러리</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">동영상</a></li>
+                <li><a href="#none">사진</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">기업규제개선 플랫폼</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">기업규제개선 플랫폼 안내</a></li>
+                <li><a href="#none">규제·애로 제안</a></li>
+                <li><a href="#none">기업민원 보호·서비스 헌장</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">중소기업마켓</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">설문조사</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴7 -->
+      <div class="accordion-item">
+        <div class="accordion-title"  id="clickPoint" >인재채용 </div>
+        <div class="accordion-content">
+          <ul>
+            <a href="sub1.html" class="jobsBtn"  id="clickPoint">인재채용바로가기<i class="fa-solid fa-circle-arrow-right"></i></a>
+            <li class="accordion-sub none-after"><a href="#none">KAC 인재상</a></li>
+            <li class="accordion-sub none-after"><a href="#none">인사관리</a></li>
+            <li class="accordion-sub none-after"><a href="#none">인재육성</a></li>
+            <li class="accordion-sub none-after"><a href="#none">급여 및 복리후생</a></li>
+            <li class="accordion-sub none-after"><a href="#none">채용공지</a></li>
+            <li class="accordion-sub none-after"><a href="#none">채용정보</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <main>
+
+    <!-- ========================= main visual ========================= -->
+    <section class="main-visual">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide visual-swiper" data-swiper-slide-index="1">
+            <img src="sub1/visual_img01.png" alt="공사이미지1">
+          </div>
+          <div class="swiper-slide visual-swiper" data-swiper-slide-index="2">
+            <img src="sub1/visual_img02.png" alt="공항이미지2">
+          </div>
+          <div class="swiper-slide visual-swiper" data-swiper-slide-index="3">
+            <img src="sub1/visual_img03.png" alt="공항이미지3">
+          </div>
+        </div>
+        <div class="visual-util">
+          <div class="inner">
+            <div class="box-util">
+              <div class="paging">
+                <span class="swiper-pagination" tabindex="0" role="button" aria-label="Go to Slide1"></span>
+                <span class="swiper-pagination" tabindex="0" role="button" aria-label="Go to Slide2"></span>
+                <span class="swiper-pagination" tabindex="0" role="button" aria-label="Go to Slide3"></span>
+              </div>
+              <div class="control">
+                <button class="prev " title="이전 슬라이드"><i class="fa-solid fa-angle-left"></i></i></button>
+                <button class="stop" id="stopBtn" title="일시정지/재생"><i class="fa-solid fa-play"></i></button>
+                <button class="next " title="다음 슬라이드"><i class="fa-solid fa-angle-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="main-title">
+          <h1><a href="#">KOREA AIRPORTS <br> CORPORATION</a></h1>
+          <p>2026 한국공항공사 채용</p>
+        </div>
+        <div class="main-search">
+          <div class="search-jobs">
+            <i class="fa-solid fa-location-dot"></i>
+            <select class="search-area">
+              <option selected>본사</option>
+              <option value="gimpo">김포국제공항</option>
+              <option value="gimhae">김해국제공항</option>
+              <option value="jeju">제주국제공항</option>
+              <option value="daegu">대구국제공항</option>
+              <option value="cheongju">청주국제공항</option>
+              <option value="muan">무안국제공항</option>
+              <option value="yangyang">양양국제공항</option>
+              <option value="ulsan">울산공항</option>
+              <option value="gwangju">광주공항</option>
+              <option value="yeosu">여수공항</option>
+              <option value="pohang">포항경주공항</option>
+              <option value="sacheon">사천공항</option>
+              <option value="gunsan">군산공항</option>
+              <option value="wonju">원주공항</option>
+            </select>
+          </div>
+          <div class="input-search">
+            <input type="text" placeholder="직무를 검색해보세요">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= quick-btn ========================= -->
+    <section class="quick-btn">
+      <div class="quick-btn-inner">
+        <div class="quick-btn-link">
+          <a href="#none">
+            <div class="star"><img src="images/hover_accent.png" alt="포인트별"></div>
+            입사지원
+          </a>
+        </div>
+        <div class="quick-btn-link">
+          <a href="#none">
+            <div class="star"><img src="images/hover_accent.png" alt="포인트별"></div>
+            확인/수정
+          </a>
+        </div>
+        <div class="quick-btn-link">
+          <a href="#none">
+            <div class="star"><img src="images/hover_accent.png" alt="포인트별"></div>
+            결과조회
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= 채용 공고 ========================= -->
+    <section class="jobs-notice">
+      <div class="container">
+        <div class="title-wrap">
+          <h2 class="title">채용공고</h2>
+        <div class="plus-Btn"><span>view more</span><i class="fa-solid fa-circle-plus"></i></div>
+        </div>
+        <div class="jobs-notice-wrap swiper jobSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide jobs-card">
+              <a href="#none">
+                <div class="star"><img src="images/hover_accent.png" alt="포인트별"></div>
+                <div class="jobs-current">접수마감</div>
+                <div class="jobs-content">
+                  <p class="card-main-text">
+                    2025년 하반기 한국공항공사 경력직(조류전문가) 공개채용
+                  </p>
+                  <p class="jobs-date">접수기간 <br> 2025-09-11~2025-09-23 16:00</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide jobs-card">
+              <a href="#none">
+                <div class="star"><img src="images/hover_accent.png" alt="포인트별"></div>
+                <div class="jobs-current">접수마감</div>
+                <div class="jobs-content">
+                  <p class="card-main-text">
+                    2025년 하반기 한국공항공사 안전직(공항보안 일반, 보훈/EOD ) 채용
+                  </p>
+                  <p class="jobs-date">접수기간 <br> 2025-09-11~2025-09-23 16:00</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide jobs-card">
+              <a href="#none">
+                <div class="star"><img src="images/hover_accent.png" alt="포인트별"></div>
+                <div class="jobs-current">접수마감</div>
+                <div class="jobs-content">
+                  <p class="card-main-text">
+                    2025년 하반기 한국공항공사 일반직(5급갑 일반, 보훈/6급갑) 공개채용
+                  </p>
+                  <p class="jobs-date">접수기간 <br> 2025-09-11~2025-09-23 16:00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal">
+            <span class="swiper-pagination-progressbar-fill"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= working at kac ========================= -->
+    <section class="working-KAC">
+      <div class="container">
+        <div class="title-wrap">
+             <h2 class="title">Working at KAC</h2>      
+              <div class="plus-Btn"><span>view more</span><i class="fa-solid fa-circle-plus"></i></div>   
+          </div>
+        <p>KAC의 일과 삶이 궁금하다면,</p>
+             <p>한국공항공사에서 들려주는 특별한 소식을 만나보세요</p>
+        <div class="working-wrap swiper workingSwiper">
+          <div class="swiper-wrapper">
+            <div class="working-card swiper-slide"><a href="#none">
+              <div class="working-img"><img src="sub1/jobs_interview01.png" alt="인터뷰이미지1"></div>
+              <div class="working-text">
+                <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g id="Arrow / Arrow_Up_Right_MD">
+                      <path id="Vector" d="M7 17L17 7M17 7H9M17 7V15" stroke="#0058A8" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </svg>
+                <h5>취업? 워라밸?</h5>
+                <div class="title-sub">한국공항공사에서 하는 일이 궁금해?</div>
+                <div class="text-sub">공항JOB담: ILS부 / 보안관리부 / 플랜트시설부</div>
+              </div>
+            </a></div>
+            <div class="working-card swiper-slide"><a href="#none">
+              <div class="working-img"><img src="sub1/jobs_interview02.png" alt="인터뷰이미지2"></div>
+              <div class="working-text">
+                <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g id="Arrow / Arrow_Up_Right_MD">
+                      <path id="Vector" d="M7 17L17 7M17 7H9M17 7V15" stroke="#0058A8" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </svg>
+                <h5>[통했을KAC] ep3. 항행시설 편 </h5>
+                <div class="title-sub">본사&김포공항 직원이 들려주는 안전한 하늘길 이야기!</div>
+                <div class="text-sub">하는 일은 달라도 우리는 KAC로 통해요! 안전한 하늘길은 우리가 책임진다😎</div>
+              </div>
+            </a></div>
+            <div class="working-card swiper-slide"><a href="#none">
+              <div class="working-img"><img src="sub1/jobs_interview03.png" alt="인터뷰이미지3"></div>
+              <div class="working-text">
+                <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g id="Arrow / Arrow_Up_Right_MD">
+                      <path id="Vector" d="M7 17L17 7M17 7H9M17 7V15" stroke="#0058A8" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </svg>
+                <h5>[통했을KAC] ep2. 공항서비스 편</h5>
+                <div class="title-sub">본사&김해공항 직원이 들려주는 문화공항 이야기!</div>
+                <div class="text-sub">하는 일은 달라도 우리는 KAC로 통해요! 여객의 즐거움은 우리가 책임진다🥰</div>
+              </div>
+            </a></div>
+            <div class="working-card swiper-slide"><a href="#none">
+              <div class="working-img"><img src="sub1/jobs_interview04.png" alt="인터뷰이미지4"></div>
+              <div class="working-text">
+                <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g id="Arrow / Arrow_Up_Right_MD">
+                      <path id="Vector" d="M7 17L17 7M17 7H9M17 7V15" stroke="#0058A8" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </svg>
+                <h5>[통했을KAC] ep1. 항공보안 편</h5>
+                <div class="title-sub">본사&제주공항 직원이 들려주는 공항의 항공보안 이야기!</div>
+                <div class="text-sub">하는 일은 달라도 우리는 KAC로 통해요! 안전한 하늘길은 우리가 책임진다😎</div>
+              </div>
+            </a></div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal">
+            <span class="swiper-pagination-progressbar-fill"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= jobs ========================= -->
+    <section class="jobs">
+      <div class="container">
+        <div class="jobs-title">
+           <h2 class="title">Jobs</h2>
+           <p> <strong>N</strong> 개의 공고가 당신을 기다리고 있습니다</p>
+        </div>
+       
+        <article class="jobs-wrapper">
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>본사</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport01.png" alt="본사이미지">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>김포</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport02.png" alt="김포공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>김해</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport03.png" alt="김해공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>제주</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport04.png" alt="제주공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>대구</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport05.png" alt="대구공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>청주</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport06.png" alt="청주공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>무안</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport07.png" alt="무안공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>양양</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport08.png" alt="양양공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>울산</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport09.png" alt="울산공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>광주</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport10.png" alt="광주공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>여수</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport11.png" alt="여수공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>포항</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport12.png" alt="포항공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>사천</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport13.png" alt="사천공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>군산</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport14.png" alt="군산공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+          <a href="#none" class="jobs-postion-card">
+            <strong><span>원주</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport15.png" alt="원주공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+        <a href="#none" class="jobs-postion-card">
+            <strong><span>울릉</span></strong>
+            <span>
+              <b id="jobPosition">N</b>
+              Position
+            </span>
+            <div class="effect">
+              <img class="back" src="sub1/effect_airport16.png" alt="울릉공항">
+              <img class="mask" src="sub1/effect_mask.png" alt="서브이미지">
+            </div>
+          </a>
+      </article>
+    </section>
+
+
+  </main>
+
+  <!-- ========================= 팝업 ========================= -->
+  <!-- 팝업창 -->
+  <div class="open-popup">
+    <div class="popup-background"></div>
+    <div class="popup-wrap">
+      <div class="popup-top">
+        <div class="icon-img"><i class="fa-solid fa-bars"></i></div>
+        <div class="logoImg"></div>
+        <div class="design-circle">
+          <div class="popup-design-circle"></div>
+          <div class="popup-design-circle"></div>
+          <div class="popup-design-circle close-popupBtn"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+      </div>
+      <div class="popup-msg">
+        <h3 class="popup-title"> 한국공항공사 홈페이지를 <span>리뉴얼한 페이지</span> 입니다</h3>
+        <ul class="popup-list">
+          <li class="made-page">
+            <div class="popup-bubble">작업페이지</div>
+            <div>메인페이지, 서브페이지3개</div>
+          </li>
+          <li class="vscode">
+            <div class="popup-bubble">사용언어</div>
+            <img src="images/popupImg_01.png" alt="">
+            <span>HTML, JavaScript, CSS</span>
+          </li>
+          <li class="role">
+            <div class="popup-bubble">역할</div>
+            <div>디자인 100%, 개발 100%</div>
+          </li>
+          <li class="why-make">
+            <div class="popup-bubble">리뉴얼 이유</div>
+            <div class="resone">메인비주얼 영역이 너무 복잡하고 레이아웃이 깨지는 부분이 있으며 <br> 디자인적으로 통일성이 없다고 생각이 들어서 리뉴얼 하였습니다</div>
+          </li>
+        </ul>
+        <div class="popup-images">
+          <div class="prev-img"></div>
+          <div class="next-icon"><i class="fa-solid fa-right-long"></i></div>
+          <div class="next-img"></div>
+        </div>
+        <div class="induce-icon-wrap">
+        <div class="induce-top">
+          <i class="fa-solid fa-bars"></i>
+          <div class="circle-icon">O O O</div>
+        </div>
+        <div class="induce-txt">
+          <div class="induce-icon">
+            <svg width="77" height="66" viewBox="0 0 77 66" fill="none">
+              <g clip-path="url(#clip0_1234_3055)">
+                <path
+                  d="M12.4496 7.15715C12.2286 6.23454 12.6443 5.2974 13.5086 4.72526C14.3729 4.15313 15.5382 4.07443 16.5039 4.51101L65.4618 26.6956C66.831 27.3181 67.5955 28.608 67.3825 29.9262C67.1768 31.1995 66.0995 32.2396 64.664 32.5508L47.3469 36.3288C46.1409 36.5946 44.863 36.2574 44.0411 35.4543L33.7524 25.5726C33.1936 25.0389 32.2647 24.9633 31.6028 25.3954C30.9409 25.8274 30.769 26.6294 31.211 27.2313L39.3632 38.4913C40.0197 39.4025 40.046 40.5485 39.4303 41.4797L30.4447 54.8848C29.7052 55.9931 28.2531 56.6039 26.7803 56.4261C25.2557 56.242 24.0303 55.253 23.7131 53.9439L12.4496 7.15715Z"
+                  fill="#FFC64A" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1234_3055">
+                  <rect width="58.0447" height="66.9373" fill="white"
+                    transform="matrix(0.159719 -0.98871 0.991646 0.119745 0.305908 57.6539)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="induce-msg">
+            서브페이지로 이동할 수 있는 <br> 링크를 안내하는 아이콘 입니다!  
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- ========================= footer ========================= -->
+  <footer class="footer container">
+    <div class="footer-top">
+      <div class="top-left">
+        <ul>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">이메일무단수집거부</a></li>
+          <li><a href="#none">고객서비현장</a></li>
+          <li><a href="#none">영상정보처리기기 운영관리방침</a></li>
+        </ul>
+      </div>
+      <div class="top-right">
+        <form class="seclect-link">
+          <label for="relationSite">
+            <select class="site-list">
+              <option value="realstionsite" disabled selected>관련사이트</option>
+              <option value="">공공데이터포털</option>
+              <option value="">안전신문고</option>
+              <option value="">대한민국정부포털</option>
+              <option value="">공항 소음정보 시스템</option>
+              <option value="">국토교통부</option>
+              <option value="">한국항공협회</option>
+              <option value="">관세청</option>
+              <option value="">출입국·외국인 정책본부</option>
+              <option value="">농림축산검역본부</option>
+              <option value="">농림축산식품부</option>
+              <option value="">AIR portal</option>
+              <option value="">인천국제공항</option>
+              <option value="">국민권익위원회 신고상담</option>
+              <option value="">인사혁신처 국민추천제</option>
+              <option value="">항공보안365</option>
+              <option value="">항공기상청</option>
+            </select>
+          </label>
+          <label for="airline">
+            <select class="airline-list">
+              <option value="airline" disabled selected>항공사</option>
+              <option value="KE">대한항공</option>
+              <option value="OZ">아시아나</option>
+              <option value="BX">에어부산</option>
+              <option value="RS">에어서울</option>
+              <option value="7C">제주항공</option>
+              <option value="LJ">진에어</option>
+              <option value="TW">티웨이</option>
+              <option value="4H">하이에이</option>
+              <option value="4V">플라이강원</option>
+              <option value="RF">에어로케이항공</option>
+              <option value="VP">에어프레미아</option>
+              <option value="ZE">이스타항공</option>
+            </select>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="footer-center">
+      <div class="center-left">
+        <p class="center-main">한국공항공사 고객센터 1661-2626 (06:00 ~ 23:00, 연중무휴)</p>
+        <p>07505 서울시 강서구 하늘길 78(공항동)</p>
+      </div>
+      <div class="center-right">
+        <div class="sns">
+          <a href="#none" class="facebook"><svg width="11" height="22" viewBox="0 0 11 22" fill="none">
+              <path
+                d="M10.2312 12.3173L10.799 8.35438H7.2491V5.78271C7.2491 4.69854 7.74499 3.64173 9.33487 3.64173H10.9487V0.26773C10.9487 0.26773 9.4842 0 8.08397 0C5.16053 0 3.24964 1.89806 3.24964 5.33407V8.35438H0V12.3173H3.24964V21.8974H7.2491V12.3173H10.2312Z"
+                fill="#707982" />
+            </svg>
+          </a>
+          <a href="#none" class="blog"><svg width="16" height="22" viewBox="0 0 16 22" fill="none">
+              <path
+                d="M9.0026 6.88574C8.23931 6.73308 7.52831 7.35427 7.52831 8.13865V10.7919C7.52831 11.3288 7.89949 11.7605 8.40138 11.95C9.35287 12.308 10.0377 13.2345 10.0377 14.319C10.0377 15.714 8.91372 16.8459 7.52831 16.8459C6.14289 16.8459 5.01887 15.714 5.01887 14.319V1.26344C5.01887 0.563283 4.45948 0 3.76415 0H1.25472C0.559395 0 0 0.563283 0 1.26344V14.319C0 19.0306 4.29218 22.7524 9.14898 21.7259C11.993 21.1258 14.2881 18.8094 14.8841 15.9509C15.7938 11.5868 12.9497 7.67539 9.0026 6.88574Z"
+                fill="#707982" />
+            </svg>
+          </a>
+          <a href="#none" class="instagram"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path
+                d="M10.9511 5.33449C7.84423 5.33449 5.33818 7.8411 5.33818 10.9487C5.33818 14.0563 7.84423 16.5629 10.9511 16.5629C14.0581 16.5629 16.5641 14.0563 16.5641 10.9487C16.5641 7.8411 14.0581 5.33449 10.9511 5.33449ZM10.9511 14.5987C8.94338 14.5987 7.30199 12.9618 7.30199 10.9487C7.30199 8.9356 8.93849 7.29873 10.9511 7.29873C12.9638 7.29873 14.6003 8.9356 14.6003 10.9487C14.6003 12.9618 12.9589 14.5987 10.9511 14.5987ZM18.1029 5.10484C18.1029 5.83288 17.5167 6.41433 16.7937 6.41433C16.0658 6.41433 15.4845 5.82799 15.4845 5.10484C15.4845 4.38168 16.0707 3.79534 16.7937 3.79534C17.5167 3.79534 18.1029 4.38168 18.1029 5.10484ZM21.8205 6.43388C21.7374 4.67974 21.3368 3.12593 20.0521 1.84575C18.7722 0.565575 17.2187 0.164909 15.465 0.0769573C13.6575 -0.0256524 8.23993 -0.0256524 6.43244 0.0769573C4.68358 0.160022 3.13012 0.560689 1.84534 1.84087C0.560564 3.12105 0.164872 4.67485 0.0769402 6.42899C-0.0256467 8.23688 -0.0256467 13.6557 0.0769402 15.4635C0.159987 17.2177 0.560564 18.7715 1.84534 20.0517C3.13012 21.3318 4.67869 21.7325 6.43244 21.8205C8.23993 21.9231 13.6575 21.9231 15.465 21.8205C17.2187 21.7374 18.7722 21.3367 20.0521 20.0517C21.332 18.7715 21.7325 17.2177 21.8205 15.4635C21.9231 13.6557 21.9231 8.24176 21.8205 6.43388ZM19.4854 17.4034C19.1044 18.361 18.3667 19.0989 17.4044 19.4849C15.9633 20.0565 12.5437 19.9246 10.9511 19.9246C9.35861 19.9246 5.93416 20.0517 4.49795 19.4849C3.54047 19.1037 2.80282 18.3659 2.4169 17.4034C1.84534 15.9619 1.97724 12.5416 1.97724 10.9487C1.97724 9.35581 1.85023 5.9306 2.4169 4.49406C2.79794 3.53637 3.53558 2.79856 4.49795 2.41255C5.93905 1.84087 9.35861 1.9728 10.9511 1.9728C12.5437 1.9728 15.9681 1.84575 17.4044 2.41255C18.3618 2.79367 19.0995 3.53149 19.4854 4.49406C20.057 5.93549 19.9251 9.35581 19.9251 10.9487C19.9251 12.5416 20.057 15.9668 19.4854 17.4034Z"
+                fill="#707982" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-corpo">
+        © 2020 Korea Airports Corporation. All Rights Reserved.
+      </div>
+      <div class="footer-logo">
+        <img src="images/footer/footer_webimg01.png" alt="웹마크1">
+        <img src="images/footer/footer_webimb02.png" alt="웹마크2">
+        <img class="footer-kac" src="images/footer/simbol.svg" alt="kac로고">
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="topBtn">
+    <a href="#"></a>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- scrollTrigger -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="../js/sub1.js"></script>
+  <script src="../js/header.js"></script>
+</body>
+
+</html>

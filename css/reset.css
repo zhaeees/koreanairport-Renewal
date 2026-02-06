@@ -1,0 +1,146 @@
+@font-face { font-family: 'Paperozi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2')
+ format('woff2'); font-weight: 300; font-display: swap; }  
+@font-face { font-family: 'Paperozi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') 
+format('woff2'); font-weight: 400; font-display: swap; } 
+ @font-face { font-family: 'Paperozi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2')
+ format('woff2'); font-weight: 500; font-display: swap; } 
+ @font-face { font-family: 'Paperozi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2')
+ format('woff2'); font-weight: 600; font-display: swap; }  
+@font-face { font-family: 'Paperozi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2')
+ format('woff2'); font-weight: 700; font-display: swap; } 
+ @font-face { font-family: 'Paperozi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') 
+format('woff2'); font-weight: 800; font-display: swap; } 
+ @font-face { font-family: 'Paperozi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') 
+format('woff2'); font-weight: 900; font-display: swap; }
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+  font-family: 'Paperozi'; 
+  line-height: 1.2; 
+  color: var(--color-title-text);
+  background: #fafaf8;
+}
+html{font-size: 16px; }
+ol, ul, li {list-style: none;}
+a{text-decoration: none; color: var(--color-title-text); font-family: 'Paperozi';}
+input, select, textarea, button{
+  border: none;
+  font-family: 'Paperozi';
+  font-size: 0.8rem;
+  color: var(--color-text-darkgray);
+  background: var(--color-white);
+}
+button{cursor: pointer;}
+h1, h2, h3, h4, h5, h6{
+  font-size: inherit; font-weight: 500;
+  color: var(--color-title-text);
+}
+table{
+  width: 100%; border-spacing: 0; 
+  border-collapse: collapse;
+}
+address, cite, code, em{font-style: normal;}
+label, img, input, textarea, button{vertical-align: middle;}
+input:focus, select:focus{
+  outline-color: var(--color-logo-border);
+}
+iframe {
+	border: none; 
+}
+/* 플러스버튼 */
+.plus-btn{
+  width: 26px; height: 26px;
+  border: 2px solid var(--color-text-darkgray);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plus-btn-inner{
+  transition: 0.3s;
+  width: 10px; height: 10px;
+  position: relative;
+}
+.plus-btn-inner span{
+  width: 10px;
+  height: 2px;
+  background: var(--color-text-darkgray);
+  position: absolute;
+  border-radius: 1px;
+}
+.plus-btn-inner span:nth-child(1){
+  left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+.plus-btn-inner span:nth-child(2){
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg)
+}
+.plus-btn:hover .plus-btn-inner {
+  transform: rotate(180deg) scale(1.2); 
+}
+.plus-btn:hover .plus-btn-inner span{
+  background: var(--color-logo); 
+}
+
+
+section{margin-bottom: 200px;}
+
+.star{display: none; opacity: 0;}
+.star img{width: 40px; height: 40px;}
+.clickPoint{
+  position: relative;
+}
+.clickPoint::after{
+  content: '\f1d8'; position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 15px; height: 15px;
+  color: var(--color-point);
+  transform: scaleX(-1) ;
+  animation: pulse 1.2s ease-out infinite;
+  bottom: -10%;
+}
+
+@keyframes pulse{
+  0%{
+    transform: scaleX(-1);
+    opacity: 0.8;
+  }
+  70%{
+    transform: scaleX(-1);
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+#clickPoint{
+  position: relative;
+}
+#clickPoint::before{
+  content: '\f1d8'; position: absolute;
+  width: 15px; height: 15px;
+   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--color-point);
+  transform: scale(1);
+  opacity: 0;
+  animation: point 1.5s ease-out infinite;
+  left: -5px; bottom: 5px;
+}
+
+@keyframes point{
+  0%{
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+  70%{
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100%{
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+}

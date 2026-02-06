@@ -1,0 +1,150 @@
+/* 모바일&테블릿 */
+@media (max-width : 768px) {
+  /* body, html{overflow-x: hidden;} */
+  section {margin-bottom: 100px;}
+  h4 {font-size: var(--mtext-title-xs);}
+  h2 {font-size: var(--mtext-title-l);}
+  .contianer{width: 90%; margin: auto;}
+  .title > p {font-size: var(--mtext-m); font-weight: 500;}
+  .plus-Btn span{font-size: var(--mtext-xs);}
+  .plus-Btn:hover i{font-size: var(--text-s);}
+  /* ========================= 
+    main-visual
+  ============================ */
+  .main-visual {
+     padding-top: 60px;
+     margin-bottom: 0;
+  }
+  /* 비주얼 타이틀 */
+  .main-visual .container{
+    width: 90%; margin: auto;
+    left: 5%;
+  }
+  .main-title h1{
+    font-size: var(--mtext-title-xxl);
+  }
+  .main-title p{
+    font-size: var(--mtext-title-l);
+  }
+  .main-search{ 
+    position: absolute;
+    width: 100%;
+    border-color: var(--color-white);
+    top: 50vh;
+  }
+  .search-jobs::after{
+    background: var(--color-white);
+    right: -5px;
+  }
+  .search-jobs i{
+    color: var(--color-white);
+  }
+  .search-jobs select{
+    font-size: var(--mtext-xl);
+    color: var(--color-white);
+  }
+  .input-search input{width: 100%;}
+  .input-search input::-webkit-input-placeholder{
+    font-size: var(--mtext-s);
+    color: var(--color-white);
+  }
+  .input-search button i{color: var(--color-white);}
+  
+  /* ========================= 
+    quick-btn
+  ============================ */
+  .quick-btn{
+    height: 375px; max-height: 375px;
+  }
+  .quick-btn-inner{
+    width: 90%; margin: auto;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+  }
+  .quick-btn-link {
+    width: 100%;
+    transition: 0.3s ease;
+    position: relative;
+  }
+  
+  .quick-btn-link a{
+    height: 85px; width: 100%; 
+    border-radius: 0;
+    font-size: var(--mtext-xl);
+  }
+  .quick-btn-link:nth-child(1) a{
+    border-radius: 20px 20px 0 0;
+  }
+  .quick-btn-link:nth-child(3) a{
+    border-radius: 0 0 20px 20px;
+  }
+  .quick-btn-link .star{top: 20%;}
+  .quick-btn-link a:hover{
+    height: 110px;
+  }
+
+
+  /* ========================= 
+    채용 공고
+  ============================ */
+  .jobs-notice-wrap.swiper{
+    padding: 5px;
+  }
+  .jobs-card{
+    padding: 20px 30px;
+  }
+  .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal{
+    width: 100%;
+    top: 97%;
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .swiper-pagination-progressbar-fill {
+    background: var(--color-logo) !important;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transform-origin: left top;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .jobs-content .card-main-text{
+    font-size: var(--mtext-l);
+  }
+  .jobs-content .jobs-date{
+    font-size: var(--mtext-m);
+    line-height: 1;
+  }
+
+  /* ========================= 
+    working at kac
+  ============================ */
+  .working-wrap.swiper{
+    padding: 10px;
+  }
+
+  /* ========================= 
+    jobs
+  ============================ */
+  .jobs-wrapper{
+   flex-direction: column;
+  }
+  .jobs-title{
+    align-items: end;
+  }
+  .jobs-postion-card{
+    height: 100px;
+    width: 100%;
+  }
+  .jobs-title p{
+    font-size: var(--mtext-s);
+    margin-bottom: 20px;
+    
+  }
+  .jobs-title p strong{font-size: var(--mtext-xl);}
+  
+}

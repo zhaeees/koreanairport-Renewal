@@ -1,0 +1,78 @@
+/* 기본 리셋 및 변수 */
+
+:root {
+  /* 컬러 */
+  --color-logo: #0058A8;
+  --color-primary-dark: #11385c;
+  --color-primary-middle: #00519a;
+  --color-primary-mlight: #1366bc;
+  --color-primary-light: #0476dd;
+  --color-logo-border: #0476dd;
+  --color-linerGradiunt: linear-gradient( #035aa9, #2b79c1, #fafaf8 );
+  --color-secondary-gray: #707982;
+  --color-map: #f2eddd;
+  --color-point: #ffc64a;
+
+  /* white&black */
+  --color-white: #fafaf8;
+  --color-white-dark: #eee;
+  --color-black: #1a1a1a;
+  --color-black-soft: #2a2a2a;
+
+  /* mono color */
+  --color-title-text: #3b3b3b;
+  --color-text-darkgray: #666;
+  --color-text-gray: #999;
+  --color-text-lightgray: #ddd;
+
+  /* box-shadow */
+  --shadow-white:  0 0 10px rgba(250, 250, 248, 0.9), inset 0 0 5px rgba(250, 250, 248, 0.9);
+  --shadow-black-xs: 0 0 4px rgba(26, 26, 26, 0.25);
+  --shadow-black-s: 0 4px 4px rgba(26, 26, 26, 0.25);
+  --shadow-black-m: 4px 4px 4px rgba(26, 26, 26, 0.25);
+  --shadow-black-l: 4px 4px 15px rgba(26, 26, 26, 0.5);
+
+  /* heading font */
+  --text-title-xxl: 48px; 
+  --text-title-xl: 40px; 
+  --text-title-l: 36px; 
+  --text-title-m: 32px; 
+  --text-title-s: 26px; 
+  --text-title-xs: 24px; 
+
+  /* body font */
+  --text-xxl: 40px;
+  --text-xl: 32px;
+  --text-l: 24px;
+  --text-m: 20px;
+  --text-s: 18px;
+  --text-xs: 16px;
+
+  /* mobile font */
+  --mtext-title-xxl: 32px; 
+  --mtext-title-xl: 26px; 
+  --mtext-title-l: 24px; 
+  --mtext-title-m: 20px; 
+  --mtext-title-s: 18px; 
+  --mtext-title-xs: 16px; 
+  --mtext-xxl: 24px;
+  --mtext-xl: 20px;
+  --mtext-l: 18px;
+  --mtext-m: 16px;
+  --mtext-s: 14px;
+  --mtext-xs: 12px;
+
+  /* 간격 */
+  --space-xxxl: 60px;
+  --space-xxl: 50px;
+  --space-xl: 42px;
+  --space-l: 32px;
+  --space-m: 20px;
+  --space-s: 16px;
+  --space-xs: 14px;
+  --space-xxs: 12px;
+   
+  --container: 1300px;
+  --mcontainer: 90%;
+  
+}

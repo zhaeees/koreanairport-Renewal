@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제주국제공항</title>
+  <link rel="icon" type="image/x-icon" href="images/ico_logo.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/sub2_style.css">
+  <link rel="stylesheet" href="css/header&footer.css">
+  <link rel="stylesheet" href="css/sub2_responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ========================= header ========================= -->
+
+  <!-- 보여지는 내비 - 메인내비 -->
+  <header>
+    <div class="header-top">
+      <a href="login.html" target='_blank' class="login clickPoint">로그인</a>
+      <a href="#none" id="familyBtn" class="clickPoint">패밀리사이트</a>
+       <!-- 패밀리사이트 -->
+   <div class="family">
+    <div class="family-wrap">
+      <a href="#none">김포국제공항</a>
+      <a href="#none" class="gimhae">김해국제공항</a>
+      <a href="sub2.html" class="jeju clickPoint">제주국제공항</a>
+      <a href="#none" class="daegu">대구국제공항</a>
+      <a href="#none" class="cheongju">청주국제공항</a>
+      <a href="#none" class="muan">무안국제공항</a>
+      <a href="#none" class="yangyang">양양국제공항</a>
+      <a href="#none" class="ulsan">울산공항</a>
+      <a href="#none" class="gwangju">광주공항</a>
+      <a href="#none" class="yeosu">여수공항</a>
+      <a href="#none" class="pohang">포항경주공항</a>
+      <a href="#none" class="sacheon">사천공항</a>
+      <a href="#none" class="gunsan">군산공항</a>
+      <a href="#none" class="wonju">원주공항</a>
+      <a href="#none">Clean Airport</a>
+      <a href="#none">항로시설본부</a>
+      <a href="#none">항공기술훈련원</a>
+      <a href="#none">항우회</a>
+      <a href="#none">이동지역 운전자 교육</a>
+    </div>
+   </div>
+      <a href="#none">KOR</a>
+    </div>
+    <nav class="main-nav">
+      <div class="header-logo">
+        <a href="index.html">
+          <div class="logo-img"></div>
+        </a>
+      </div>
+      <div class="main-menu">
+        <ul>
+          <li class="menu-item" data-target="submenu1"><a href="#none">KAC소개</a></li>
+          <li class="menu-item" data-target="submenu2"><a href="#none">ESG경영</a></li>
+          <li class="menu-item" data-target="submenu3"><a href="#none">정보공개</a></li>
+          <li class="menu-item" data-target="submenu4"><a href="#none">열린경영</a></li>
+          <li class="menu-item" data-target="submenu5"><a href="#none">업무지원</a></li>
+          <li class="menu-item" data-target="submenu6"><a href="#none">고객소통</a></li>
+          <li class="menu-item" data-target="submenu7"><a href="#none" class="clickPoint">인재채용</a></li>
+        </ul>
+      </div>
+      <div class="header-utils">
+        <a href="#none" class="searchBtn" id="searchBtn">
+          <svg width="35px" height="35px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+            <g id="SVGRepo_iconCarrier">
+              <title>Search</title>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Search">
+                  <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"> </rect>
+                  <circle id="Oval" stroke="#666" stroke-width="2" stroke-linecap="round" cx="11" cy="11" r="7">
+                  </circle>
+                  <line x1="16" y1="17" x2="19" y2="20" id="Path" stroke="#666" stroke-width="2" stroke-linecap="round">
+                  </line>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <!-- 검색창 -->
+          <div class="search-bar" id="searchBar">
+            <div class="search-box">
+              <input type="text" placeholder="검색어를 입력하세요" id="searchInput">
+            </div>
+          </div>
+        </a>
+         <!-- 햄버거 -->
+        <div class="menu-toggle click-Point" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+
+
+  <!-- 사라지는 내비 - 서브메뉴들 -->
+  <div class="submenu-wrapper">
+    <!-- 메뉴 1 -->
+    <div class="submenu" id="submenu1">
+      <div class="submenu-content">
+        <div class="submenu-title">KAC소개</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">공사소개</a></h4>
+            <ul>
+              <li><a href="#none">공사소개</a></li>
+              <li><a href="#none">경영진소개</a></li>
+              <li><a href="#none">연혁</a></li>
+              <li><a href="#none">조직현황</a></li>
+              <li><a href="#none">CI 및 캐릭터</a></li>
+              <li><a href="#none">오시는 길</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">CEO 인사말</a></h4>
+            <ul>
+              <li><a href="#none">CEO 인사말</a></li>
+              <li><a href="#none">CEO 프로필</a></li>
+              <li><a href="#none">역대 CEO </a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">KAC 경영전략·혁신</a></h4>
+            <ul>
+              <li><a href="#none">미션</a></li>
+              <li><a href="#none">비젼2030</a></li>
+              <li><a href="#none">핵심가치</a></li>
+              <li><a href="#none">KAC 혁신체계</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 2 -->
+    <div class="submenu" id="submenu2">
+      <div class="submenu-content">
+        <div class="submenu-title">ESG경영</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">KAC ESG</a></h4>
+            <ul>
+              <li><a href="#none">KAC ESG</a></li>
+              <li><a href="#none">이해관계자 참여</a></li>
+              <li><a href="#none">지속가능경영보고서</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">환경(E)</a></h4>
+            <ul>
+              <li><a href="#none">공항환경관리</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">사회(S)</a></h4>
+            <ul>
+              <li><a href="#none">산업안전보건</a></li>
+              <li><a href="#none">사회공헌</a></li>
+              <li><a href="#none">일자리창출</a></li>
+              <li><a href="#none">동반성장</a></li>
+              <li><a href="#none">인권경영</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">지배구조(G)</a></h4>
+            <ul>
+              <li><a href="#none">윤리경영</a></li>
+              <li><a href="#none">공정거래 자율준수</a></li>
+              <li><a href="#none">KAC 신문고</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">ESG DATA</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 3 -->
+    <div class="submenu" id="submenu3">
+      <div class="submenu-content">
+        <div class="submenu-title">정보공개</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">정보공개제도</a></h4>
+            <ul>
+              <li><a href="#none">제도안내</a></li>
+              <li><a href="#none">정보공개절차</a></li>
+              <li><a href="#none">정보공개청구</a></li>
+              <li><a href="#none">불복구제절차</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">사진정보 공개</a></h4>
+            <ul>
+              <li><a href="#none">사전정보공표</a></li>
+              <li><a href="#none">사전정보공표 제안 게시판</a></li>
+              <li><a href="#none">행정정보목록</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">공공데이터개방</a></h4>
+            <ul>
+              <li><a href="#none">공공데이터소개</a></li>
+              <li><a href="#none">Open API</a></li>
+              <li><a href="#none">파일데이터</a></li>
+              <li><a href="#none">공공데이터 소통창구</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">사업실명제</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">항공통계</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">A-CDM</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 4 -->
+    <div class="submenu" id="submenu4">
+      <div class="submenu-content">
+        <div class="submenu-title">열린경영</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">경영공시</a></h4>
+            <ul>
+              <li><a href="#none">경영공시 목차</a></li>
+              <li><a href="#none">경영공시 개요</a></li>
+              <li><a href="#none">경영공시 FAQ</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">입찰정보</a></h4>
+            <ul>
+              <li><a href="#none">입찰공지</a></li>
+              <li><a href="#none">계약절차</a></li>
+              <li><a href="#none">구매규격사전공개</a></li>
+              <li><a href="#none">공사/용역/물품 입찰공고</a></li>
+              <li><a href="#none">공사/용역/물품 개찰결과</a></li>
+              <li><a href="#none">자산임대/매각 입찰공고</a></li>
+              <li><a href="#none">공항입점 사업제안</a></li>
+              <li><a href="#none">규정 및 계약조건</a></li>
+              <li><a href="#none">입찰 및 계약 사용서식</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">계약정보</a></h4>
+            <ul>
+              <li><a href="#none">수의계약 정보공개</a></li>
+              <li><a href="#none">공항별 임대현황</a></li>
+              <li><a href="#none">하도급계약자료 공개</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">직원 국외출방정보</a></h4>
+            <ul>
+              <li><a href="#none">해외출장보고</a></li>
+              <li><a href="#none">임원해외출장현황</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 5 -->
+    <div class="submenu" id="submenu5">
+      <div class="submenu-content">
+        <div class="submenu-title">업무지원</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">보호구역출입증</a></h4>
+            <ul>
+              <li><a href="#none">보호구역출입증 안내</a></li>
+              <li><a href="#none">보호구역출입증 규정</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">공항 시설사용</a></h4>
+            <ul>
+              <li><a href="#none">공항시설사용료</a></li>
+              <li><a href="#none">공항시설사용료 후불계약</a></li>
+              <li><a href="#none">임대시설 사용안내</a></li>
+              <li><a href="#none">이동지역</a></li>
+              <li><a href="#none">항공장애물 제한 및 관리</a></li>
+              <li><a href="#none">계류장관제</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">안전관리시스템</a></h4>
+            <ul>
+              <li><a href="#none">개요</a></li>
+              <li><a href="#none">안전정책</a></li>
+              <li><a href="#none">안전성과지표 관리대상</a></li>
+              <li><a href="#none">안전자료</a></li>
+              <li><a href="#none">자발적 비밀보고</a></li>
+              <li><a href="#none">관련사이트</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">특허이전</a></h4>
+            <ul>
+              <li><a href="#none">KAC 특허보유현황</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">공항소방 구조대</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">전자고지</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">월정기권 납부</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">사규</a></h4>
+            <ul>
+              <li><a href="#none">정관 및 사규</a></li>
+              <li><a href="#none">제개정 예정 사규</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 6 -->
+    <div class="submenu" id="submenu6">
+      <div class="submenu-content">
+        <div class="submenu-title">고객소통</div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">공지사항</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">보도자료</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">민원 및 서식</a></h4>
+            <ul>
+              <li><a href="#none">민원안내</a></li>
+              <li><a href="#none">서식안내</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">고객의 소리</a></h4>
+            <ul>
+              <li><a href="#none">일반고객</a></li>
+              <li><a href="#none">Airport Community</a></li>
+              <li><a href="#none">KAC 안전신문고</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">간행물</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">갤러리</a></h4>
+            <ul>
+              <li><a href="#none">동영상</a></li>
+              <li><a href="#none">사진</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">기업규제개선 플랫폼</a></h4>
+            <ul>
+              <li><a href="#none">기업규제개선 플랫폼 안내</a></li>
+              <li><a href="#none">규제·애로 제안</a></li>
+              <li><a href="#none">기업민원 보호·서비스 헌장</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">중소기업마켓</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">설문조사</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 메뉴 7 -->
+    <div class="submenu" id="submenu7">
+      <div class="submenu-content">
+        <div class="submenu-title">
+          인재채용
+          <p class="jobs-link"><a href="sub1.html" id="clickPoint">인재채용바로가기</a></p>
+        </div>
+        <div class="submenu-links">
+          <div class="submenu-column">
+            <h4><a href="#none">KAC 인재상</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">인사관리</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">인재육성</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">급여 및 복리후생 </a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">채용공지</a></h4>
+          </div>
+          <div class="submenu-column">
+            <h4><a href="#none">채용정보</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모바일 메뉴 -->
+  <div class="mobile-menu" id="mobileMenu">
+    <!-- 상단 header-top메뉴 -->
+    <div class="accordion-top">
+      <ul>
+        <li><a href="login.html" target='_blank' class="login clickPoint">로그인</a></li>
+        <li class="family-site">
+          <a href="#none">패밀리사이트</a>
+          <div class="family-content">
+            <div class="mobile-close-btn" id="mobileCloseSearch"><img src="../images/mobile/media_closesuare.svg"alt="닫기아이콘"></div>
+            <div class="family-content-list">
+              <a href="#none">Clean Airport</a>
+              <a href="#none">항로시설본부</a>
+              <a href="#none">항공기술훈련원</a>
+              <a href="#none">항우회</a>
+              <a href="#none">이동지역 운전자 교육</a>
+            </div>
+
+          </div>
+        </li>
+        <li><a href="#none">KOR</a></li>
+      </ul>
+    </div>
+    <!-- 메뉴들 -->
+    <div class="accordion-wrap">
+      <div class="airport-pot">
+        <a href="#none" id="airportPot">공항이동</a>
+        <div class="airport-pot-wrap">
+          <div class="closeAirportBtn" id="closeAirportBtn">
+            <img src="../images/mobile/media_closesuare.svg" alt="닫기아이콘">
+          </div>
+          <div class="airport-pot-container">
+            <a href="#none" class="gimpo">김포국제공항</a>
+            <a href="#none" class="gimhae">김해국제공항</a>
+            <a href="sub2.html" class="jeju">제주국제공항</a>
+            <a href="#none" class="daegu">대구국제공항</a>
+            <a href="#none" class="cheongju">청주국제공항</a>
+            <a href="#none" class="muan">무안국제공항</a>
+            <a href="#none" class="yangyang">양양국제공항</a>
+          </div>
+          <div class="airport-pot-container">
+            <a href="#none" class="ulsan">울산공항</a>
+            <a href="#none" class="gwangju">광주공항</a>
+            <a href="#none" class="yeosu">여수공항</a>
+            <a href="#none" class="pohang">포항경주공항</a>
+            <a href="#none" class="sacheon">사천공항</a>
+            <a href="#none" class="gunsan">군산공항</a>
+            <a href="#none" class="wonju">원주공항</a>
+          </div>
+          <div class="airport-pot-img">
+            <img src="../images/mobile/media_navi_airport.svg" alt="공항아이콘">
+          </div>
+
+        </div>
+      </div>
+      <!-- 메뉴1 -->
+      <div class="accordion-item">
+        <div class="accordion-title">KAC소개</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">공사소개</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">공사소개</a></li>
+                <li><a href="#none">경영진소개</a></li>
+                <li><a href="#none">연혁</a></li>
+                <li><a href="#none">조직현황</a></li>
+                <li><a href="#none">CI 및 캐릭터</a></li>
+                <li><a href="#none">오시는 길</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">CEO 인사말</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">CEO 인사말</a></li>
+                <li><a href="#none">CEO 프로필</a></li>
+                <li><a href="#none">역대 CEO</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">KAC 경영전략·혁신</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">미션</a></li>
+                <li><a href="#none">비젼2030</a></li>
+                <li><a href="#none">핵심가치</a></li>
+                <li><a href="#none">KAC 혁신체계</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴2 -->
+      <div class="accordion-item">
+        <div class="accordion-title">ESG경영</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">KAC ESG</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">KAC ESG</a></li>
+                <li><a href="#none">이해관계자 참여</a></li>
+                <li><a href="#none">지속가능경영보고서</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">환경(E)</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">공항환경관리</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">사회(S)</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">산업안전보건</a></li>
+                <li><a href="#none">사회공헌</a></li>
+                <li><a href="#none">일자리창출</a></li>
+                <li><a href="#none">동반성장</a></li>
+                <li><a href="#none">인권경영</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">지배구조(G)</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">윤리경영</a></li>
+                <li><a href="#none">공정거래 자율준수</a></li>
+                <li><a href="#none">KAC 신문고</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">ESG DATA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴3 -->
+      <div class="accordion-item">
+        <div class="accordion-title">정보공개</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">정보공개제도</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">제도안내</a></li>
+                <li><a href="#none">정보공개절차</a></li>
+                <li><a href="#none">정보공개청구</a></li>
+                <li><a href="#none">불복구제절차</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">사진정보 공개</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">사전정보공표</a></li>
+                <li><a href="#none">사전정보공표 제안 게시판</a></li>
+                <li><a href="#none">행정정보목록</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">공공데이터개방</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">공공데이터소개</a></li>
+                <li><a href="#none">Open API</a></li>
+                <li><a href="#none">파일데이터</a></li>
+                <li><a href="#none">공공데이터 소통창구</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">사업실명제</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">항공통계</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">A-CDM</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴4 -->
+      <div class="accordion-item">
+        <div class="accordion-title">열린경영</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">경영공시</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">경영공시 목차</a></li>
+                <li><a href="#none">경영공시 개요</a></li>
+                <li><a href="#none">경영공시 FAQ</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">입찰정보</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">입찰공지</a></li>
+                <li><a href="#none">계약절차</a></li>
+                <li><a href="#none">구매규격사전공개</a></li>
+                <li><a href="#none">공사/용역/물품 입찰공고</a></li>
+                <li><a href="#none">공사/용역/물품 개찰결과</a></li>
+                <li><a href="#none">자산임대/매각 입찰공고</a></li>
+                <li><a href="#none">공항입점 사업제안</a></li>
+                <li><a href="#none">규정 및 계약조건</a></li>
+                <li><a href="#none">입찰 및 계약 사용서식</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">계약정보</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">수의계약 정보공개</a></li>
+                <li><a href="#none">공항별 임대현황</a></li>
+                <li><a href="#none">하도급계약자료 공개</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">직원 국외출방정보</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">해외출장보고</a></li>
+                <li><a href="#none">임원해외출장현황</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴5 -->
+      <div class="accordion-item">
+        <div class="accordion-title">업무지원</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub">
+              <a href="#none">보호구역출입증</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">보호구역출입증 안내</a></li>
+                <li><a href="#none">보호구역출입증 규정</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">공항 시설사용</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">공항시설사용료</a></li>
+                <li><a href="#none">공항시설사용료 후불계약</a></li>
+                <li><a href="#none">임대시설 사용안내</a></li>
+                <li><a href="#none">이동지역</a></li>
+                <li><a href="#none">항공장애물 제한 및 관리</a></li>
+                <li><a href="#none">계류장관제</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">안전관리시스템</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">개요</a></li>
+                <li><a href="#none">안전정책</a></li>
+                <li><a href="#none">안전성과지표 관리대상</a></li>
+                <li><a href="#none">안전자료</a></li>
+                <li><a href="#none">자발적 비밀보고</a></li>
+                <li><a href="#none">관련사이트</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">특허이전</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">KAC 특허보유현황</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">공항소방 구조대</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">전자고지</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">월정기권 납부</a>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">사규</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">정관 및 사규</a></li>
+                <li><a href="#none">제개정 예정 사규</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴6 -->
+      <div class="accordion-item">
+        <div class="accordion-title">고객소통</div>
+        <div class="accordion-content">
+          <ul>
+            <li class="accordion-sub none-after">
+              <a href="#none">공지사항</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">보도자료</a>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">민원 및 서식</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">민원안내</a></li>
+                <li><a href="#none">서식안내</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">고객의 소리</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">일반고객</a></li>
+                <li><a href="#none">Airport Community</a></li>
+                <li><a href="#none">KAC 안전신문고</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">간행물</a>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">갤러리</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">동영상</a></li>
+                <li><a href="#none">사진</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub">
+              <a href="#none">기업규제개선 플랫폼</a>
+              <ul class="accordion-sub-list">
+                <li><a href="#none">기업규제개선 플랫폼 안내</a></li>
+                <li><a href="#none">규제·애로 제안</a></li>
+                <li><a href="#none">기업민원 보호·서비스 헌장</a></li>
+              </ul>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">중소기업마켓</a>
+            </li>
+            <li class="accordion-sub none-after">
+              <a href="#none">설문조사</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 메뉴7 -->
+      <div class="accordion-item">
+        <div class="accordion-title" id="clickPoint">인재채용</div>
+        <div class="accordion-content">
+          <ul>
+            <a href="sub1.html" class="jobsBtn" id="clickPoint">인재채용바로가기<i
+                class="fa-solid fa-circle-arrow-right"></i></a>
+            <li class="accordion-sub none-after"><a href="#none">KAC 인재상</a></li>
+            <li class="accordion-sub none-after"><a href="#none">인사관리</a></li>
+            <li class="accordion-sub none-after"><a href="#none">인재육성</a></li>
+            <li class="accordion-sub none-after"><a href="#none">급여 및 복리후생</a></li>
+            <li class="accordion-sub none-after"><a href="#none">채용공지</a></li>
+            <li class="accordion-sub none-after"><a href="#none">채용정보</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ <main>
+  <!-- ========================= main visual ========================= -->
+  <section class="main-visual">
+    <div class="main-bg">
+      <img src="sub2/main_bg.png" alt="제주공항이미지">
+    </div>
+    <div class="container">
+      <div class="main-title">
+        <h1><a href="#">제주국제공항</a></h1>
+      </div>
+
+      <!-- 검색영역 -->
+      <div class="main-search">
+        <h2 class="title">출도착 항공편 검색</h2>
+        <div class="search-wrap">
+          <div class="search-left">
+            <div class="search-category">
+              <span data-type="depart" class="depart active">출발</span>
+              <span data-type="arrive" class="arrive">도착</span>
+            </div>
+            <div class="search-box-wrap" id="result">
+              <img src="sub2/searchBox_img.png" alt="항공티켓이미지">
+              <div class="search-box-content">
+                <div class="search-inner">
+                  <div class="date-icon"><i class="fa-solid fa-calendar"></i></div>
+                  <div class="search-text">
+                    <label for="dateText">Pick a date</label>
+                    <input type="date">
+                  </div>
+                </div>
+                <div class="search-inner">
+                  <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                  <div class="search-text">
+                    <label for="searchText">Enter Flight number / Airline / City</label>
+                    <input type="text" placeholder="항공편/목적지를 입력해주세요">
+                  </div>
+                </div>
+                <button class="search-btn">
+                  <i><svg width="51" height="51" viewBox="0 0 51 51" fill="none">
+                      <path
+                        d="M22.7655 42.5471C11.8406 42.5471 2.98415 33.6907 2.98415 22.7657C2.98415 11.8408 11.8406 2.98438 22.7655 2.98438C33.6905 2.98438 42.5469 11.8408 42.5469 22.7657C42.5469 33.6907 33.6905 42.5471 22.7655 42.5471Z"
+                        stroke="#FAFAF8" stroke-width="5.96875" stroke-miterlimit="10" />
+                      <path d="M47.9844 47.9844L37.2134 37.2134" stroke="#FAFAF8" stroke-width="5.96875"
+                        stroke-miterlimit="10" />
+                      <path d="M22.7656 10.3894V30.1708" stroke="#FAFAF8" stroke-width="5.96875"
+                        stroke-miterlimit="10" />
+                      <path d="M27.7109 32.6306L22.7656 30.1709" stroke="#FAFAF8" stroke-width="5.96875"
+                        stroke-miterlimit="10" />
+                      <path d="M17.8203 32.6306L22.7656 30.1709" stroke="#FAFAF8" stroke-width="5.96875"
+                        stroke-miterlimit="10" />
+                      <path d="M22.7661 17.8203L32.6309 22.7657" stroke="#FAFAF8" stroke-width="5.96875"
+                        stroke-miterlimit="10" />
+                      <path d="M22.7656 17.8203L12.8749 22.7657" stroke="#FAFAF8" stroke-width="5.96875"
+                        stroke-miterlimit="10" />
+                    </svg>
+                  </i>
+                  <span>항공편 검색</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="search-right">
+            <div class="height-blank">날씨</div>
+            <img src="sub2/weather_bg.png" alt=" 날씨티켓">
+            <div class="weather-box">
+              <div class="weather-today">
+                <p>오늘날씨</p>
+                <p class="today-time">18:00</p>
+              </div>
+              <div class="weather-data">
+                <iframe class="weather-icon" id="weatherIcon"></iframe>
+                <div class="weatherTxt">
+                  <div class="weather-temp"></div>
+                  <div id="description"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 탑승수속 대기시간 ========================= -->
+  <section class="boarding-time">
+    <div class="container">
+      <div class="boarding-title title">
+        <h2>국내선 출발장 소요시간 안내</h2>
+        <p>셀프체크인부터 보안 검색까지 평균 체류시간</p>
+        <b><strong class="total-time"></strong> <span>분</span></b>
+        <!-- 야간 안내 문구 -->
+        <b class="time-notice">
+        현재 시간대에는 출발장 소요시간 안내를 제공하지 않습니다.
+        </b>
+      </div>
+      <div class="boarding-bg-wrap">
+        <img src="sub2/airportTime.png" alt="공항절차이미지">
+        <div class="bording-animation">
+          <div class="person">
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="arm left"></div>
+            <div class="arm right"></div>
+            <div class="leg left"></div>
+            <div class="leg right"></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="flow-wrap">
+        <ul class="flow-steps">
+          <li class="step is-active">
+            공항도착(주차)
+            <span><img src="sub2/icon_checkIn01.png" alt="도착아이콘"></span>
+            <span class="step-time">3분</span>
+          </li>
+          <li class="step">
+            체크인
+            <span><img src="sub2/icon_checkIn02.png" alt="체크인아이콘"></span>
+            <span class="step-time">3분</span>
+          </li>
+          <li class="step">
+            수화물
+            <span><img src="sub2/icon_checkIn04.png" alt="수화물아이콘"></span>
+            <span class="step-time">3분</span>
+          </li>
+          <li class="step">
+            보안검색
+            <span><img src="sub2/icon_checkIn03.png" alt="보안아이콘"></span>
+            <span class="step-time">3분</span>
+          </li>
+          <li class="step">
+            탑승시간
+            <span><img src="sub2/icon_checkIn05.png" alt="탑승아이콘"></span>
+            <span class="step-time">3분</span>
+          </li>
+          <li class="step">
+            출발
+            <span><img src="sub2/icon_checkIn06.png" alt="출발아이콘"></span>
+            <span class="step-time">3분</span>
+          </li>
+        </ul>
+
+        <div class="controls">
+          <button id="prevBtn">이전</button>
+          <button id="nextBtn">다음</button>
+        </div>
+      </div>
+      <div class="bording-content">
+        <ul class="bording-text dec2">
+          <li><span>항공권 셀프 체크인 및 수하물 위탁 가능 시간</span>은 항공사별 정책에 따라 달라질 수 있으며, 일반적으로 <span>국내선 항공기는 출발 예정 시각
+              30분전까지</span> 가능함에 유의하시기 바랍니다. </li>
+          <li>본 서비스는 <span>탑승수속 구간별 여객이 체류하는 평균시간을 실시간으로 안내</span>하는 것으로, <span>개개인의 실제 소요시간과 차이가 있을 수 있습니다.</span>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ========================= airport guide ========================= -->
+  
+  <section class="guide-area">
+    <div class="container">
+      <div class="guide-title title">
+        <h2>Airport Guide</h2>
+        <p>공항이용 가이드</p>
+      </div>
+
+      <div class="guide-content ">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content-box">
+                <div class="content-box-top">
+                  <h4>출국</h4>
+                </div>
+                <div class="content-box-bottom">
+                  <div class="content-card">
+                    <svg width="93" height="110" viewBox="0 0 93 110" fill="none">
+                      <path
+                        d="M27.8193 72.738L22.2478 73.4968C20.7195 71.5163 19.5591 69.2311 18.8813 66.7367L26.0203 65.7643C26.4625 68.1584 27.0675 70.5193 27.8193 72.738ZM39.562 80.9979C39.6853 80.9858 39.8086 80.9749 39.9314 80.9603C41.1565 80.6725 42.4362 78.6424 43.2382 75.6965L35.0767 76.8083C36.6578 79.4794 38.315 80.9573 39.562 80.9979ZM27.0003 77.908C28.2955 78.7607 29.6962 79.4595 31.1729 79.9852C30.6882 79.2188 30.228 78.3967 29.7945 77.5269L27.0003 77.908ZM26.2448 46.5603C26.3216 46.2716 26.4037 45.9923 26.488 45.7162C25.087 46.7003 23.8112 47.8733 22.6939 49.22L25.7486 48.804C25.8906 48.0289 26.0539 47.2776 26.2448 46.5603ZM34.7445 42.4277C34.7229 42.4277 34.7019 42.4313 34.6809 42.4322C34.5817 42.4477 34.4824 42.4633 34.3836 42.4804C33.1565 42.8113 31.8798 44.8765 31.0897 47.8479C31.0696 47.9236 31.0552 48.0073 31.0356 48.0841L39.4659 46.9357C37.8087 44.0269 36.0453 42.4277 34.7445 42.4277ZM43.3712 58.342C42.9111 55.8752 42.3031 53.6511 41.6087 51.7022L30.2384 53.2512C30.0846 55.4072 30.1096 57.7235 30.3166 60.1207L43.3712 58.342ZM25.1766 53.9403L19.4723 54.7174C18.614 56.9591 18.1835 59.3431 18.2035 61.7701L25.34 60.7981C25.1267 58.4389 25.074 56.1324 25.1766 53.9403ZM92.6413 18.2877L83.244 84.1498C82.6294 88.4561 79.3471 91.8518 75.2327 92.7675C75.521 95.2824 74.8471 97.7688 73.3103 99.7903C71.7304 101.869 69.4355 103.207 66.848 103.56L20.2261 109.91C19.7859 109.97 19.3393 110 18.8982 110C14.0384 110 9.87889 106.365 9.22176 101.544L0.0912044 34.5037C-0.261264 31.9168 0.415094 29.3472 1.995 27.2685C3.57508 25.1902 5.86981 23.8513 8.45733 23.4991L24.941 21.2539L26.706 8.88072C27.4295 3.81765 31.8261 0 36.9334 0C37.4226 0 37.9169 0.0350491 38.4036 0.104788L83.8652 6.5912C86.5995 6.98124 89.0181 8.41286 90.6758 10.6218C92.3335 12.831 93.0308 15.5539 92.6413 18.2877ZM61.8935 58.3486C60.2503 46.282 49.8409 37.1831 37.6804 37.1831C36.5746 37.1831 35.4543 37.2593 34.3509 37.4098C34.2592 37.4223 34.1684 37.4403 34.0771 37.4538C34.011 37.4608 33.9438 37.4653 33.8782 37.4739C33.7293 37.4941 33.5834 37.5266 33.4376 37.5566C27.3376 38.6183 21.9451 41.8881 18.1776 46.8441C14.2221 52.0463 12.5299 58.4775 13.412 64.9524C14.0677 69.766 16.1214 74.1045 19.122 77.5848C19.2503 77.7717 19.3971 77.9427 19.5691 78.0875C24.077 83.0365 30.553 86.1183 37.6248 86.1183C37.6254 86.1183 37.6259 86.1183 37.6259 86.1183C38.4094 86.1183 39.1993 86.0782 39.9864 86.0025C40.1523 85.993 40.3177 85.979 40.4816 85.9563C40.5211 85.9508 40.5598 85.9403 40.5993 85.9342C40.7176 85.9197 40.8364 85.9082 40.9547 85.8922C47.4301 85.0104 53.174 81.6595 57.129 76.4573C61.084 71.2551 62.7759 64.8239 61.8935 58.3486ZM86.6662 13.6305C85.8121 12.492 84.5665 11.7547 83.1573 11.5538L37.6958 5.06738C37.4427 5.03125 37.1864 5.01274 36.9334 5.01274C34.3047 5.01274 32.041 6.98016 31.669 9.58889L30.1051 20.5506L42.2813 18.8924L55.0793 17.1494C55.5194 17.0892 55.9664 17.0592 56.4072 17.0592C61.2675 17.0592 65.4275 20.695 66.0836 25.5161L66.1598 26.074C66.1598 26.0745 66.1598 26.0754 66.1603 26.076L74.5646 87.7765C76.4905 87.1841 77.9863 85.5169 78.2819 83.4425L87.6792 17.5804C87.8798 16.1715 87.52 14.7684 86.6662 13.6305ZM49.1664 69.8302L55.6898 68.9414C56.6423 66.5965 57.1229 64.0875 57.1019 61.5305L49.0194 62.6313C49.2446 65.1136 49.2917 67.5372 49.1664 69.8302ZM30.9885 65.0876C31.4741 67.6911 32.1248 70.0255 32.8673 72.0501L44.1017 70.5198C44.2832 68.2691 44.2611 65.8315 44.0435 63.3091L30.9885 65.0876ZM48.1153 76.8698C47.9799 77.3787 47.83 77.8613 47.6722 78.3311C49.3866 77.301 50.9395 76.0017 52.2818 74.4647L48.5484 74.973C48.421 75.6253 48.2772 76.2594 48.1153 76.8698ZM42.8354 42.901C43.5116 43.9075 44.1438 45.0203 44.7247 46.2189L48.7188 45.6751C46.9412 44.4394 44.9567 43.4919 42.8354 42.901ZM56.4242 56.564C55.7817 54.1985 54.7074 52.0189 53.2939 50.1107L46.6486 51.016C47.3503 53.1398 47.9188 55.3876 48.3399 57.6653L56.4242 56.564Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>출국절차 한눈에보기</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="110" height="110" viewBox="0 0 110 110" fill="none">
+                      <g clip-path="url(#clip0_943_884)">
+                        <path
+                          d="M47.9706 47.4693C47.6322 46.351 47.2962 45.2615 47.0155 43.0536H46.9651C46.6819 45.2615 46.4011 46.3774 46.0987 47.4693L44.9756 52.2499H49.1489L47.9706 47.4693Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M31.7409 49.73C34.0112 49.73 35.3959 48.5804 35.3959 46.6485C35.3959 44.9134 34.2152 43.8767 32.0865 43.8767C31.2177 43.8767 30.3418 43.9607 30.3418 44.0447V49.6196C30.3442 49.7036 31.1313 49.73 31.7409 49.73Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M87.2686 16.9383H83.6833V14.116C83.6833 10.8906 82.1473 7.81401 79.5699 5.88693C76.9948 3.95504 73.6134 3.33828 70.5152 4.24542L55.8665 8.54117C55.3169 5.32296 53.277 2.54872 50.2724 1.07041C46.7254 -0.67669 42.5833 -0.261514 39.4586 2.14315C39.4586 2.14315 23.6916 14.1712 18.5031 18.2654C16.576 19.7821 16 22.014 16 23.6507V103.288C16 106.995 19.007 110 22.7124 110H87.2663C90.974 110 93.9787 106.995 93.9787 103.288V23.6507C93.9811 19.9429 90.9764 16.9383 87.2686 16.9383ZM54.6617 16.3383L72.5239 11.1066C73.4647 10.8234 74.4774 11.0154 75.2717 11.6058C76.0565 12.1962 76.5101 13.1321 76.5101 14.116V16.9383H52.2379L54.6617 16.3383ZM49.9604 40.6633L55.8113 59.423H51.2179L49.7612 54.6401H44.3567L43.0104 59.423H38.5827L44.3543 40.6633H49.9604ZM41.1433 77.6331H68.8257C70.8008 77.6331 72.3991 79.2435 72.3991 81.2161C72.3991 83.1888 70.8008 84.8015 68.8257 84.8015H41.1433C39.1731 84.8015 37.5723 83.1888 37.5723 81.2161C37.5723 79.2435 39.1755 77.6331 41.1433 77.6331ZM62.2597 59.9534C60.1094 59.9534 57.9784 59.3918 56.9104 58.8038L57.7792 55.2736C58.9287 55.8616 60.695 56.4496 62.5141 56.4496C64.4724 56.4496 65.5139 55.6384 65.5139 54.4025C65.5139 53.2242 64.614 52.5522 62.3509 51.7411C59.2095 50.6467 57.1672 48.9116 57.1672 46.1662C57.1672 42.9456 59.8598 40.4809 64.3116 40.4809C66.4403 40.4809 68.0098 40.9321 69.1305 41.4337L68.1778 44.8775C67.4266 44.5127 66.0803 43.9823 64.2276 43.9823C62.3797 43.9823 61.4821 44.8223 61.4821 45.8014C61.4821 47.0037 62.5429 47.5365 64.9811 48.4628C68.3194 49.694 69.8865 51.4315 69.8865 54.0929C69.8841 57.2631 67.4434 59.9534 62.2597 59.9534ZM43.8168 7.80922C44.3759 7.37484 45.0455 7.15645 45.7247 7.15645C46.195 7.15645 46.6726 7.26205 47.1142 7.48043C48.1941 8.0108 48.8637 9.09074 48.8637 10.2955L36.3964 13.5113L43.8168 7.80922ZM25.7458 41.0497C27.9513 40.8241 29.0648 40.6561 31.6711 40.6561C34.3061 40.6561 36.2596 41.1601 37.5171 42.168C38.7243 43.1208 39.5762 44.6903 39.5762 46.5382C39.5762 48.3861 38.9763 49.9532 37.8531 51.0187C36.4012 52.3914 34.2797 53.0058 31.7623 53.0058C31.2007 53.0058 30.344 52.9794 30.344 52.9218V59.4206H25.7458V41.0497ZM78.8931 99.6999H31.0831C29.1128 99.6999 27.5121 98.0872 27.5121 96.1121C27.5121 94.1418 29.1128 92.5291 31.0831 92.5291H78.8955C80.8682 92.5291 82.4689 94.1418 82.4689 96.1121C82.4689 98.0872 80.8682 99.6999 78.8931 99.6999ZM76.6901 59.9534C74.535 59.9534 72.4111 59.3918 71.3408 58.8038L72.2071 55.2736C73.3567 55.8616 75.1182 56.4496 76.942 56.4496C78.9003 56.4496 79.9371 55.6384 79.9371 54.4025C79.9371 53.2242 79.0419 52.5522 76.7765 51.7411C73.6374 50.6467 71.5952 48.9116 71.5952 46.1662C71.5952 42.9456 74.283 40.4809 78.7395 40.4809C80.8682 40.4809 82.4377 40.9321 83.5585 41.4337L82.6033 44.8775C81.8546 44.5127 80.5034 43.9823 78.6579 43.9823C76.8077 43.9823 75.9125 44.8223 75.9125 45.8014C75.9125 47.0037 76.9708 47.5365 79.4091 48.4628C82.7473 49.694 84.3072 51.4315 84.3072 54.0929C84.3072 57.2631 81.8762 59.9534 76.6901 59.9534Z"
+                          fill="#3B3B3B" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_943_884">
+                          <rect width="110" height="110" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <p>스마트 패스</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="110" height="110" viewBox="0 0 110 110" fill="none">
+                      <g clip-path="url(#clip0_943_890)">
+                        <path
+                          d="M53.7483 100.402L59.5257 50.3249C60.2871 43.721 65.8766 38.7387 72.5262 38.7387H73.9958L70.9336 7.45672C70.5385 3.42602 67.1535 0.414429 63.1011 0.414429H18.6766C14.6989 0.414429 11.3476 3.31278 10.8633 7.26157L0.0577472 95.8359C-0.2145 98.0717 0.484188 100.312 1.97793 102.001C3.47168 103.69 5.61834 104.656 7.87101 104.656H53.982C53.6688 103.199 53.5845 101.83 53.7483 100.402ZM17.0118 16.7758C16.8455 15.7759 17.1298 14.8219 17.7851 14.0509C18.4405 13.2751 19.4018 12.8993 20.4185 12.8993H20.8329C22.4688 12.8993 23.8661 14.0196 24.1288 15.6338C25.4731 23.8687 32.6383 30.14 41.249 30.14C49.8573 30.14 57.0201 23.8879 58.3645 15.6531C58.6295 14.034 60.022 12.8993 61.6604 12.8993H62.2048C63.183 12.8993 64.113 13.2607 64.7514 14.0051C65.3851 14.7496 65.6621 15.6988 65.5055 16.6649C63.648 28.3764 53.4737 37.3389 41.2514 37.3389C29.0726 37.3413 18.9368 28.415 17.0118 16.7758Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M109.949 100.936L104.131 50.5778C103.673 46.6074 100.31 43.6753 96.313 43.6753H72.5238C68.3221 43.6753 64.7877 46.7567 64.3058 50.932L58.5308 100.973C58.2754 103.204 58.9813 105.353 60.4727 107.032C61.9688 108.704 64.1058 109.586 66.3513 109.586H102.134C104.382 109.586 106.516 108.687 108.01 107.015C109.499 105.338 110.205 103.167 109.949 100.936ZM100.334 54.0592C99.0041 61.74 92.2991 67.6042 84.2401 67.6042C76.1907 67.6042 69.4906 61.752 68.151 54.0809C68.0378 53.4377 68.2136 52.792 68.6329 52.2932C69.0545 51.7945 69.6737 51.5199 70.3218 51.5199H70.6952C71.7866 51.5199 72.7214 52.286 72.9165 53.3606C73.8995 58.726 78.5904 62.7977 84.2353 62.7977C89.8127 62.7977 94.4675 58.8175 95.5203 53.5412C95.7612 52.3559 96.7924 51.5175 97.9994 51.5175H98.1681C98.8138 51.5175 99.4233 51.7921 99.8425 52.286C100.264 52.7799 100.44 53.4208 100.334 54.0592Z"
+                          fill="#3B3B3B" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_943_890">
+                          <rect width="110" height="110" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <p>쇼핑</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="100" height="110" viewBox="0 0 100 110" fill="none">
+                      <path
+                        d="M31.83 68.5438C31.83 61.1868 34.9274 54.54 39.8865 49.8372H15.2946C13.3711 49.8372 11.8118 48.2776 11.8118 46.3542C11.8118 44.4307 13.3711 42.8711 15.2946 42.8711H43.6825C45.1564 42.8711 46.4135 43.788 46.9221 45.0817C50.182 43.5898 53.8043 42.7569 57.6168 42.7569C57.9507 42.7569 58.2835 42.7653 58.6139 42.7781C57.3459 36.9445 52.867 32.3093 47.1206 30.8161V7.83707H47.339C49.5031 7.83707 51.2575 6.08261 51.2575 3.91853C51.2575 1.75446 49.5028 0 47.339 0H43.2021H15.7742H11.6373C9.47318 0 7.71873 1.75446 7.71873 3.91853C7.71873 6.08261 9.47318 7.83707 11.6373 7.83707H11.8557V30.8156C5.03558 32.5876 0 38.7856 0 46.1601V86.4287C0 93.8376 5.08286 100.059 11.9515 101.797V103.129C11.9515 105.193 13.6313 106.873 15.6961 106.873C17.7604 106.873 19.4401 105.193 19.4401 103.129V102.283H39.5369V103.129C39.5369 105.193 41.2167 106.873 43.281 106.873C45.3453 106.873 47.0255 105.193 47.0255 103.129V101.797C51.2304 100.733 54.7636 97.9868 56.8731 94.3188C42.9968 93.9241 31.83 82.5138 31.83 68.5438ZM19.6927 7.83707H39.2843V30.3062H19.6927V7.83707Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M98.4111 102.234L76.6254 80.4475C78.8581 77.0199 80.1575 72.9315 80.1575 68.5449C80.1575 56.4862 70.3471 46.6758 58.2887 46.6758C46.2304 46.6758 36.4199 56.4862 36.4199 68.5449C36.4199 80.603 46.2304 90.4137 58.2887 90.4137C62.6757 90.4137 66.7643 89.1138 70.1919 86.8815L91.9777 108.667C92.8661 109.555 94.0299 110 95.1942 110C96.3583 110 97.5229 109.556 98.4106 108.667C100.188 106.89 100.188 104.01 98.4111 102.234ZM58.2887 83.5894C49.9927 83.5894 43.2434 76.8401 43.2434 68.5443C43.2434 60.248 49.9927 53.499 58.2887 53.499C66.5848 53.499 73.3341 60.248 73.3341 68.5443C73.3341 76.8401 66.5848 83.5894 58.2887 83.5894Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M65.2236 61.897C64.8181 61.491 64.1614 61.491 63.7554 61.897L56.3063 69.3469L53.4732 66.5136C53.0672 66.1076 52.4105 66.1076 52.0051 66.5136L49.906 68.6113C49.5001 69.0172 49.5001 69.6745 49.906 70.0802L55.5714 75.7459C55.9774 76.1516 56.6362 76.1516 57.0419 75.7459L67.3226 65.4644C67.7286 65.0585 67.7286 64.4015 67.3226 63.9955L65.2236 61.897Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>제한물품</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="110" height="110" viewBox="0 0 110 110" fill="none">
+                      <path
+                        d="M34.8598 51.3672C34.1708 50.8911 33.2529 50.4576 32.1055 50.0634V55.966C34.6299 55.8678 35.8927 54.9979 35.8927 53.3586C35.8927 52.5068 35.5483 51.8425 34.8598 51.3672Z"
+                        fill="black" />
+                      <path
+                        d="M26.3496 37.7171C26.3496 38.5372 26.6362 39.1841 27.2109 39.6598C27.7839 40.1365 28.6444 40.5541 29.7925 40.9144V34.8649C27.4973 35.061 26.3496 36.0126 26.3496 37.7171Z"
+                        fill="black" />
+                      <path
+                        d="M79.4445 33.611C72.3241 33.611 65.7727 36.0467 60.5773 40.1304C57.9058 25.9802 45.4813 15.2777 30.5555 15.2777C13.6806 15.2777 0 28.9575 0 45.8332C0 62.709 13.6806 76.3887 30.5555 76.3887C37.6759 76.3887 44.2273 73.9533 49.4227 69.8697C52.094 84.0198 64.5189 94.722 79.4445 94.722C96.3198 94.722 110 81.0422 110 64.1665C110 47.2907 96.3196 33.611 79.4445 33.611ZM43.5664 57.343C42.9092 58.6564 42.0322 59.7285 40.9346 60.5655C39.8355 61.4019 38.5733 62.0344 37.1469 62.4591C35.7199 62.8841 34.2203 63.1309 32.6464 63.1965V68.9029H29.2521V63.1475C26.9897 62.9511 24.7509 62.4926 22.5375 61.771C20.3244 61.0502 18.3315 60.0986 16.5612 58.917L20.1027 51.8828C20.2342 52.048 20.5861 52.3189 21.1606 52.6943C21.7336 53.0726 22.4645 53.4649 23.3492 53.8744C24.2342 54.2867 25.2347 54.6786 26.3495 55.0567C27.4646 55.4331 28.6127 55.7036 29.7928 55.8679V49.3259L27.4317 48.6363C25.8244 48.1443 24.4312 47.611 23.251 47.0385C22.07 46.4646 21.0938 45.8003 20.3242 45.0469C19.5536 44.2926 18.9789 43.4225 18.602 42.4395C18.2252 41.4553 18.0361 40.307 18.0361 38.9954C18.0361 37.2906 18.3313 35.7744 18.9221 34.4454C19.5121 33.1181 20.3066 31.9797 21.3076 31.0268C22.3074 30.0761 23.4878 29.3311 24.8493 28.7899C26.2092 28.2487 27.6772 27.8963 29.2514 27.7313V22.7639H32.6455V27.7316C34.7761 27.9292 36.777 28.404 38.6461 29.1585C40.5152 29.9139 42.1386 30.6839 43.516 31.4698L39.9745 38.1605C39.8763 38.0294 39.5886 37.8152 39.1138 37.5192C38.6384 37.2249 38.0316 36.9056 37.2939 36.5608C36.5557 36.2177 35.7358 35.889 34.8346 35.5766C33.9322 35.2648 33.0223 35.0455 32.1047 34.9136V41.6027L33.6783 41.9965C35.3508 42.4559 36.8584 42.9554 38.2039 43.4961C39.5478 44.0373 40.6878 44.7098 41.6225 45.5135C42.5573 46.3177 43.2783 47.2918 43.7864 48.4401C44.295 49.5878 44.5491 50.9658 44.5491 52.5724C44.5498 54.4414 44.2221 56.0321 43.5664 57.343ZM92.3841 76.601C91.3501 77.6185 90.1603 78.4712 88.8149 79.1609C87.4689 79.8499 86.0411 80.3758 84.5316 80.7361C83.0225 81.0972 81.5454 81.2775 80.1013 81.2775C78.1647 81.2775 76.3512 80.9662 74.6614 80.3423C72.9708 79.719 71.4448 78.882 70.0833 77.8316C68.7212 76.781 67.5235 75.5427 66.4894 74.1148C65.456 72.687 64.6439 71.1693 64.0529 69.5608H59.1302L60.8036 65.3277H62.9701C62.937 64.9672 62.9123 64.6142 62.8964 64.2692C62.8792 63.9248 62.8717 63.5722 62.8717 63.2111V62.9644H59.4748L61.1488 58.7314H63.4618C63.9214 57.0251 64.6351 55.392 65.6038 53.8329C66.5713 52.2742 67.7699 50.9035 69.1977 49.7223C70.6249 48.5407 72.282 47.5977 74.1697 46.8913C76.0562 46.1858 78.1324 45.8332 80.3965 45.8332C83.6778 45.8332 86.526 46.5396 88.938 47.9501C91.3501 49.3614 93.1468 51.1989 94.3287 53.4636L88.1259 57.7964C87.7317 56.8773 87.2309 56.1143 86.6241 55.5072C86.017 54.8998 85.3518 54.4078 84.631 54.0301C83.9089 53.6533 83.1699 53.3897 82.4154 53.2425C81.66 53.0952 80.9215 53.021 80.2003 53.021C78.0663 53.021 76.3271 53.5717 74.982 54.6702C73.6358 55.77 72.635 57.1235 71.9789 58.7316H82.9082L81.2341 62.9646H71.0933V63.5061C71.0933 63.8345 71.1012 64.1463 71.1178 64.4419C71.1343 64.7367 71.1588 65.0332 71.1917 65.3275H81.4314L79.7573 69.5606H72.6687C73.4566 70.9392 74.4975 72.0394 75.7943 72.8593C77.0904 73.6802 78.5916 74.0897 80.2985 74.0897C81.0199 74.0897 81.7674 73.9994 82.5385 73.819C83.3087 73.6389 84.048 73.3596 84.7541 72.9824C85.4597 72.6053 86.1077 72.1133 86.6985 71.5053C87.2895 70.8988 87.7643 70.1514 88.1263 69.2656L94.7225 73.1555C94.197 74.4347 93.4173 75.5837 92.3841 76.601Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M88.5444 28.4669L83.276 11.4471L80.1952 14.8885C72.6623 10.1344 64.0338 7.63904 55 7.63904V16.8058C61.754 16.8058 68.2241 18.537 73.9701 21.8417L71.0473 25.1065L88.5444 28.4669Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M36.0304 88.1586L38.9531 84.8938L21.4561 81.5332L26.7245 98.5529L29.8053 95.1115C37.3382 99.8656 45.9667 102.361 55.0005 102.361V93.1945C48.2464 93.1945 41.7764 91.4631 36.0304 88.1586Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>환전안내</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="110" height="114" viewBox="0 0 110 114" fill="none">
+                      <path
+                        d="M58.9022 76.8864C59.372 76.8864 59.8381 76.7065 60.1978 76.3542C61.3943 75.1651 89.5445 47.1176 89.5445 30.6349C89.5408 13.7448 75.796 0 58.9022 0C42.0085 0 28.2637 13.7448 28.2637 30.6386C28.2637 47.1213 56.4139 75.1651 57.6103 76.3579C57.97 76.7065 58.4361 76.8864 58.9022 76.8864ZM58.9022 16.435C66.7417 16.435 73.1095 22.8064 73.1095 30.6386C73.1095 38.4707 66.7417 44.8421 58.9022 44.8421C51.0701 44.8421 44.7024 38.4707 44.7024 30.6386C44.7024 22.8064 51.0701 16.435 58.9022 16.435Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M5.0247 98.204L1.6041 98.6408C0.602143 98.7692 -0.11354 99.6904 0.0149162 100.696C0.143372 101.702 1.0756 102.41 2.07021 102.289L3.84657 102.061C4.39343 102.377 5.08709 102.399 5.66331 102.061L6.20282 101.76L29.4533 98.7802L43.9652 112.877C44.0349 112.943 44.1193 112.969 44.1927 113.024C44.2625 113.072 44.3028 113.138 44.3799 113.178C44.4056 113.193 44.4386 113.186 44.4607 113.2C44.7102 113.318 44.9745 113.402 45.2461 113.402C45.5434 113.402 45.8406 113.325 46.1159 113.178L72.4347 99.0078L92.4812 113.065C92.9032 113.365 93.4244 113.461 93.9345 113.354C94.4374 113.244 94.8704 112.929 95.1237 112.485L109.757 87.0724C110.01 86.6283 110.069 86.0998 109.918 85.619C109.768 85.1309 109.423 84.7308 108.964 84.5069L86.0437 73.4047H86.0363L86.029 73.3973C85.7978 73.2909 85.5519 73.2359 85.3096 73.2249C85.2326 73.2249 85.1555 73.2542 85.0821 73.2616C84.9133 73.2799 84.7444 73.2983 84.5866 73.3533C84.5683 73.3606 84.5499 73.357 84.5316 73.3643L58.9285 84.1473L43.6239 77.1996C43.5725 77.174 43.5174 77.185 43.4624 77.1629C43.3009 77.1042 43.1431 77.0822 42.9779 77.0749C42.8751 77.0675 42.7761 77.0528 42.677 77.0638C42.4714 77.0859 42.2843 77.1483 42.0971 77.2363C42.053 77.2584 42.0053 77.251 41.9613 77.2804L41.9026 77.3097L41.8952 77.3171L5.0247 98.204ZM56.3593 87.01L44.7836 108.547L32.5106 96.6258L43.4881 81.1708L56.3593 87.01ZM36.5918 84.54L29.0716 95.1284L14.6405 96.9745L36.5918 84.54ZM71.6933 95.2275L49.7567 107.045L60.213 87.5899L81.5441 78.609L73.6312 95.3486H73.6238C73.0476 94.9412 72.3026 94.8935 71.6933 95.2275ZM92.9509 108.903L76.6737 97.492L86.1097 77.519L105.598 86.9476L92.9509 108.903Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>공항지도</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="content-box">
+                <div class="content-box-top">
+                  <h4>입국</h4>
+                </div>
+                <div class="content-box-bottom">
+                  <div class="content-card card-height">
+                    <svg width="106" height="106" viewBox="0 0 96 96" fill="none">
+                      <path
+                        d="M20.3497 11.6751H42.887C44.0014 11.6751 45.0016 10.9682 45.4153 9.93476L48.9792 1.01053C49.0686 0.788044 49.0416 0.526056 48.9064 0.326446C48.7713 0.126836 48.5467 0 48.3055 0H20.3497C18.8464 0 17.6758 1.21845 17.6758 2.72385V8.89305C17.6779 10.3984 18.8464 11.6751 20.3497 11.6751Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M31.7385 33.8838C38.9869 33.8838 44.9627 28.3799 45.7778 21.3354H48.3332C48.6139 21.3354 48.8717 21.2127 48.9903 20.9569C49.1109 20.7012 49.0713 20.4413 48.8884 20.225L45.3474 16.0561L20.3753 16.1018C18.976 16.1018 17.8012 17.1124 17.666 18.5055C17.6224 18.94 17.6016 19.3559 17.6016 19.8029C17.6016 27.6106 23.9288 33.8838 31.7385 33.8838Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M53.3251 86.138H24.1612C22.4458 86.138 21.0548 84.7344 21.0548 83.019C21.0548 81.3036 22.4437 79.9001 24.1612 79.9001H44.6815C45.0995 79.9001 45.4821 79.7005 45.6775 79.3304C45.8709 78.9603 45.8418 78.5299 45.6006 78.1889C45.6006 78.1889 18.5035 39.4188 18.4162 39.1901L17.0605 39.1755C13.2325 39.1381 10.0908 42.1925 10.0221 46.0205L9.29025 86.2918C9.25698 88.0426 9.9265 89.7289 11.1491 90.9847C12.3696 92.2406 14.0414 92.9496 15.7901 92.9642C15.709 93.7398 15.9585 94.5091 16.4804 95.0892C17.0002 95.6673 17.7446 95.9999 18.5222 95.9999H51.2999C52.0775 95.9999 52.8177 95.6693 53.3376 95.0892C53.8574 94.5133 54.111 93.7419 54.0299 92.9663L53.3251 86.138Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M73.8844 52.2645C72.3499 52.1356 70.8258 52.6243 69.6511 53.6223L65.0371 57.5334L48.7065 41.2756C47.4008 39.976 45.6334 39.2441 43.7891 39.2441H25.9219L51.2329 75.411C51.3638 75.6023 51.6134 75.6792 51.8317 75.5981C52.0479 75.517 52.1872 75.2966 52.1623 75.0658L50.5155 59.305L58.7453 67.7073C60.4024 69.3977 62.621 70.2627 64.8479 70.2627C66.8045 70.2627 68.7694 69.5994 70.358 68.2521L77.1593 62.4842C78.3341 61.4882 79.066 60.066 79.1949 58.5315C79.3217 56.997 78.831 55.4729 77.8371 54.3001C76.8412 53.1212 75.421 52.3872 73.8844 52.2645Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M81.4847 17.1083H69.1754C66.2956 17.1083 63.9668 19.4433 63.9668 22.3231V40.8744C63.9668 43.7542 66.2956 46.0892 69.1754 46.0892H69.7867C69.9114 47.0727 70.4084 47.9688 71.1819 48.5593C72.0801 49.2455 73.232 49.4285 74.2821 49.0604C74.2821 49.0604 83.1585 45.8417 83.4142 45.7253C85.4665 44.773 86.7099 43.0784 86.7099 40.8764V22.3252C86.7078 19.4433 84.3645 17.1083 81.4847 17.1083ZM72.13 22.9448C70.7265 23.4397 69.8033 24.8307 69.8033 26.3943V42.0616H69.1088C68.5162 42.0616 67.9923 41.5418 67.9923 40.9492V22.3855C67.9923 21.795 68.5162 21.3334 69.1088 21.3334H76.6732L72.13 22.9448Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>입국절차 한눈에보기</p>
+                  </div>
+                  <div class="content-card">
+                    <div><svg width="106" height="106" viewBox="0 0 90 90" fill="none">
+                        <path
+                          d="M90 83.1983C90 84.4693 88.9697 85.4992 87.6991 85.4992H2.30088C1.03029 85.4992 0 84.4693 0 83.1983C0 81.9272 1.03029 80.8974 2.30088 80.8974H87.6991C88.9697 80.8974 90 81.9272 90 83.1983ZM85.2947 41.6899L65.8237 34.0803L65.8218 34.078L42.6707 25.0305L42.6712 25.0324L18.9582 15.7653L16.8579 9.82489C16.02 7.45636 14.1976 5.57327 11.8581 4.65842C11.1687 4.38915 10.3915 4.46798 9.7703 4.87004C9.14912 5.2721 8.75882 5.94915 8.7225 6.68812L8.08103 19.6927L2.25838 23.3234C1.51985 23.784 1.10426 24.6221 1.18485 25.4886C1.26544 26.355 1.82765 27.1024 2.63853 27.419L5.60897 28.5796C5.98029 28.7242 6.38206 28.77 6.77647 28.7136L14.396 27.61L37.8259 36.7667L22.8156 54.279C22.3306 54.8446 22.1497 55.6112 22.3301 56.3342C22.5106 57.0571 23.0306 57.648 23.725 57.9194L30.3257 60.4987C30.5954 60.6042 30.8793 60.6565 31.1632 60.6565C31.5015 60.6565 31.8393 60.582 32.1512 60.4339L62.0276 46.2255L80.8034 53.563C81.5443 53.8524 82.3215 53.9992 83.1125 53.9992C85.8897 53.9992 88.3218 52.2178 89.1643 49.5672C90.1744 46.393 88.4746 42.9324 85.2947 41.6899ZM42.0615 22.3224L63.2416 30.5996L49.9779 12.7186C49.7203 12.3711 49.3704 12.1037 48.9678 11.9459L42.8696 9.56224C42.0753 9.25165 41.1779 9.40577 40.5324 9.95989C39.8868 10.5144 39.6 11.38 39.7869 12.2106L42.0615 22.3224ZM24.25 32.8568C22.9794 32.8568 21.9491 33.8867 21.9491 35.1577V35.3008C21.9491 36.5718 22.9794 37.6017 24.25 37.6017C25.5206 37.6017 26.5509 36.5718 26.5509 35.3008V35.1577C26.5509 33.8867 25.5204 32.8568 24.25 32.8568ZM31.1907 36.0118C29.9201 36.0118 28.8899 37.0417 28.8899 38.3127V38.4558C28.8899 39.7268 29.9201 40.7567 31.1907 40.7567C32.4613 40.7567 33.4916 39.7268 33.4916 38.4558V38.3127C33.4916 37.0417 32.4618 36.0118 31.1907 36.0118ZM67.5834 49.8171C66.3128 49.8171 65.2825 50.847 65.2825 52.118V52.2611C65.2825 53.5321 66.3128 54.562 67.5834 54.562C68.854 54.562 69.8843 53.5321 69.8843 52.2611V52.118C69.8843 50.847 68.854 49.8171 67.5834 49.8171Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M12.8246 57.0375C7.05818 57.0375 2.47461 61.621 2.47461 67.3875C2.47461 73.1539 7.05818 77.7375 12.8246 77.7375C18.591 77.7375 23.1746 73.1539 23.1746 67.3875C23.1746 61.621 18.591 57.0375 12.8246 57.0375ZM18.4432 67.0918L13.2682 68.866C13.1203 68.866 12.9725 68.866 12.8246 68.866C12.5289 68.866 12.2332 68.7182 11.9375 68.5703C11.6418 68.2746 11.346 67.831 11.346 67.3875V61.4732C11.346 60.586 11.9375 59.9946 12.8246 59.9946C13.7118 59.9946 14.3032 60.586 14.3032 61.4732V65.3175L17.556 64.2825C18.2953 63.9868 19.1825 64.4303 19.4782 65.1696C19.626 65.9089 19.1825 66.796 18.4432 67.0918Z"
+                          fill="#3B3B3B" />
+                      </svg></div>
+                    <p>도착시간</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="106" height="106" viewBox="0 0 106 106" fill="none">
+                      <path
+                        d="M46.3225 51.3464C46.6645 51.8526 47.3657 51.9323 47.705 51.5035L49.4712 49.2724C49.8975 48.7337 49.9925 47.9811 49.7228 47.2762L43.971 32.1879L49.1507 27.8254C51.62 25.9242 52.5899 24.0967 52.8377 22.5548C53.3653 19.2706 50.5913 16.497 47.3088 17.0341C45.7705 17.2858 43.9474 18.2583 42.0491 20.7236L37.6868 25.9033L22.5988 20.1518C21.8936 19.8822 21.1411 19.977 20.6026 20.4035L18.3714 22.1697C17.9426 22.509 18.0223 23.2098 18.5285 23.5522L31.8446 32.8405L26.0065 39.7721L21.0678 38.4912C20.5521 38.3575 20.0032 38.4664 19.5778 38.7875L18.4024 39.6738C18.0656 39.9278 18.0853 40.4398 18.4405 40.6673L22.9402 43.5492C22.8689 43.684 22.8033 43.8216 22.7516 43.9657C22.4992 44.6676 22.3934 45.7048 23.2702 46.5923L23.2822 46.6046C24.1697 47.4813 25.2069 47.3755 25.909 47.1232C26.0529 47.0714 26.1908 47.0058 26.3255 46.9346L29.2074 51.4342C29.4349 51.7894 29.9469 51.8091 30.2009 51.4723L31.0873 50.297C31.4082 49.8715 31.5173 49.3229 31.3833 48.8072L30.1024 43.8684L37.034 38.0304L46.3225 51.3464ZM45.5776 20.6505L45.8838 20.3441C46.8719 19.3561 48.4744 19.3561 49.4625 20.3441C50.4507 21.3325 50.4507 22.9347 49.4625 23.9228L49.1563 24.2292C48.9712 24.4143 48.671 24.4143 48.486 24.2292L45.5776 21.3207C45.3925 21.1356 45.3925 20.8356 45.5776 20.6505Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M53.794 93.8777C55.3325 93.6261 57.1556 92.6537 59.0538 90.1884L63.4162 85.0085L78.5044 90.7602C79.2094 91.0298 79.9621 90.9349 80.5006 90.5085L82.7316 88.7423C83.1603 88.403 83.0808 87.7019 82.5747 87.3597L69.2586 78.0717L75.0967 71.1399L80.0352 72.421C80.5511 72.5547 81.1 72.4456 81.5252 72.1247L82.7005 71.2382C83.0374 70.9842 83.0177 70.4724 82.6624 70.2447L78.1626 67.3628C78.2342 67.2282 78.2997 67.0903 78.3514 66.9462C78.6038 66.2442 78.7096 65.2072 77.8326 64.3194L77.8204 64.3072C76.9329 63.4304 75.8956 63.536 75.1936 63.7884C75.0497 63.8401 74.912 63.9058 74.777 63.9772L71.8952 59.4776C71.6676 59.1221 71.1556 59.1026 70.9016 59.4395L70.0153 60.6146C69.6942 61.0403 69.5853 61.5887 69.7191 62.1046L71 67.0433L64.0683 72.8814L54.7801 59.5654C54.4381 59.0594 53.7369 58.9797 53.3975 59.4082L51.6314 61.6392C51.2049 62.1779 51.11 62.9305 51.3798 63.6356L57.1316 78.7236L51.9518 83.0862C49.4826 84.9873 48.5126 86.8148 48.2648 88.3568C47.7377 91.6413 50.5115 94.4147 53.794 93.8777ZM51.6403 86.9891L51.9465 86.6829C52.1315 86.4976 52.4317 86.4976 52.6168 86.6829L55.5252 89.5913C55.7105 89.7764 55.7105 90.0764 55.5252 90.2615L55.219 90.5677C54.2308 91.556 52.6284 91.556 51.6403 90.5677C50.6519 89.5799 50.6519 87.9773 51.6403 86.9891Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M38.232 96.0523C39.5601 96.0523 40.8998 95.96 42.2424 95.7724L41.4704 90.2383C34.3245 91.2343 27.3078 88.8859 22.2148 83.7926C14.2721 75.8496 13.3433 63.0863 20.0546 54.1039L15.5784 50.7593C11.5392 56.1649 9.5681 62.8675 10.0273 69.6322C10.491 76.4643 13.4162 82.8965 18.2638 87.744C23.6497 93.1301 30.7627 96.0523 38.232 96.0523Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M87.7498 58.3424C98.8011 47.2911 98.8011 29.3094 87.7498 18.2578C79.1559 9.66355 66.0629 7.50008 55.1699 12.8717L57.6415 17.8835C66.3869 13.5702 76.8985 15.3091 83.7984 22.209C92.6709 31.0818 92.6709 45.5185 83.7984 54.3914L81.8664 56.3232L85.8182 60.2744L87.7498 58.3424Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>환승안내</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="135" height="135" viewBox="0 0 135 135" fill="none">
+                      <path
+                        d="M35.2796 83.0335L38.2068 78.6267V64.1493V59.741C37.0172 59.9108 35.8035 60.0036 34.5679 60.0036C33.3321 60.0036 32.1184 59.9105 30.9287 59.741V64.1493V83.2244H34.9262C35.0691 83.2246 35.2012 83.1532 35.2796 83.0335Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M30.9286 56.6122V56.6568C32.114 56.8495 33.3288 56.9537 34.5678 56.9537C35.8065 56.9537 37.0212 56.8493 38.2067 56.6568V56.6122C48.9347 54.8717 57.1265 45.5694 57.1265 34.3496C57.1265 21.8908 47.0265 11.7909 34.5678 11.7909C22.1087 11.7909 12.0088 21.8908 12.0088 34.3496C12.0088 45.5691 20.2005 54.8714 30.9286 56.6122ZM34.5678 18.3663C43.395 18.3663 50.5508 25.5224 50.5508 34.3496C50.5508 43.1768 43.3947 50.3329 34.5678 50.3329C25.7403 50.3329 18.5845 43.1768 18.5845 34.3496C18.5845 25.5224 25.7403 18.3663 34.5678 18.3663Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M32.5335 36.0613V28.1435H35.4254C37.0199 28.1435 38.3169 29.4405 38.3169 31.0352C38.3169 32.6296 37.0199 33.9269 35.4254 33.9269V38.1957C39.3742 38.1957 42.5857 34.9837 42.5857 31.0352C42.5857 27.0867 39.3739 23.8744 35.4254 23.8744H28.2646V26.0088V36.0613V44.8247H32.5335V36.0613Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M100.738 84.3523L90.3982 69.0016C88.9793 66.8954 86.606 65.6327 84.0663 65.6327H69.3395H54.6124C52.0727 65.6327 49.6996 66.8957 48.2808 69.0016L46.7829 71.2254L38.2059 84.139L37.826 84.7112C37.1892 85.6865 36.1023 86.275 34.9256 86.275H34.4765H30.9283V86.2853H28.4084C25.2591 86.2853 22.4331 88.2191 21.2927 91.1546L15.9947 104.79C14.8617 107.706 17.0127 110.849 20.141 110.849H33.4071C33.4071 117.676 38.9408 123.209 45.7672 123.209C52.5937 123.209 58.1274 117.676 58.1274 110.849H69.3395H80.5513C80.5513 117.676 86.085 123.209 92.9115 123.209C99.738 123.209 105.272 117.676 105.272 110.849H118.538C121.666 110.849 123.817 107.706 122.684 104.79L117.386 91.1546C116.246 88.2191 113.42 86.2853 110.271 86.2853H104.37C102.913 86.2851 101.551 85.5605 100.738 84.3523ZM45.7672 116.429C42.6857 116.429 40.1877 113.93 40.1877 110.849C40.1877 107.768 42.686 105.269 45.7672 105.269C48.849 105.269 51.3468 107.768 51.3468 110.849C51.3468 113.93 48.849 116.429 45.7672 116.429ZM65.9363 84.1533C65.9363 85.2443 65.0519 86.1284 63.9611 86.1284H49.9794C48.1094 86.1284 46.9598 84.0826 47.9317 82.4855L53.1516 73.9101C53.974 72.5594 55.4416 71.7346 57.0231 71.7346H63.9611C65.0522 71.7346 65.9363 72.6189 65.9363 73.7098V84.1533ZM74.7179 86.1284C73.6268 86.1284 72.7427 85.2441 72.7427 84.1533V73.7098C72.7427 72.6189 73.6271 71.7346 74.7179 71.7346H81.6559C83.2376 71.7346 84.7047 72.5594 85.5274 73.9101L90.7473 82.4855C91.7197 84.0829 90.5695 86.1284 88.6999 86.1284H74.7179ZM92.9118 116.429C89.8302 116.429 87.3322 113.93 87.3322 110.849C87.3322 107.768 89.8305 105.269 92.9118 105.269C95.9935 105.269 98.4913 107.768 98.4913 110.849C98.4913 113.93 95.9933 116.429 92.9118 116.429Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>주차요금</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="106" height="106" viewBox="0 0 106 106" fill="none">
+                      <g clip-path="url(#clip0_943_878)">
+                        <path
+                          d="M103.509 32.1845H95.2592C93.8836 32.1845 92.7682 33.2999 92.7682 34.6755V35.93H89.5258C89.4491 35.93 89.3769 35.946 89.3021 35.9524V15.1985C89.3021 7.59823 83.1187 1.41455 75.5181 1.41455H30.5893C22.989 1.41455 16.8053 7.59788 16.8053 15.1985V35.964C16.6957 35.9491 16.5871 35.9305 16.473 35.9305H13.2306V34.6755C13.2306 33.2999 12.1152 32.1845 10.7396 32.1845H2.491C1.11542 32.1845 0 33.2999 0 34.6755V49.5626C0 50.9382 1.11542 52.0536 2.491 52.0536H9.54173L16.8062 59.9234V80.6864H16.4998C15.1242 80.6864 14.0088 81.8019 14.0088 83.1774V94.6985C14.0088 96.0741 15.1242 97.1895 16.4998 97.1895H19.9115V100.805C19.9115 102.89 21.6079 104.586 23.6926 104.586H32.065C34.15 104.586 35.846 102.889 35.846 100.805V97.1895H70.2629V100.805C70.2629 102.89 71.9593 104.586 74.0439 104.586H82.4159C84.5009 104.586 86.1969 102.889 86.1969 100.805V97.1895H89.6086C90.9842 97.1895 92.0996 96.0741 92.0996 94.6985V83.1774C92.0996 81.8019 90.9842 80.6864 89.6086 80.6864H89.3022V59.8058L96.4586 52.0536H103.509C104.885 52.0536 106 50.9382 106 49.5626V34.6755C106 33.2999 104.885 32.1845 103.509 32.1845ZM37.1726 66.5361V70.9064C37.1726 72.282 36.0571 73.3974 34.6816 73.3974H25.3969C24.0213 73.3974 22.9059 72.282 22.9059 70.9064V66.5361C22.9059 65.1606 24.0213 64.0451 25.3969 64.0451H34.6816C36.0571 64.0451 37.1726 65.16 37.1726 66.5361ZM45.1619 62.3876C45.1619 61.735 45.6924 61.2043 46.3452 61.2043H59.763C60.4157 61.2043 60.9464 61.7348 60.9464 62.3876V80.6864H45.1621V62.3876H45.1619ZM77.8267 48.5413C76.188 45.8783 73.2561 44.1795 70.058 44.1795C66.86 44.1795 63.9275 45.8784 62.2889 48.5413H55.545V20.8093H84.2116V48.5413H77.8267ZM50.563 48.5413H21.897V20.8093H50.5636V48.5413H50.563ZM68.5749 66.5361C68.5749 65.1606 69.6903 64.0451 71.0659 64.0451H80.3506C81.7262 64.0451 82.8416 65.1606 82.8416 66.5361V70.9064C82.8416 72.282 81.7262 73.3974 80.3506 73.3974H71.0659C69.6903 73.3974 68.5749 72.282 68.5749 70.9064V66.5361ZM4.98217 37.1665H8.24999V47.0715H4.98217V37.1665ZM13.232 48.7061V40.9122H16.4743C16.588 40.9122 16.6966 40.8933 16.8067 40.8788V52.5783L13.232 48.7061ZM87.1173 92.2075H83.7055H72.7539H33.3548H22.4027H18.991V85.6684H19.2974H42.6714H63.4379H86.8119H87.1183V92.2075H87.1173ZM89.3024 40.8897C89.3771 40.8966 89.4495 40.912 89.5262 40.912H92.7685V48.706L89.3024 52.4605V40.8897ZM101.018 47.0716H97.75V37.1667H101.018V47.0716Z"
+                          fill="#3B3B3B" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_943_878">
+                          <rect width="106" height="106" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p>대중교통안내</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="96" height="92" viewBox="0 0 96 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27.5 0C42.6878 0 55 11.8645 55 26.5C55 41.1355 42.6878 53 27.5 53C12.3122 53 0 41.1355 0 26.5C0 11.8645 12.3122 0 27.5 0ZM11.8164 20.333V22.5332H15.3662V32H17.9336V22.5332H21.4668V20.333H11.8164ZM25.1631 20.333L20.2129 32H22.8467L23.8301 29.5H28.9795L29.9629 32H34.9941L37.6104 27.9502L40.2939 32H43.2441L39.1279 25.9668L42.9775 20.333H40.2109L37.7109 24.1162L35.1611 20.333H32.2441L36.1445 26.0664L32.417 31.459L27.6963 20.333H25.1631ZM28.1631 27.4502H24.6465L26.4131 22.9834L28.1631 27.4502Z"
+                        fill="#3B3B3B" />
+                      <path d="M11.296 59.1511L11.4622 47.6225L20.08 51.6826L11.296 59.1511Z" fill="#3B3B3B" />
+                      <path d="M83.3971 88.9488L74.285 81.8843L82.7107 77.4394L83.3971 88.9488Z" fill="#3B3B3B" />
+                      <circle cx="73" cy="7" r="5" fill="#3B3B3B" />
+                      <circle cx="18.5" cy="77.5" r="3.5" fill="#3B3B3B" />
+                      <circle cx="2" cy="57" r="2" fill="#3B3B3B" />
+                      <circle cx="5" cy="78" r="2" fill="#3B3B3B" />
+                      <circle cx="41" cy="85" r="2" fill="#3B3B3B" />
+                      <circle cx="85" cy="22" r="2" fill="#3B3B3B" />
+                      <circle cx="57" cy="4" r="2" fill="#3B3B3B" />
+                      <path
+                        d="M67.5 31C83.2401 31 96 43.3122 96 58.5C96 73.6878 83.2401 86 67.5 86C51.7599 86 39 73.6878 39 58.5C39 56.5576 39.2105 54.6626 39.6074 52.834C48.0852 49.369 54.4635 42.0567 56.3936 33.167C59.8068 31.772 63.5599 31 67.5 31ZM48.0664 52.333V64H50.6338V59.75H55.7666V57.583H50.6338V54.5H56.4336V52.333H48.0664ZM57.8955 52.333V64H60.4629V60.75H62.8125L64.9629 64H67.7129L65.2295 60.25C65.9516 59.9167 66.5122 59.4385 66.9121 58.8164C67.3121 58.1831 67.5127 57.4331 67.5127 56.5664C67.5127 55.6998 67.3121 54.9497 66.9121 54.3164C66.5233 53.6833 65.9681 53.194 65.2461 52.8496C64.5239 52.5052 63.6731 52.333 62.6953 52.333H57.8955ZM69.0283 52.333V64H77.6123V61.833H71.5781V59.1338H76.7285V57.0332H71.5781V54.5H77.3955V52.333H69.0283ZM79.1504 52.333V64H87.7344V61.833H81.7002V59.1338H86.8506V57.0332H81.7002V54.5H87.5176V52.333H79.1504ZM62.5459 54.5332C63.3236 54.5332 63.9125 54.7109 64.3125 55.0664C64.7124 55.4219 64.9121 55.9221 64.9121 56.5664C64.9121 57.2107 64.7069 57.7109 64.2959 58.0664C63.8959 58.4219 63.3125 58.5996 62.5459 58.5996H60.4629V54.5332H62.5459Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>입국장 면세</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="content-box">
+                <div class="content-box-top">
+                  <h4>공항서비스</h4>
+                </div>
+                <div class="content-box-bottom">
+                  <div class="content-card">
+                    <svg width="110" height="106" viewBox="0 0 110 106" fill="none">
+                      <path
+                        d="M35.1628 1.00887C34.8713 0.393984 34.251 0 33.5674 0H1.7671C1.08348 0 0.463209 0.393984 0.171706 1.01053C-0.12166 1.62707 -0.0313935 2.35666 0.39965 2.88666L5.00013 8.5101C5.16804 8.71506 5.41875 8.83349 5.68376 8.83349H29.6489C29.9139 8.83349 30.1648 8.71506 30.3325 8.5101L34.9346 2.88501C35.3659 2.35666 35.456 1.62707 35.1628 1.00887Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M19.4336 91.1448V21.8289L25.9967 13.8082C26.4684 13.2306 26.0586 12.3647 25.3131 12.3647H10.0206C9.27509 12.3647 8.86516 13.2304 9.33699 13.8082L15.9001 21.8289V91.1446C7.73455 91.4645 0 93.9942 0 98.5541C0.000207033 103.441 8.88649 105.999 17.667 105.999C26.4475 105.999 35.3337 103.441 35.3337 98.5543C35.3337 93.9944 27.5992 91.4645 19.4336 91.1448ZM17.667 102.466C8.3424 102.466 3.53344 99.7236 3.53344 98.5541C3.53344 97.4941 7.85463 95.0049 15.9001 94.6797V97.1653C15.9001 98.1404 16.6898 98.9319 17.6668 98.9319C18.6437 98.9319 19.4334 98.1404 19.4334 97.1653V94.6778C27.4789 95.0047 31.8001 97.4939 31.8001 98.5539C31.8005 99.7238 26.9915 102.466 17.667 102.466Z"
+                        fill="#3B3B3B" />
+                      <path
+                        d="M38.5478 59.7153C39.7278 59.7153 40.8963 59.9478 41.9864 60.3996C43.0766 60.8513 44.067 61.5135 44.9012 62.3481C45.7353 63.1828 46.3968 64.1736 46.8479 65.264C47.2989 66.3545 47.5307 67.5231 47.53 68.7031V82.4051H91.3642V68.6975C91.3653 67.0118 91.8406 65.3604 92.736 63.9321C93.6314 62.5039 94.9107 61.3564 96.4275 60.6209C97.9443 59.8854 99.6375 59.5916 101.313 59.7731C102.989 59.9546 104.58 60.604 105.905 61.6472C107.229 62.6903 108.233 64.085 108.802 65.6718C109.371 67.2586 109.481 68.9735 109.122 70.6204C108.762 72.2673 107.946 73.7796 106.767 74.9846C105.588 76.1895 104.094 77.0384 102.455 77.4342V103.287C102.454 103.99 102.174 104.663 101.677 105.16C101.181 105.656 100.508 105.936 99.8052 105.937H39.0946C38.3922 105.936 37.719 105.656 37.2223 105.16C36.7257 104.663 36.446 103.99 36.4445 103.287V77.4342C34.3032 76.9231 32.4242 75.6434 31.1643 73.8381C29.9044 72.0328 29.3513 69.8277 29.6102 67.6415C29.869 65.4553 30.9217 63.4403 32.5683 61.9791C34.2149 60.5179 36.3464 59.7123 38.5478 59.7153ZM44.456 54.7277C44.0411 54.5525 43.6185 54.3961 43.1895 54.2591V46.5991C43.1925 44.961 43.8438 43.3907 45.001 42.2313C46.1583 41.072 47.7274 40.4179 49.3655 40.412H89.5231C91.1622 40.4164 92.7328 41.0699 93.8912 42.2294C95.0497 43.3889 95.7017 44.96 95.7047 46.5991V54.2591C95.2757 54.3961 94.8531 54.5525 94.4382 54.7277C91.691 55.8879 89.347 57.8326 87.6997 60.3185C86.0523 62.8044 85.1749 65.7209 85.1771 68.7031V76.218H53.7171V68.7031C53.7172 65.7214 52.8388 62.8058 51.1918 60.3203C49.5447 57.8349 47.2019 55.8897 44.456 54.7277Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>안내편의시설</p>
+                  </div>
+                  <div class="content-card">
+                    <div><svg width="110" height="61" viewBox="0 0 110 61" fill="none">
+                        <path
+                          d="M107.196 43.6904H107.154V10.3029C107.154 4.62159 102.532 0 96.851 0H9.84402C6.09663 0 3.0476 3.04903 3.0476 6.79642V7.99058C3.0476 9.37403 4.16862 10.4952 5.55225 10.4952H6.23949L3.09922 26.4759C3.09868 26.4784 3.09815 26.4809 3.09779 26.4839L3.0942 26.5015C3.07825 26.5827 3.07968 26.6623 3.07162 26.7429C3.06355 26.8236 3.04706 26.9017 3.04706 26.9844V27.0025C3.04706 27.005 3.04706 27.008 3.04706 27.0106V43.6906H2.50465C1.12103 43.6904 0 44.8115 0 46.1949V51.3989C0 52.7823 1.12103 53.9035 2.50465 53.9035H5.55225H8.6409H11.1959C12.3015 57.9845 16.0272 61 20.4538 61C24.8804 61 28.6062 57.9845 29.7117 53.9035H75.6468C76.7528 57.9845 80.4787 61 84.9047 61C89.3307 61 93.0571 57.9845 94.1626 53.9035H101.059H104.649H107.196C108.579 53.9035 109.701 52.7825 109.701 51.3989V46.1949C109.701 44.8115 108.58 43.6904 107.196 43.6904ZM18.033 24.4797V10.4952H29.8882V24.4797H18.033ZM34.8973 10.4952H52.5962V24.4797H34.8973V10.4952ZM57.6054 10.4952H75.3043V24.4797H57.6054V10.4952ZM8.5968 24.4797L11.3449 10.4952H13.0239V24.4797H8.5968ZM20.454 55.9903C17.9222 55.9903 15.8625 53.9306 15.8625 51.3985C15.8625 48.8668 17.9222 46.807 20.454 46.807C22.986 46.807 25.0458 48.8668 25.0458 51.3985C25.0458 53.9306 22.986 55.9903 20.454 55.9903ZM84.9052 55.9903C82.3732 55.9903 80.3134 53.9306 80.3134 51.3985C80.3134 48.8668 82.3732 46.807 84.9052 46.807C87.4373 46.807 89.4971 48.8668 89.4971 51.3985C89.4972 53.9306 87.4375 55.9903 84.9052 55.9903ZM80.3134 24.4797V10.4952H86.633C90.2997 10.4952 93.452 12.9868 94.2986 16.5544L96.18 24.4799H80.3134V24.4797Z"
+                          fill="#3B3B3B" />
+                      </svg></div>
+                    <p>셔틀버스</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="108" height="108" viewBox="0 0 108 108" fill="none">
+                      <path
+                        d="M37.0887 0.810033C38.8707 1.84053 40.3017 3.29853 41.2826 5.04003L41.3097 5.09403C41.7867 6.16503 42.0657 7.42053 42.0657 8.73453C42.0657 9.90003 41.8452 11.016 41.4492 12.042L41.4717 11.979C40.0767 15.291 36.9222 17.6085 33.2097 17.7615H33.1917C29.4387 17.6175 26.2662 15.2865 24.8982 12.0105L24.8757 11.9475C24.5247 11.0025 24.3222 9.91353 24.3222 8.77503C24.3222 7.45203 24.5967 6.18753 25.0962 5.04903L25.0737 5.10753C26.2932 2.82603 28.2822 1.08903 30.6852 0.225033L30.7572 0.202533C31.3917 0.0765332 32.1252 0.0090332 32.8722 0.0090332C34.3887 0.0090332 35.8422 0.301533 37.1697 0.837033L37.0887 0.810033ZM38.5827 19.845C40.5582 20.385 42.1827 21.6405 43.1772 23.3145L43.1951 23.3505C43.9872 25.1685 44.6847 27.3195 45.1707 29.547L45.2157 29.781C45.8682 32.544 46.5476 35.37 46.7097 36.018L47.0336 37.251H57.3296C66.4871 37.251 67.7696 37.314 68.7326 37.836C70.1591 38.511 71.1491 39.897 71.2526 41.526V41.5395C71.2751 41.7195 71.2932 41.922 71.2932 42.1335C71.2932 43.5735 70.6227 44.8605 69.5742 45.693L69.5651 45.702L68.6876 46.5165L58.9676 46.6155C53.6396 46.6785 49.2477 46.746 49.2477 46.7775C49.2477 46.809 49.6707 48.5325 50.1926 50.58L51.0701 54.315L61.1501 54.477C69.7586 54.6075 71.3516 54.702 72.0312 55.152C74.6231 58.9725 77.2062 63.4095 79.4922 68.0175L79.7981 68.697L86.7551 81.657L90.9761 80.262C95.6876 78.669 97.6046 78.462 99.0986 79.4475C100.35 80.2755 101.182 81.6525 101.259 83.2275V83.2365C101.263 83.2995 101.263 83.376 101.263 83.448C101.263 84.96 100.561 86.31 99.4677 87.1875L99.4586 87.1965C97.3616 88.218 94.8596 89.181 92.2721 89.937L91.9256 90.0225C84.2262 92.5425 83.0606 92.6235 81.3776 90.9C80.8557 90.378 77.2826 84.1095 73.4846 76.986L66.5276 64.026L52.5597 63.864C36.5802 63.6705 38.1372 64.026 36.9672 60.453C35.6037 56.358 29.0742 28.62 29.0742 26.8965C29.1507 24.3585 30.4917 22.149 32.4852 20.871L32.5167 20.853C33.7587 20.0205 35.2887 19.5255 36.9312 19.521C37.3812 19.647 37.9347 19.7595 38.5017 19.8315L38.5647 19.8405L38.5827 19.845ZM26.8242 42.777C27.3732 45.0855 27.8322 47.16 27.8322 47.358C27.0717 48.4155 26.2167 49.3335 25.2582 50.13L25.2357 50.148C19.6332 55.2645 16.1322 62.604 16.1322 70.7625C16.1322 74.4885 16.8612 78.048 18.1887 81.297L18.1212 81.1125C20.5737 86.8365 24.5877 91.4985 29.6277 94.6845L29.7492 94.7565C32.6562 96.4395 36.0402 97.695 39.6447 98.3295L39.8292 98.3565C41.0082 98.505 42.3716 98.5905 43.7531 98.5905C46.4891 98.5905 49.1441 98.262 51.6866 97.6365L51.4572 97.6815C58.5266 95.5935 64.3091 91.044 67.9451 85.041L68.0171 84.915C68.8316 83.52 69.5741 82.512 69.7046 82.6425C69.8351 82.773 71.0051 84.8475 72.3056 87.2595C74.9966 92.232 74.9966 91.8405 72.2066 95.0265C66.4556 101.669 58.4771 106.25 49.4456 107.6L49.2387 107.627C47.6817 107.856 45.8816 107.987 44.0501 107.987C27.6611 107.987 13.7382 97.434 8.70266 82.755L8.62616 82.494C7.42016 78.9885 6.72266 74.952 6.72266 70.749C6.72266 61.4025 10.1697 52.857 15.8622 46.323L15.8262 46.368C18.5397 43.2945 21.7032 40.7025 25.2312 38.6685L25.4112 38.574C26.0637 39.789 26.5587 41.1975 26.8197 42.6915L26.8332 42.777H26.8242Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>교통약자 서비스</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="104" height="104" viewBox="0 0 104 104" fill="none">
+                      <g clip-path="url(#clip0_943_832)">
+                        <path
+                          d="M101.254 79.6605L93.7185 74.493C93.0643 74.0443 92.2548 73.8836 91.4783 74.0494L86.9673 75.011L83.1636 66.4828L90.2502 64.9287C91.8114 64.5864 92.7994 63.0431 92.4569 61.4818C92.1147 59.9206 90.5717 58.9326 89.0101 59.2751L79.9457 61.2629C78.2711 60.232 76.0863 60.3293 74.498 61.6567C76.6215 64.5716 86.9003 78.6813 88.3268 80.639L91.4695 79.9691L97.9807 84.434C99.2994 85.3383 101.101 85.0015 102.004 83.684C102.908 82.3657 102.573 80.5642 101.254 79.6605Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M80.2882 49.4776C78.7211 45.9641 74.6023 44.3858 71.0889 45.9529C68.7992 46.9741 67.3325 49.079 67.0215 51.3939L72.6862 59.1695C74.0179 59.4116 75.4339 59.2698 76.7636 58.6769C80.277 57.1098 81.8551 52.991 80.2882 49.4776Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M44.7272 50.9703C44.4507 50.6198 44.2326 50.3398 44.1426 50.2165C43.5044 49.3405 43.2062 48.2308 43.387 47.0645C43.1503 47.0705 44.4802 47.0478 37.7963 47.1607C37.6672 49.3571 38.2708 51.5954 39.6503 53.4893C39.79 53.681 39.9517 53.9025 40.1274 54.1432C40.6113 54.8053 41.3529 55.2315 42.1684 55.318C42.984 55.4046 43.8005 55.144 44.4119 54.5971C44.4125 54.5965 44.4133 54.5959 44.414 54.5953C45.4615 53.6589 45.5976 52.0735 44.7272 50.9703Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M19.635 17.0162C24.3339 17.0162 28.1431 13.207 28.1431 8.50809C28.1431 3.8092 24.3339 0 19.635 0C14.9362 0 11.127 3.8092 11.127 8.50809C11.127 13.207 14.9362 17.0162 19.635 17.0162Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M43.1208 35.5028L29.7863 35.7281L22.6919 25.4345L30.9896 31.8519L29.5354 24.5052C29.0382 21.9932 26.8347 20.1772 24.2739 20.1772C20.9757 20.1772 18.6563 20.1772 14.9957 20.1772C12.4295 20.1772 10.2323 21.9879 9.73399 24.5052L1.53241 65.9409C1.2523 67.3557 2.34207 68.6668 3.76963 68.6668C5.07836 68.6668 6.7775 68.6668 8.71877 68.6668V99.0738C8.71877 101.794 10.9243 104 13.6452 104C16.3658 104 18.5715 101.795 18.5715 99.0738V68.6668C19.2798 68.6668 19.99 68.6668 20.6985 68.6668V99.0738C20.6985 101.794 22.904 104 25.6249 104C28.3457 104 30.5513 101.795 30.5513 99.0738V68.6668C32.4929 68.6668 34.1921 68.6668 35.5004 68.6668C36.9359 68.6668 38.0171 67.3534 37.7374 65.9409C37.0238 62.3358 34.7427 50.8111 34.0328 47.2246C29.2157 47.3058 29.4653 47.3017 26.3011 47.3552C24.072 47.3929 22.1524 45.9798 21.4356 43.9937L16.3431 29.8098L24.6105 41.8058C25.3307 42.8511 26.5182 43.4734 27.7849 43.4734C27.8066 43.4734 27.8286 43.4734 27.8503 43.473L43.2518 43.2126C45.3808 43.1767 47.0775 41.4215 47.0413 39.2927C47.0046 37.1636 45.2488 35.4654 43.1208 35.5028Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M95.722 91.8333C94.5457 90.8804 93.0491 90.308 91.4209 90.308C91.1846 90.308 90.9512 90.32 90.7211 90.3434L55.4742 41.9616C54.3189 40.3754 52.7351 39.1717 50.8487 38.504C51.0638 40.4544 50.5428 42.3648 49.4053 43.9149C50.0203 44.2114 50.5625 44.6585 50.9821 45.2344L58.9276 56.141C58.9276 59.967 58.9276 71.6225 58.9276 75.0702C58.9276 79.3441 60.5641 83.235 63.2432 86.1535L60.295 90.4023C59.9288 90.3413 59.5532 90.3082 59.1701 90.3082C55.395 90.3082 52.3242 93.3793 52.3242 97.1541C52.3242 100.929 55.3952 104 59.1701 104C62.9448 104 66.0158 100.929 66.0158 97.1541C66.0158 95.7971 65.6173 94.532 64.9336 93.467L67.6461 89.5581C69.9369 90.7746 72.5493 91.4666 75.3238 91.4666H79.9866H84.6625L85.881 93.1394C85.0606 94.2681 84.5749 95.6553 84.5749 97.1545C84.5749 100.913 87.6344 104 91.4207 104C95.1957 104 98.2666 100.929 98.2666 97.1545C98.2666 95.0075 97.2727 93.0894 95.722 91.8333ZM59.1699 98.4419C58.4598 98.4419 57.8821 97.8643 57.8821 97.1541C57.8821 96.444 58.4598 95.8663 59.1699 95.8663C59.88 95.8663 60.4577 96.444 60.4577 97.1541C60.4577 97.8643 59.88 98.4419 59.1699 98.4419ZM91.4207 98.4419C90.7105 98.4419 90.1329 97.8643 90.1329 97.1541C90.1329 96.444 90.7105 95.8663 91.4207 95.8663C92.1308 95.8663 92.7085 96.444 92.7085 97.1541C92.7085 97.8643 92.1308 98.4419 91.4207 98.4419Z"
+                          fill="#3B3B3B" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_943_832">
+                          <rect width="104" height="104" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p class="content-card-text">임산부, 유아,어린이 동반 서비스</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="99" height="99" viewBox="0 0 99 99" fill="none">
+                      <g clip-path="url(#clip0_943_854)">
+                        <path
+                          d="M93.0728 19.6612C92.1543 18.1364 90.1716 17.6437 88.6426 18.561C82.0422 22.5365 77.5606 29.1724 76.3466 36.7679C76.0651 38.5281 77.2641 40.1844 79.0243 40.4648C79.1966 40.4932 79.369 40.5056 79.5382 40.5056C81.0965 40.5056 82.4678 39.3748 82.7211 37.7869C83.6353 32.0745 87.0075 27.0831 91.9738 24.0924C93.5019 23.172 93.9936 21.1891 93.0728 19.6612Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M63.2446 36.7531C62.0256 29.1628 57.5449 22.5321 50.9508 18.5611C49.4232 17.6436 47.4403 18.1365 46.5195 19.6613C45.6001 21.1892 46.093 23.1731 47.6198 24.0927C52.5819 27.0803 55.9528 32.0676 56.8701 37.7768C57.1245 39.3635 58.4958 40.4931 60.053 40.4931C60.2231 40.4931 60.3956 40.4803 60.5688 40.4523C62.3294 40.1696 63.5272 38.5133 63.2446 36.7531Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M69.9469 0.00134277C68.1637 0.00134277 66.7188 1.44632 66.7188 3.22948V24.7506C66.7188 26.5337 68.1637 27.9787 69.9469 27.9787C71.73 27.9787 73.175 26.5337 73.175 24.7506V3.22948C73.175 1.44632 71.7302 0.00134277 69.9469 0.00134277Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M47.3483 11.8386C49.1311 11.8386 50.5764 10.3933 50.5764 8.61046C50.5764 6.82761 49.1311 5.38232 47.3483 5.38232C45.5654 5.38232 44.1201 6.82761 44.1201 8.61046C44.1201 10.3933 45.5654 11.8386 47.3483 11.8386Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M86.0865 11.8386C87.8694 11.8386 89.3147 10.3933 89.3147 8.61046C89.3147 6.82761 87.8694 5.38232 86.0865 5.38232C84.3037 5.38232 82.8584 6.82761 82.8584 8.61046C82.8584 10.3933 84.3037 11.8386 86.0865 11.8386Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M66.7186 53.804H46.6243L52.3914 46.1506C53.4642 44.7267 53.1805 42.7028 51.7568 41.6299L46.6003 37.7437C42.3083 34.51 36.2475 35.39 33.0381 39.6499L26.8564 47.8533C26.255 46.9453 25.527 46.1168 24.6316 45.4422C20.3493 42.214 14.2832 43.0797 11.0686 47.3473C9.61433 49.2765 8.9803 51.6295 9.19126 54.0171C6.83711 54.473 4.75076 55.7308 3.29747 57.6599C0.0757187 61.9316 0.927274 68.0014 5.20284 71.2222C6.09635 71.8957 7.08326 72.3897 8.11928 72.7174L1.95343 80.8994C-1.26794 85.1727 -0.417541 91.2403 3.8586 94.4617L9.01511 98.3478C10.4458 99.4262 12.4681 99.1294 13.5359 97.7132L40.8933 61.4092V89.3139C40.8933 94.654 45.2375 98.9983 50.5777 98.9983H66.7186V53.804ZM13.6086 65.4334C12.5362 66.8555 10.5057 67.1342 9.08878 66.0672C8.39945 65.548 7.95473 64.7914 7.83523 63.9381C7.71438 63.0837 7.93404 62.2346 8.45301 61.5465C9.08762 60.7048 10.0565 60.2612 11.0359 60.2612C12.3939 60.2612 12.8533 60.8181 15.5524 62.8526C13.8298 65.1403 14.2246 64.6161 13.6086 65.4334ZM19.4385 57.6975C16.8272 55.7291 15.8391 55.2847 15.6061 53.6255C15.3345 51.688 16.8311 49.9497 18.8059 49.9497C20.386 49.9497 21.7712 51.1031 21.9994 52.727C22.2343 54.3862 21.4 55.0941 19.4385 57.6975Z"
+                          fill="#3B3B3B" />
+                        <path
+                          d="M95.7719 53.804H73.1748V98.9982H89.3157C94.6559 98.9982 99.0001 94.654 99.0001 89.3138V57.0323C99.0003 55.2489 97.5541 53.804 95.7719 53.804Z"
+                          fill="#3B3B3B" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_943_854">
+                          <rect width="99" height="99" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p>이벤트</p>
+                  </div>
+                  <div class="content-card">
+                    <svg width="111" height="111" viewBox="0 0 111 111" fill="none">
+                      <path
+                        d="M111 89.5544C111 93.5435 107.754 96.7891 103.765 96.7891C99.7761 96.7891 96.5305 93.5435 96.5305 89.5544C96.5305 88.7997 96.6476 88.0724 96.8624 87.3882H94.5796C94.7951 88.0724 94.9115 88.8002 94.9115 89.5544C94.9115 93.5435 91.6659 96.7891 87.6768 96.7891C83.6877 96.7891 80.4425 93.5435 80.4425 89.5544C80.4425 88.7997 80.5597 88.0724 80.7745 87.3882H78.4911C78.7066 88.0724 78.8231 88.8002 78.8231 89.5544C78.8231 93.5435 75.5774 96.7891 71.5883 96.7891C67.5992 96.7891 64.3541 93.5435 64.3541 89.5544C64.3541 88.7997 64.4712 88.0724 64.686 87.3882H62.4027C62.6182 88.0724 62.7346 88.8002 62.7346 89.5544C62.7346 93.5435 59.4895 96.7891 55.5004 96.7891C51.5107 96.7891 48.2656 93.5435 48.2656 89.5544C48.2656 88.7997 48.3828 88.0724 48.5975 87.3882H46.3144C46.5299 88.0724 46.6463 88.8002 46.6463 89.5544C46.6463 93.5435 43.4006 96.7891 39.4115 96.7891C35.4224 96.7891 32.1768 93.5435 32.1768 89.5544C32.1768 88.7997 32.2937 88.0724 32.5087 87.3882H30.2254C30.4408 88.0724 30.5573 88.8002 30.5573 89.5544C30.5573 93.5435 27.3116 96.7891 23.3225 96.7891C19.3329 96.7891 16.0877 93.5435 16.0877 89.5544C16.0877 88.7997 16.2047 88.0724 16.4197 87.3882H14.1367C14.3522 88.0724 14.4686 88.8002 14.4686 89.5544C14.4686 93.5435 11.223 96.7891 7.23386 96.7891C3.24475 96.7891 0 93.5435 0 89.5544C0 85.5653 3.24566 82.3201 7.23477 82.3201H103.765C107.754 82.3196 111 85.5653 111 89.5544ZM91.563 32.7356V72.4564C91.563 76.0568 88.6337 78.9867 85.0327 78.9867H25.9667C22.3663 78.9867 19.4364 76.0574 19.4364 72.4564V32.7356C19.4364 29.1346 22.3658 26.2047 25.9667 26.2047H41.187V23.3443C41.187 18.3076 45.284 14.2109 50.3204 14.2109H60.6787C65.7154 14.2109 69.8121 18.308 69.8121 23.3443V26.2047H85.0323C88.6337 26.2053 91.563 29.1346 91.563 32.7356ZM46.2551 26.2053H64.7442V23.3449C64.7442 21.1033 62.9201 19.2798 60.6791 19.2798H50.3202C48.0786 19.2798 46.2551 21.1038 46.2551 23.3449V26.2053ZM46.3559 51.8603C46.5404 51.214 46.4613 50.5208 46.1345 49.9334L42.9673 44.2317C42.2872 43.0082 40.7459 42.5678 39.5214 43.2471L33.8198 46.4136C33.2323 46.7401 32.7985 47.2864 32.6135 47.9326C32.4291 48.5789 32.5081 49.2721 32.835 49.8595L36.0021 55.5612C36.4653 56.3953 37.329 56.8652 38.2194 56.8652C38.6354 56.8652 39.0577 56.7624 39.4474 56.546L45.1491 53.3794C45.7376 53.053 46.1715 52.5065 46.3559 51.8603ZM64.9319 62.1731C64.7337 61.2294 64.0165 60.4793 63.0825 60.2397L59.6507 59.3578L58.4323 56.0311C58.1003 55.1255 57.2827 54.4863 56.3243 54.383C55.3649 54.2836 54.4308 54.7301 53.9134 55.5441L52.0138 58.5353L48.4733 58.6661C47.5093 58.702 46.6492 59.2818 46.2544 60.1617C45.8601 61.0421 45.999 62.0699 46.6137 62.8128L48.8716 65.5441L47.9019 68.9524C47.6379 69.8803 47.9237 70.8773 48.6389 71.5245C49.354 72.1713 50.3742 72.3563 51.2718 72.0019L54.5667 70.6983L57.5082 72.6735C57.9338 72.9599 58.427 73.1042 58.9207 73.1042C59.3551 73.1042 59.7909 72.9927 60.1816 72.7682C61.0183 72.2882 61.51 71.3745 61.4496 70.4119L61.2276 66.8748L64.0156 64.6878C64.7752 64.0918 65.13 63.1177 64.9319 62.1731ZM77.955 36.6326C77.955 34.1801 75.42 32.5958 71.4972 32.5958C67.574 32.5958 65.0389 34.1801 65.0389 36.6326C65.0389 39.0851 67.574 40.6699 71.4972 40.6699C75.42 40.6697 77.955 39.0849 77.955 36.6326Z"
+                        fill="#3B3B3B" />
+                    </svg>
+                    <p>유실물 찾기</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ========================= traffic guide ========================= -->
+  <section class="traffic-area">
+    <div class="container">
+      <div class="traffic-title title">
+        <h2>Traffic Guide</h2>
+        <p>공항교통 가이드</p>
+      </div>
+      <div class="traffic-content">
+        <div class="parking">
+          <h3>주차장 혼잡도</h3>
+          <!-- 주차장 혼잡도 영역 -->
+          <div class="parking-wrap">
+            <div class="parking-p2">
+              <div class="parking-top">
+                <h5>P2 장기주차장</h5>
+                <p>보통</p>
+              </div>
+              <div class="parking-bottom"></div>
+            </div>
+            <div class="parking-p1">
+              <div class="parking-top">
+                <h5>P1 주차장</h5>
+                <p>혼잡</p>
+              </div>
+              <div class="parking-bottom"></div>
+            </div>
+            <div class="traffic-guide">
+              <ul>
+                <li>매일 5시 ~ 8시, 16시~19시 까지는 주차장 혼잡이 예상되므로 이용 시 참고하시기 바랍니다.</li>
+                <li>문의: 제주국제공항 주사관리사무실(064-797-2701, 2702)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 교통 안내 -->
+        <div class="traffic-cards-wrap">
+
+          <div class="traffic-card">
+            <a href="#none">
+              <div class="card-text">
+                <h6>주차장 안내</h6>
+                <p>Parking Lot Information</p>
+              </div>
+              <div class="card-icon"><img src="sub2/ic-traffic1.png" alt="자동차아이콘"></div>
+            </a>
+          </div>
+          <div class="traffic-card">
+            <a href="#none">
+              <div class="card-text">
+                <h6>주차요금</h6>
+                <p>Parking Free</p>
+              </div>
+              <div class="card-icon"><img src="sub2/ic-traffic2.png" alt="요금아이콘"></div>
+            </a>
+          </div>
+          <div class="traffic-card">
+            <a href="#none">
+              <div class="card-text">
+                <h6>오시는 길</h6>
+                <p>How To Airport</p>
+              </div>
+              <div class="card-icon "><img src="sub2/ic-traffic3.png" alt="오시는길아이콘"></div>
+            </a>
+          </div>
+
+
+          <div class="traffic-card">
+            <a href="#none">
+              <div class="card-text">
+                <h6>공항버스</h6>
+                <p>Bus</p>
+              </div>
+              <div class="card-icon"> <img src="sub2/ic-traffic4.png" alt="공항버스아이콘"></div>
+            </a>
+          </div>
+          <div class="traffic-card">
+            <a href="#none">
+              <div class="card-text">
+                <h6>리무진버스</h6>
+                <p>Airport Shuttle Bus</p>
+              </div>
+              <div class="card-icon"><img src="sub2/ic-traffic5.png" alt="리무진버스아이콘"></div>
+            </a>
+          </div>
+          <div class="traffic-card">
+            <a href="#none">
+              <div class="card-text">
+                <h6>심야버스</h6>
+                <p>Late-night Bus</p>
+              </div>
+              <div class="card-icon"><img src="sub2/ic-traffic6.png" alt="심야버스아이콘"></div>
+            </a>
+          </div>
+
+
+          <div class="traffic-card">
+            <a href="#none">
+              <div class="card-text">
+                <h6>택시</h6>
+                <p>Taxi</p>
+              </div>
+              <div class="card-icon"><img src="sub2/ic-traffic7.png" alt="택시아이콘"></div>
+            </a>
+          </div>
+          <div class="traffic-card">
+            <a href="#none">
+              <div class="card-text">
+                <h6>렌터카</h6>
+                <p>Car Rental</p>
+              </div>
+              <div class="card-icon"><img src="sub2/ic-traffic8.png" alt="렌터카아이콘"></div>
+            </a>
+          </div>
+          <div class="traffic-card blank"></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 항공권 예약 ========================= -->
+  <section class="bookFlight">
+    <div class="container">
+      <div class="book-title title">
+        <h2>Book a Flight</h2>
+        <p>항공권 예약</p>
+      </div>
+
+      <div class="book-wrap">
+
+        <div class="book-content">
+          <!-- 모바일용 -->
+          <!-- 상단 선택 영역 -->
+          <div class="book-top">
+            <div class="book-top-category">
+              <span class="active" data-type="domestic">국내선</span>
+              <span data-type="international">국제선</span>
+            </div>
+            <div class="book-top-flight">
+              <form>
+                <input type="radio" name="flight" id="roundTicket" checked>
+                <span>왕복</span>
+                <input type="radio" name="flight" id="singleTicket">
+                <span>편도</span>
+              </form>
+            </div>
+          </div>
+          <!-- 하단 선택영역 -->
+          <div class="book" id="book" data-wow="domestic">
+            <!-- 출도착 날짜 -->
+            <div class="book-area">
+              <!-- 국내선 -->
+              <div class="book-left domestic is-active ">
+                <form>
+                  <label><span>From</span>출발지</label>
+                  <select name="dome-start" id="domeStart">
+                    <option disabled selected>출발지 선택</option>
+                    <option value="ICN">인천</option>
+                    <option value="JEJ">제주</option>
+                    <option value="GMP">김포</option>
+                    <option value="PUS">김해</option>
+                    <option value="TAE">대구</option>
+                    <option value="CJJ">청주</option>
+                    <option value="MWX">무안</option>
+                    <option value="YNY">양양</option>
+                    <option value="USN">울산</option>
+                    <option value="KWJ">광주</option>
+                    <option value="RSU">여수</option>
+                    <option value="KPO">포항경주</option>
+                    <option value="HIN">사천</option>
+                    <option value="KUV">군산</option>
+                    <option value="WJU">원주</option>
+                  </select>
+                </form>
+                <i class="fa-solid fa-plane"></i>
+                <form>
+                  <label><span>To</span>도착지</label>
+                  <select name="dome-arrived" id="domeArrived">
+                    <option disabled selected>도착지 선택</option>
+                    <option value="ICN">인천</option>
+                    <option value="JEJ">제주</option>
+                    <option value="GMP">김포</option>
+                    <option value="PUS">김해</option>
+                    <option value="TAE">대구</option>
+                    <option value="CJJ">청주</option>
+                    <option value="MWX">무안</option>
+                    <option value="YNY">양양</option>
+                    <option value="USN">울산</option>
+                    <option value="KWJ">광주</option>
+                    <option value="RSU">여수</option>
+                    <option value="KPO">포항경주</option>
+                    <option value="HIN">사천</option>
+                    <option value="KUV">군산</option>
+                    <option value="WJU">원주</option>
+                  </select>
+                </form>
+              </div>
+              <!-- 국제선 -->
+              <div class="book-left international">
+                <form>
+                  <label><span>From</span>출발지</label>
+                  <select name="int-start" id="intStart">
+                    <option disabled selected>출발지 선택</option>
+                    <option value="JEJ">제주(JEJ) · 대한민국</option>
+                    <option value="NTR">도쿄(NTR) · 일본</option>
+                    <option value="HND">도쿄(HND) · 일본</option>
+                    <option value="KIX">오사카(KIX) · 일본</option>
+                    <option value="FUK">후쿠오카(FUK) · 일본</option>
+                    <option value="PVG">상하이(PVG) · 중국</option>
+                    <option value="SHA">상하이(SHA) · 중국</option>
+                    <option value="HGH">항저우(HGH) · 중국</option>
+                    <option value="NKG">난징(NKG) · 중국</option>
+                    <option value="CAN">광저우(CAN) · 중국</option>
+                    <option value="SHE">심양(SHE) · 중국</option>
+                    <option value="TAO">청도(TAO) · 중국</option>
+                    <option value="HKG">홍콩(HKG) · 홍콩</option>
+                    <option value="SIN">싱가폴(SIN) · 싱가포르</option>
+                    <option value="TPE">타이페이(TPE) · 대만</option>
+                    <option value="KHH">카오슝(KHH) · 대만</option>
+                    <option value="BKK">방콕(BKK) · 태국</option>
+                    <option value="DMK">방콕(DMK) · 태국</option>
+                  </select>
+                </form>
+                <i class="fa-solid fa-plane"></i>
+                <form>
+                  <label><span>To</span>도착지</label>
+                  <select name="int-arrived" id="intArrived">
+                    <option disabled selected>도착지 선택</option>
+                    <option value="JEJ">제주(JEJ) · 대한민국</option>
+                    <option value="NTR">도쿄(NTR) · 일본</option>
+                    <option value="HND">도쿄(HND) · 일본</option>
+                    <option value="KIX">오사카(KIX) · 일본</option>
+                    <option value="FUK">후쿠오카(FUK) · 일본</option>
+                    <option value="PVG">상하이(PVG) · 중국</option>
+                    <option value="SHA">상하이(SHA) · 중국</option>
+                    <option value="HGH">항저우(HGH) · 중국</option>
+                    <option value="NKG">난징(NKG) · 중국</option>
+                    <option value="CAN">광저우(CAN) · 중국</option>
+                    <option value="SHE">심양(SHE) · 중국</option>
+                    <option value="TAO">청도(TAO) · 중국</option>
+                    <option value="HKG">홍콩(HKG) · 홍콩</option>
+                    <option value="SIN">싱가폴(SIN) · 싱가포르</option>
+                    <option value="TPE">타이페이(TPE) · 대만</option>
+                    <option value="KHH">카오슝(KHH) · 대만</option>
+                    <option value="BKK">방콕(BKK) · 태국</option>
+                    <option value="DMK">방콕(DMK) · 태국</option>
+                  </select>
+                </form>
+              </div>
+              <div class="book-right">
+                <form>
+                  <label id="dateTitle">가는날 / 오는날</label>
+                  <div class="book-date">
+                    <input type="date" class="form-control" id="startDate" data-placeholder="가는 날" >
+                    <input type="date" class="form-control" id="arrivedDate" data-placeholder="오는 날" >
+                  </div>
+                </form>
+              </div>
+
+            </div>
+            <!-- 탑승수속 -->
+            <div class="book-detail">
+              <div class="setGroup">
+                <!-- 보이는 화면 -->
+                <div class="option-item">
+                  <label>탑승객</label>
+                  <button type="button" class="inp-sCustom">성인1, 소아0, 유아0</button>
+                </div>
+
+                <div class="search-option-group" id="search-optGrp">
+                  <div class="list-num">
+                    <!-- 눌렀을떼 -->
+                    <ul class="list-age">
+                      <li>
+                        <b>성인 <em>만 13세 이상</em></b>
+                        <div class="count">
+                          <button type="button" class="btn-del"><i class="fa-solid fa-minus"></i></button>
+                          <input type="text" name="adtCnt" class="inp-t" title="성인탑승객수">
+                          <button type="button" class="btn-add"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                      </li>
+                      <li>
+                        <b>소아 <em>만 13세 미만</em></b>
+                        <div class="count">
+                          <button type="button" class="btn-del"><i class="fa-solid fa-minus"></i></button>
+                          <input type="text" name="adtCnt" class="inp-t" title="소아탑승객수">
+                          <button type="button" class="btn-add"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                      </li>
+                      <li>
+                        <b>유아 <em>만 2세 미만</em></b>
+                        <div class="count">
+                          <button type="button" class="btn-del"><i class="fa-solid fa-minus"></i></button>
+                          <input type="text" name="adtCnt" class="inp-t" title="유아탑승객수">
+                          <button type="button" class="btn-add"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <!-- 적용과 닫기버튼 -->
+                    <div class="closeBtn">
+                      <button class="btnC-s btnRedA">
+                        <span>적용</span>
+                      </button>
+                      <button id="search-optGrpClosed" class="btnC-s">
+                        <span>닫기</span>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="setClass">
+                <label>좌석등급</label>
+                <select name="" id="">
+                  <option value="">전체</option>
+                  <option value="">일반</option>
+                  <option value="">비즈니스</option>
+                  <option value="">특가</option>
+                  <option value="">할인</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="book-searchBtn">
+            <button class="book-btn">조회하기</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================= Travel Jeju ========================= -->
+  <section class="travel">
+    <div class="container">
+      <div class="travel-title title">
+        <h2>Travel Jeju</h2>
+        <p>제주도 가볼한한 곳</p>
+      </div>
+      <div class="travel-box" id="travelBox">
+        <div class="travel-map-wrap" id="travelMap">
+          <img src="sub2/jeju.svg" alt="제주도지도">
+        </div>
+        <div class="travel-content">
+          <h4>유명여행지 안내</h4>
+          <div class="filter-controls" id="filterControls">
+            <button data-filter="landmark">
+              <i class="fa-solid fa-location-dot"></i>
+              제주도 명소
+            </button>
+            <button data-filter="trail">
+              <i class="fa-solid fa-location-dot"></i>
+              한라산둘레길 / 오름
+            </button>
+            <button data-filter="museum">
+              <i class="fa-solid fa-location-dot"></i>
+              박물관 / 미술관
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ </main>
+
+  <!-- ========================= 팝업 ========================= -->
+  <!-- 팝업창 -->
+  <div class="open-popup">
+    <div class="popup-background"></div>
+    <div class="popup-wrap">
+      <div class="popup-top">
+        <div class="icon-img"><i class="fa-solid fa-bars"></i></div>
+        <div class="logoImg"></div>
+        <div class="design-circle">
+          <div class="popup-design-circle"></div>
+          <div class="popup-design-circle"></div>
+          <div class="popup-design-circle close-popupBtn"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+      </div>
+      <div class="popup-msg">
+        <h3 class="popup-title"> 한국공항공사 홈페이지를 <span>리뉴얼한 페이지</span> 입니다</h3>
+        <ul class="popup-list">
+          <li class="made-page">
+            <div class="popup-bubble">작업페이지</div>
+            <div>메인페이지, 서브페이지3개</div>
+          </li>
+          <li class="vscode">
+            <div class="popup-bubble">사용언어</div>
+            <img src="images/popupImg_01.png" alt="">
+            <span>HTML, JavaScript, CSS</span>
+          </li>
+          <li class="role">
+            <div class="popup-bubble">역할</div>
+            <div>디자인 100%, 개발 100%</div>
+          </li>
+          <li class="why-make">
+            <div class="popup-bubble">리뉴얼 이유</div>
+            <div class="resone">메인비주얼 영역이 너무 복잡하고 레이아웃이 깨지는 부분이 있으며 <br> 디자인적으로 통일성이 없다고 생각이 들어서 리뉴얼 하였습니다</div>
+          </li>
+        </ul>
+        <div class="popup-images">
+          <div class="prev-img"></div>
+          <div class="next-icon"><i class="fa-solid fa-right-long"></i></div>
+          <div class="next-img"></div>
+        </div>
+        <div class="induce-icon-wrap">
+        <div class="induce-top">
+          <i class="fa-solid fa-bars"></i>
+          <div class="circle-icon">O O O</div>
+        </div>
+        <div class="induce-txt">
+          <div class="induce-icon">
+            <svg width="77" height="66" viewBox="0 0 77 66" fill="none">
+              <g clip-path="url(#clip0_1234_3055)">
+                <path
+                  d="M12.4496 7.15715C12.2286 6.23454 12.6443 5.2974 13.5086 4.72526C14.3729 4.15313 15.5382 4.07443 16.5039 4.51101L65.4618 26.6956C66.831 27.3181 67.5955 28.608 67.3825 29.9262C67.1768 31.1995 66.0995 32.2396 64.664 32.5508L47.3469 36.3288C46.1409 36.5946 44.863 36.2574 44.0411 35.4543L33.7524 25.5726C33.1936 25.0389 32.2647 24.9633 31.6028 25.3954C30.9409 25.8274 30.769 26.6294 31.211 27.2313L39.3632 38.4913C40.0197 39.4025 40.046 40.5485 39.4303 41.4797L30.4447 54.8848C29.7052 55.9931 28.2531 56.6039 26.7803 56.4261C25.2557 56.242 24.0303 55.253 23.7131 53.9439L12.4496 7.15715Z"
+                  fill="#FFC64A" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1234_3055">
+                  <rect width="58.0447" height="66.9373" fill="white"
+                    transform="matrix(0.159719 -0.98871 0.991646 0.119745 0.305908 57.6539)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="induce-msg">
+            서브페이지로 이동할 수 있는 <br> 링크를 안내하는 아이콘 입니다!  
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- ========================= footer ========================= -->
+  <footer class="footer container">
+    <div class="footer-top">
+      <div class="top-left">
+        <ul>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">이메일무단수집거부</a></li>
+          <li><a href="#none">고객서비현장</a></li>
+          <li><a href="#none">영상정보처리기기 운영관리방침</a></li>
+        </ul>
+      </div>
+      <div class="top-right">
+        <form class="seclect-link">
+          <label for="relationSite">
+            <select class="site-list">
+              <option value="realstionsite" disabled selected>관련사이트</option>
+              <option value="">공공데이터포털</option>
+              <option value="">안전신문고</option>
+              <option value="">대한민국정부포털</option>
+              <option value="">공항 소음정보 시스템</option>
+              <option value="">국토교통부</option>
+              <option value="">한국항공협회</option>
+              <option value="">관세청</option>
+              <option value="">출입국·외국인 정책본부</option>
+              <option value="">농림축산검역본부</option>
+              <option value="">농림축산식품부</option>
+              <option value="">AIR portal</option>
+              <option value="">인천국제공항</option>
+              <option value="">국민권익위원회 신고상담</option>
+              <option value="">인사혁신처 국민추천제</option>
+              <option value="">항공보안365</option>
+              <option value="">항공기상청</option>
+            </select>
+          </label>
+          <label for="airline">
+            <select class="airline-list">
+              <option value="airline" disabled selected>항공사</option>
+              <option value="KE">대한항공</option>
+              <option value="OZ">아시아나</option>
+              <option value="BX">에어부산</option>
+              <option value="RS">에어서울</option>
+              <option value="7C">제주항공</option>
+              <option value="LJ">진에어</option>
+              <option value="TW">티웨이</option>
+              <option value="4H">하이에이</option>
+              <option value="4V">플라이강원</option>
+              <option value="RF">에어로케이항공</option>
+              <option value="VP">에어프레미아</option>
+              <option value="ZE">이스타항공</option>
+            </select>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="footer-center">
+      <div class="center-left">
+        <p class="center-main">한국공항공사 고객센터 1661-2626 (06:00 ~ 23:00, 연중무휴)</p>
+        <p>07505 서울시 강서구 하늘길 78(공항동)</p>
+      </div>
+      <div class="center-right">
+        <div class="sns">
+          <a href="#none" class="facebook"><svg width="11" height="22" viewBox="0 0 11 22" fill="none">
+              <path
+                d="M10.2312 12.3173L10.799 8.35438H7.2491V5.78271C7.2491 4.69854 7.74499 3.64173 9.33487 3.64173H10.9487V0.26773C10.9487 0.26773 9.4842 0 8.08397 0C5.16053 0 3.24964 1.89806 3.24964 5.33407V8.35438H0V12.3173H3.24964V21.8974H7.2491V12.3173H10.2312Z"
+                fill="#707982" />
+            </svg>
+          </a>
+          <a href="#none" class="blog"><svg width="16" height="22" viewBox="0 0 16 22" fill="none">
+              <path
+                d="M9.0026 6.88574C8.23931 6.73308 7.52831 7.35427 7.52831 8.13865V10.7919C7.52831 11.3288 7.89949 11.7605 8.40138 11.95C9.35287 12.308 10.0377 13.2345 10.0377 14.319C10.0377 15.714 8.91372 16.8459 7.52831 16.8459C6.14289 16.8459 5.01887 15.714 5.01887 14.319V1.26344C5.01887 0.563283 4.45948 0 3.76415 0H1.25472C0.559395 0 0 0.563283 0 1.26344V14.319C0 19.0306 4.29218 22.7524 9.14898 21.7259C11.993 21.1258 14.2881 18.8094 14.8841 15.9509C15.7938 11.5868 12.9497 7.67539 9.0026 6.88574Z"
+                fill="#707982" />
+            </svg>
+          </a>
+          <a href="#none" class="instagram"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path
+                d="M10.9511 5.33449C7.84423 5.33449 5.33818 7.8411 5.33818 10.9487C5.33818 14.0563 7.84423 16.5629 10.9511 16.5629C14.0581 16.5629 16.5641 14.0563 16.5641 10.9487C16.5641 7.8411 14.0581 5.33449 10.9511 5.33449ZM10.9511 14.5987C8.94338 14.5987 7.30199 12.9618 7.30199 10.9487C7.30199 8.9356 8.93849 7.29873 10.9511 7.29873C12.9638 7.29873 14.6003 8.9356 14.6003 10.9487C14.6003 12.9618 12.9589 14.5987 10.9511 14.5987ZM18.1029 5.10484C18.1029 5.83288 17.5167 6.41433 16.7937 6.41433C16.0658 6.41433 15.4845 5.82799 15.4845 5.10484C15.4845 4.38168 16.0707 3.79534 16.7937 3.79534C17.5167 3.79534 18.1029 4.38168 18.1029 5.10484ZM21.8205 6.43388C21.7374 4.67974 21.3368 3.12593 20.0521 1.84575C18.7722 0.565575 17.2187 0.164909 15.465 0.0769573C13.6575 -0.0256524 8.23993 -0.0256524 6.43244 0.0769573C4.68358 0.160022 3.13012 0.560689 1.84534 1.84087C0.560564 3.12105 0.164872 4.67485 0.0769402 6.42899C-0.0256467 8.23688 -0.0256467 13.6557 0.0769402 15.4635C0.159987 17.2177 0.560564 18.7715 1.84534 20.0517C3.13012 21.3318 4.67869 21.7325 6.43244 21.8205C8.23993 21.9231 13.6575 21.9231 15.465 21.8205C17.2187 21.7374 18.7722 21.3367 20.0521 20.0517C21.332 18.7715 21.7325 17.2177 21.8205 15.4635C21.9231 13.6557 21.9231 8.24176 21.8205 6.43388ZM19.4854 17.4034C19.1044 18.361 18.3667 19.0989 17.4044 19.4849C15.9633 20.0565 12.5437 19.9246 10.9511 19.9246C9.35861 19.9246 5.93416 20.0517 4.49795 19.4849C3.54047 19.1037 2.80282 18.3659 2.4169 17.4034C1.84534 15.9619 1.97724 12.5416 1.97724 10.9487C1.97724 9.35581 1.85023 5.9306 2.4169 4.49406C2.79794 3.53637 3.53558 2.79856 4.49795 2.41255C5.93905 1.84087 9.35861 1.9728 10.9511 1.9728C12.5437 1.9728 15.9681 1.84575 17.4044 2.41255C18.3618 2.79367 19.0995 3.53149 19.4854 4.49406C20.057 5.93549 19.9251 9.35581 19.9251 10.9487C19.9251 12.5416 20.057 15.9668 19.4854 17.4034Z"
+                fill="#707982" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-corpo">
+        © 2020 Korea Airports Corporation. All Rights Reserved.
+      </div>
+      <div class="footer-logo">
+        <img src="images/footer/footer_webimg01.png" alt="웹마크1">
+        <img src="images/footer/footer_webimb02.png" alt="웹마크2">
+        <img class="footer-kac" src="images/footer/simbol.svg" alt="kac로고">
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="topBtn">
+    <a href="#"></a>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- scrollTrigger -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="../js/sub2.js"></script>
+  <script src="../js/header.js"></script>
+
+</body>
+
+</html>
