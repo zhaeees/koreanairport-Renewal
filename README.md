@@ -4,7 +4,7 @@
 ## Link
 리뉴얼 사이트(web-site): https://zhaeees.github.io/koreanairport-Renewal/ <br/>
 기획서(Figma-slide): <br/>
-디자인시안(figma): 
+디자인시안(figma): https://www.figma.com/design/vWrPlSnYOOtSFLhJWrxSbt/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=1-32&t=DLOKfLYf2d4HIvBr-1
 
 ## 리뉴얼 이유
 기존 사이트는 정보 중복과 복잡한 구조로 인해 사용자가 핵심 콘텐츠에 빠르게 접근하기 어렵고, 반응형·접근성 측면에서도 한계가 있어 사용자 중심의 정보 재구성과 UX 개선을 위한 리뉴얼이 필요하다 생각됨.
