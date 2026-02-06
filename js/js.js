@@ -112,7 +112,7 @@ function selectAirport(id) {
 
   const img = document.createElement('img');
   img.className = 'pin-img';
-  img.src = 'images/mainvisual/dot.png';
+  img.src = '../images/mainvisual/dot.png';
   img.alt = `${item.name} 아이콘`;
 
   selectedLabel.querySelector('.pin-slot')?.appendChild(img);
@@ -210,7 +210,7 @@ console.log(weatherMap)
 function getWeatherInfo(iconCode) {
   return weatherMap[iconCode] || {
     text: '날씨 정보 없음',
-    icon: 'images/weather/no_img.jpg'
+    icon: '../images/weather/no_img.jpg'
   };
 }
 
