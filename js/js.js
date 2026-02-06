@@ -3,20 +3,20 @@
   mainvisual
 ================================== */
 const airports = [
-  { id: 'gimpo', name: '김포국제공항', address: '주소: 07505 서울특별시 강서구 하늘길 78', top: '23%', left: '39%', type: 'international', lat: 37.565751, lon: 126.801382, icon: '../images/mainvisual/dot.png'},
-  { id: 'gimhae', name: '김해국제공항', address: '주소: 46718 부산 강서구 공항진입로 108', top: '68%', left: '81%', type: 'international' , lat:35.173009, lon:128.947607, icon: '../images/mainvisual/dot.png'},
-  { id: 'jeju', name: '제주국제공항', address: '주소: 63115 제주특별자치도 제주시 공항로 2', top: '94%', left: '27%', type: 'international', lat: 33.507269, lon:126.493695  , icon: '../images/mainvisual/dot.png'},
-  { id: 'daegu', name: '대구국제공항', address: '주소: 41052 대구 동구 공항로 221', top: '54%', left: '73%', type: 'international' , lat: 35.899302, lon:128.639234 , icon: '../images/mainvisual/dot.png'},
-  { id: 'cheongju', name: '청주국제공항', address: '주소: 28142 충북 청주시 청원구 내수읍 오창대로 980', top: '41%', left: '51%', type: 'international' , lat: 36.722183, lon:127.495906 , icon: '../images/mainvisual/dot.png'},
-  { id: 'muan', name: '무안국제공항', address: '주소: 59606 전남 여수시 율촌면 여순로 386', top: '70%', left: '34%', type: 'international' , lat: 34.993751, lon:126.387952, icon: '../images/mainvisual/dot.png'},
-  { id: 'yangyang', name: '양양국제공항', address: '주소: 25042 강원 양양군 손양면 공항로 201', top: '19%', left: '72%', type: 'international' , lat: 38.058998, lon:128.662969, icon: '../images/mainvisual/dot.png'},
-  { id: 'ulsan', name: '울산공항', address: '주소: 44238 울산 북구 산업로 1103', top: '60%', left: '83%', type: 'domestic' , lat: 35.593139, lon: 129.355728, icon: '../images/mainvisual/dot.png'},
-  { id: 'gwangju', name: '광주공항', address: '주소: 62425 광주 광산구 상무대로 420-25', top: '69%', left: '40%', type: 'domestic', lat: 35.140006, lon:126.810716, icon: '../images/mainvisual/dot.png'},
-  { id: 'yeosu', name: '여수공항', address: '주소: 59606 전남 여수시 율촌면 여순로 386', top: '73%', left: '53%', type: 'domestic' , lat: 34.840408, lon:127.614014, icon: '../images/mainvisual/dot.png'},
-  { id: 'pohang', name: '포항·경주공항', address: '주소: 37926 경북 포항시 남구 동해면 일월로 18', top: '52%', left: '88%', type: 'domestic' , lat: 35.984215, lon:129.434514, icon: '../images/mainvisual/dot.png'},
-  { id: 'sacheon', name: '사천공항', address: '주소: 52516 경남 사천시 사천읍 사천대로 1971', top: '68%', left: '62%', type: 'domestic' , lat: 35.092427, lon:128.087088, icon: '../images/mainvisual/dot.png'},
-  { id: 'gunsan', name: '군산공항', address: '주소: 54168 전북 군산시 옥서면 산동길2', top: '54%', left: '36%', type: 'domestic' , lat: 35.926086, lon:126.615940, icon: '../images/mainvisual/dot.png'},
-  { id: 'wonju', name: '원주공항', address: '주소: 25239 강원 횡성군 횡성읍 횡성로 38', top: '22%', left: '60%', type: 'domestic', lat: 37.459377, lon:127.977411, icon: '../images/mainvisual/dot.png'}
+  { id: 'gimpo', name: '김포국제공항', address: '주소: 07505 서울특별시 강서구 하늘길 78', top: '23%', left: '39%', type: 'international', lat: 37.565751, lon: 126.801382, icon: './images/mainvisual/dot.png'},
+  { id: 'gimhae', name: '김해국제공항', address: '주소: 46718 부산 강서구 공항진입로 108', top: '68%', left: '81%', type: 'international' , lat:35.173009, lon:128.947607, icon: './images/mainvisual/dot.png'},
+  { id: 'jeju', name: '제주국제공항', address: '주소: 63115 제주특별자치도 제주시 공항로 2', top: '94%', left: '27%', type: 'international', lat: 33.507269, lon:126.493695  , icon: './images/mainvisual/dot.png'},
+  { id: 'daegu', name: '대구국제공항', address: '주소: 41052 대구 동구 공항로 221', top: '54%', left: '73%', type: 'international' , lat: 35.899302, lon:128.639234 , icon: './images/mainvisual/dot.png'},
+  { id: 'cheongju', name: '청주국제공항', address: '주소: 28142 충북 청주시 청원구 내수읍 오창대로 980', top: '41%', left: '51%', type: 'international' , lat: 36.722183, lon:127.495906 , icon: './images/mainvisual/dot.png'},
+  { id: 'muan', name: '무안국제공항', address: '주소: 59606 전남 여수시 율촌면 여순로 386', top: '70%', left: '34%', type: 'international' , lat: 34.993751, lon:126.387952, icon: './images/mainvisual/dot.png'},
+  { id: 'yangyang', name: '양양국제공항', address: '주소: 25042 강원 양양군 손양면 공항로 201', top: '19%', left: '72%', type: 'international' , lat: 38.058998, lon:128.662969, icon: './images/mainvisual/dot.png'},
+  { id: 'ulsan', name: '울산공항', address: '주소: 44238 울산 북구 산업로 1103', top: '60%', left: '83%', type: 'domestic' , lat: 35.593139, lon: 129.355728, icon: './images/mainvisual/dot.png'},
+  { id: 'gwangju', name: '광주공항', address: '주소: 62425 광주 광산구 상무대로 420-25', top: '69%', left: '40%', type: 'domestic', lat: 35.140006, lon:126.810716, icon: './images/mainvisual/dot.png'},
+  { id: 'yeosu', name: '여수공항', address: '주소: 59606 전남 여수시 율촌면 여순로 386', top: '73%', left: '53%', type: 'domestic' , lat: 34.840408, lon:127.614014, icon: './images/mainvisual/dot.png'},
+  { id: 'pohang', name: '포항·경주공항', address: '주소: 37926 경북 포항시 남구 동해면 일월로 18', top: '52%', left: '88%', type: 'domestic' , lat: 35.984215, lon:129.434514, icon: './images/mainvisual/dot.png'},
+  { id: 'sacheon', name: '사천공항', address: '주소: 52516 경남 사천시 사천읍 사천대로 1971', top: '68%', left: '62%', type: 'domestic' , lat: 35.092427, lon:128.087088, icon: './images/mainvisual/dot.png'},
+  { id: 'gunsan', name: '군산공항', address: '주소: 54168 전북 군산시 옥서면 산동길2', top: '54%', left: '36%', type: 'domestic' , lat: 35.926086, lon:126.615940, icon: './images/mainvisual/dot.png'},
+  { id: 'wonju', name: '원주공항', address: '주소: 25239 강원 횡성군 횡성읍 횡성로 38', top: '22%', left: '60%', type: 'domestic', lat: 37.459377, lon:127.977411, icon: './images/mainvisual/dot.png'}
 ];
 
 /* ================= DOM ================= */
