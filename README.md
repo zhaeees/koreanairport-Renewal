@@ -28,14 +28,30 @@
 페이지별 사용자 목적을 기준으로 채용 페이지는 행동 유도 중심으로, 공항 이용 페이지는 정보 탐색 중심 구조로 분리.   
 이를 통해 사용자는 불필요한 판단 과정을 줄이고, 각 페이지에서 기대하는 행동과 정보를 빠르게 인지할 수 있도록 개선가능.
 
+## 사용한 툴
+Figma, HTML, CSS, Javascript
+
 ## Before & After
+// 메인페이지
+ - 날씨정보를 불러오기 위해 날씨 api 사용
+ - 배열을 사용하여 지도의 위치값 생성
+ - esg 섹션에서는 스와이퍼를 사용해 pc에서는 기본 스크롤이지만 반응형에서는 rotate를 주어 재미 요소를 더해봄
+
+<br/>
+<br/>
+
 | Before | After |
 |--------|-------|
 | <img width="300" height="auto" alt="Image" src="https://github.com/user-attachments/assets/041344cb-92fb-4bf3-9551-5b2dc2d54588" /><img width="80" height="auto" alt="Image" src="https://github.com/user-attachments/assets/2e1f2ea6-96b6-4118-8945-3c9e2bad0294" /> | <img width="420" height="auto" alt="Image" src="https://github.com/user-attachments/assets/800a6d05-2830-4277-a6ce-63bd8c9a29f5" /><img width="120" height="auto" alt="Image" src="https://github.com/user-attachments/assets/807dbdb2-8719-4b06-9b84-c9638d98dcf6" /> |
 <br/>
 
+
+   
+
+
 | 서브페이지1 | 서브페이지2 |
 |--------|-------|
 | <img width="1920" height="4339" alt="Image" src="https://github.com/user-attachments/assets/1799b16f-ff0b-423f-9f6b-bcb5aa0061be" /> | <img width="1920" height="6280" alt="Image" src="https://github.com/user-attachments/assets/4b73ed87-96d5-4a09-a712-b600110eaaf2" /> |
+<br/>
 
 
