@@ -32,7 +32,7 @@
 Figma, HTML, CSS, Javascript
 
 ## Before & After
-// 메인페이지
+// point📍
  - 날씨정보를 불러오기 위해 날씨 api 사용
  - 배열을 사용하여 지도의 위치값 생성
  - esg 섹션에서는 스와이퍼를 사용해 pc에서는 기본 스크롤이지만 반응형에서는 rotate를 주어 재미 요소를 더해봄
