@@ -34,12 +34,12 @@
   </tr>
   <tr>
     <td valign="top">
-      <img src="https://github.com/user-attachments/assets/041344cb-92fb-4bf3-9551-5b2dc2d54588" style="width: 250px" />
-      <img  src="https://github.com/user-attachments/assets/2e1f2ea6-96b6-4118-8945-3c9e2bad0294" style="width: 80px" />
+      <img src="https://github.com/user-attachments/assets/041344cb-92fb-4bf3-9551-5b2dc2d54588" style="width: 200px"valign="top" />
+      <img  src="https://github.com/user-attachments/assets/2e1f2ea6-96b6-4118-8945-3c9e2bad0294" style="width: 60px" />
     </td>
     <td valign="top">
-      <img src="https://github.com/user-attachments/assets/800a6d05-2830-4277-a6ce-63bd8c9a29f5" style="width: 350px"/>
-      <img src="https://github.com/user-attachments/assets/807dbdb2-8719-4b06-9b84-c9638d98dcf6" style="width: 100px"/>
+      <img src="https://github.com/user-attachments/assets/800a6d05-2830-4277-a6ce-63bd8c9a29f5" style="width: 320px" valign="top"/>
+      <img src="https://github.com/user-attachments/assets/807dbdb2-8719-4b06-9b84-c9638d98dcf6" style="width: 90px"/>
     </td>
   </tr>
 </table>
