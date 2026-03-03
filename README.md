@@ -34,11 +34,11 @@
   </tr>
   <tr>
     <td valign="top">
-      <img src="https://github.com/user-attachments/assets/041344cb-92fb-4bf3-9551-5b2dc2d54588" width="240"/>
+      <img src="https://github.com/user-attachments/assets/041344cb-92fb-4bf3-9551-5b2dc2d54588" width="240" style="vertical-align: top;"/>
       <img src="https://github.com/user-attachments/assets/2e1f2ea6-96b6-4118-8945-3c9e2bad0294" width="80"/>
     </td>
     <td valign="top">
-      <img src="https://github.com/user-attachments/assets/800a6d05-2830-4277-a6ce-63bd8c9a29f5" width="300"/>
+      <img src="https://github.com/user-attachments/assets/800a6d05-2830-4277-a6ce-63bd8c9a29f5" width="300" style="vertical-align: top;"/>
       <img src="https://github.com/user-attachments/assets/807dbdb2-8719-4b06-9b84-c9638d98dcf6" width="100"/>
     </td>
   </tr>
