@@ -34,7 +34,7 @@
   </tr>
   <tr>
     <td valign="top">
-      <img src="https://github.com/user-attachments/assets/041344cb-92fb-4bf3-9551-5b2dc2d54588" style="width: 200px"valign="top" />
+      <img src="https://github.com/user-attachments/assets/041344cb-92fb-4bf3-9551-5b2dc2d54588" style="width: 220px"valign="top" />
       <img  src="https://github.com/user-attachments/assets/2e1f2ea6-96b6-4118-8945-3c9e2bad0294" style="width: 60px" />
     </td>
     <td valign="top">
