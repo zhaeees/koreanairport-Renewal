@@ -232,12 +232,12 @@ document.addEventListener("DOMContentLoaded", () => {
       openpopup.classList.remove("active");
       document.body.style.overflow = ""; // 스크롤 복원
 
-      // 오늘 날짜 저장 (오늘은 다시 안 뜸)
-      localStorage.setItem(popupKey, today); 
+      // 세션 동안 다시 안 뜨게 저장
+      sessionStorage.setItem(popupKey, "true"); 
     }
 
-  // 오늘 이미 닫았는지 체크
-  if (localStorage.getItem(popupKey) !== today) {
+  // 세션에 저장되어 있지 않으면 열기
+  if (!sessionStorage.getItem(popupKey)) {
     openPopup();
   }
   
