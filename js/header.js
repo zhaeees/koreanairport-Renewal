@@ -20,44 +20,44 @@ let closeAirportBtn = document.getElementById('closeAirportBtn'); // 공항이�
 let familyBtn = document.getElementById('familyBtn'); // 패밀리사이트 버튼
 let familyWrap = document.querySelector('.family')
 
-menuItems.forEach(function(item){
-  item.addEventListener("mouseenter", function(){
-      // 1) 모든 active 제거
+menuItems.forEach(function (item) {
+  item.addEventListener("mouseenter", function () {
+    // 1) 모든 active 제거
     menuItems.forEach(li => li.classList.remove("active"));
 
     // 2) 현재 메뉴에 active 추가
     item.classList.add("active");
     // 전부 안보이게 내가 선택한 요소만 보이게
     // 3) 모든 submenu 숨기기
-    submenus.forEach(function(sub){
+    submenus.forEach(function (sub) {
       sub.style.display = 'none';
     })
     // 4) 해당 submenu만 열기
     let target = document.getElementById(item.dataset.target);
-    if(target){
+    if (target) {
       target.style.display = 'block'
     }
   })
-  
+
 });
 // nav에서 마우스가 떠나면 submenu들을 각각 안보이게
-document.querySelector('nav').addEventListener('mouseleave',function(){
-  submenus.forEach(function(sub){
+document.querySelector('nav').addEventListener('mouseleave', function () {
+  submenus.forEach(function (sub) {
     sub.style.display = 'none';
   })
 })
 // 서브메뉴에 마우스가 들어오면 블럭, 떠나면 display none
-  submenus.forEach(function(sub){
-    sub.addEventListener('mouseenter',function(){
-      sub.style.display = 'block'
-    })
-    sub.addEventListener('mouseleave', function(){
-      sub.style.display = 'none';
-      // sub-menu에서 벗어나면 active 제거
-    menuItems.forEach(li => li.classList.remove("active"));
-    })
+submenus.forEach(function (sub) {
+  sub.addEventListener('mouseenter', function () {
+    sub.style.display = 'block'
   })
-  
+  sub.addEventListener('mouseleave', function () {
+    sub.style.display = 'none';
+    // sub-menu에서 벗어나면 active 제거
+    menuItems.forEach(li => li.classList.remove("active"));
+  })
+})
+
 
 /*   패밀리 사이트 누르면 패밀리wrap이 열림 */
 // 버튼 클릭 → 열고 닫기
@@ -81,12 +81,12 @@ document.addEventListener('click', function () {
 
 // 햄버거 먼저
 //햄버거 클릭하면 active 클래스 추가
-menuToggle.addEventListener('click', function(){
+menuToggle.addEventListener('click', function () {
   menuToggle.classList.toggle('active');
   mobileMenu.classList.toggle('active');
   document.querySelector('header').classList.toggle('active');
   document.querySelector('.logo-img').classList.toggle('active');
-  
+
 })
 
 // 아코디언 메뉴
@@ -94,7 +94,7 @@ accordionItems.forEach(item => {
   let title = item.querySelector('.accordion-title');
   let content = item.querySelector('.accordion-content');
 
-  title.addEventListener('click', function(){
+  title.addEventListener('click', function () {
     let isActive = item.classList.contains('active');
     // 모두 닫기
     accordionItems.forEach(i => {
@@ -102,12 +102,12 @@ accordionItems.forEach(item => {
       i.querySelector('.accordion-content').classList.remove('active');
     });
     // 닫혀있으면 열기
-    if(!isActive){
+    if (!isActive) {
       item.classList.add('active');
       content.classList.add('active');
     }
   });
-  
+
 });
 
 // 아코디언 서브메뉴
@@ -121,27 +121,27 @@ subItems.forEach(item => {
 
   link.addEventListener('click', function (e) {
 
-  const isOpen = subList && subList.classList.contains('active');
+    const isOpen = subList && subList.classList.contains('active');
 
-  // 1. 무조건 전체 닫기
-  document.querySelectorAll('.accordion-sub-list').forEach(list => {
-    list.classList.remove('active');
+    // 1. 무조건 전체 닫기
+    document.querySelectorAll('.accordion-sub-list').forEach(list => {
+      list.classList.remove('active');
+    });
+
+    // 2. 자식 없는 메뉴면 끝
+    if (!subList) return;
+
+    // 3. 이미 열려있던 게 아니면 다시 열기 (토글)
+    if (!isOpen) {
+      e.preventDefault();
+      subList.classList.add('active');
+    }
   });
-
-  // 2. 자식 없는 메뉴면 끝
-  if (!subList) return;
-
-  // 3. 이미 열려있던 게 아니면 다시 열기 (토글)
-  if (!isOpen) {
-    e.preventDefault();
-    subList.classList.add('active');
-  }
-});
 });
 
 // 서브메뉴의 a태그 누르면 active 추가 제거
 subLinks.forEach(link => {
-  link.addEventListener('click', function(e){
+  link.addEventListener('click', function (e) {
     e.preventDefault();
 
     // 이미 active면 제거 (원래 상태로)
@@ -159,17 +159,17 @@ subLinks.forEach(link => {
 });
 
 // 모바일 탑 메뉴
-familySite.addEventListener('click', function(){
+familySite.addEventListener('click', function () {
   familyContent.classList.toggle('active')
 })
 
 
 // 공항이동
-airportPot.addEventListener('click', function(){
+airportPot.addEventListener('click', function () {
   airportWrap.classList.toggle('active');
   airportPot.classList.toggle('active')
 })
-closeAirportBtn.addEventListener('click', function(){
+closeAirportBtn.addEventListener('click', function () {
   airportWrap.classList.remove('active');
   airportPot.classList.remove('active')
 })
@@ -201,7 +201,7 @@ document.addEventListener('click', function () {
   searchInput.value = ''; //  검색어 초기화
 });
 
-searchInput.addEventListener('keydown', function(e) {
+searchInput.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') { // Enter 키 감지
     e.preventDefault(); // 기본 폼 제출 방지
     const query = searchInput.value.trim();
@@ -218,34 +218,39 @@ searchInput.addEventListener('keydown', function(e) {
   팝업 영역 
 ================================== */
 document.addEventListener("DOMContentLoaded", () => {
-  let openpopup = document.querySelector('.open-popup');
-  let popupBg = document.querySelector('.popup-background');
-  let closePopupBtn = document.querySelector('.close-popupBtn');
 
-  // 팝업 열기
-  function openPopup(){
-    openpopup.classList.add('active');
+  const popup = document.querySelector('.open-popup');
+  const popupBg = document.querySelector('.popup-background');
+  const closeBtn = document.querySelector('.close-popupBtn');
+
+  const popupKey = "mainPopupShown";
+  const isMainPage = document.body.dataset.page === "main";
+
+  function openPopup() {
+    if (!popup) return;
+    popup.classList.add("active");
     document.body.style.overflow = "hidden";
   }
-  // 팝업 닫기 함수
-    function closePopup() {
-      openpopup.classList.remove("active");
-      document.body.style.overflow = ""; // 스크롤 복원
-    }
-// 처음 로드 시 자동 오픈
+
+  function closePopup() {
+    if (!popup) return;
+    popup.classList.remove("active");
+    document.body.style.overflow = "";
+
+    // 🔥 여기 중요
+    sessionStorage.setItem(popupKey, "true");
+  }
+
+  // 메인이고 + 아직 안 닫았을 때만 열기
+  if (isMainPage && !sessionStorage.getItem(popupKey)) {
     openPopup();
+  }
 
-    // 닫기 버튼
-    closePopupBtn.addEventListener("click", closePopup);
+  if (closeBtn) closeBtn.addEventListener("click", closePopup);
+  if (popupBg) popupBg.addEventListener("click", closePopup);
 
-    // 배경 클릭
-    popupBg.addEventListener("click", closePopup);
-
-    // ESC 키
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        closePopup();
-      }
-    });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closePopup();
   });
-  
+
+});
