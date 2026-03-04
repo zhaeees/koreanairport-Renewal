@@ -231,7 +231,16 @@ document.addEventListener("DOMContentLoaded", () => {
     function closePopup() {
       openpopup.classList.remove("active");
       document.body.style.overflow = ""; // 스크롤 복원
+
+      // 오늘 날짜 저장 (오늘은 다시 안 뜸)
+      localStorage.setItem(popupKey, today); 
     }
+
+  // 오늘 이미 닫았는지 체크
+  if (localStorage.getItem(popupKey) !== today) {
+    openPopup();
+  }
+  
 // 처음 로드 시 자동 오픈
     openPopup();
 
