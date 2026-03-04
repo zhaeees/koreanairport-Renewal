@@ -231,12 +231,18 @@ document.addEventListener("DOMContentLoaded", () => {
     popup.classList.add("active");
     document.body.style.overflow = "hidden";
   }
-  // 팝업 닫기 함수
-    function closePopup() {
-      openpopup.classList.remove("active");
-      document.body.style.overflow = ""; // 스크롤 복원
-    }
-// 처음 로드 시 자동 오픈
+
+  function closePopup() {
+    if (!popup) return;
+    popup.classList.remove("active");
+    document.body.style.overflow = "";
+
+    
+    sessionStorage.setItem(popupKey, "true");
+  }
+
+  // 메인이고 + 아직 안 닫았을 때만 열기
+  if (isMainPage && !sessionStorage.getItem(popupKey)) {
     openPopup();
   }
 
