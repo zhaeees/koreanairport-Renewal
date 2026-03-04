@@ -35,7 +35,7 @@ nav{
   height: 50px;
 }
 .logo-img{
-  background: url(/images/kac_logo.svg) no-repeat;
+  background: url(../images/kac_logo.svg) no-repeat;
   width: 100%;
   height: 100%;
 }

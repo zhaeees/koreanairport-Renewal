@@ -26,26 +26,26 @@ mainTabs.forEach(tab => {
 // 날씨
 
 const weatherMap = {
-  '01d': { text: '맑음', icon: '../images/weather/01d.svg' },
-  '01n': { text: '맑은 밤', icon: '../images/weather/01n.svg' },
-  '02d': { text: '구름 조금', icon: '../images/weather/02d.svg' },
-  '02n': { text: '구름 조금', icon: '../images/weather/02n.svg' },
-  '03d': { text: '구름 많음', icon: '../images/weather/03d.svg' },
-  '03n': { text: '구름 많은 밤', icon: '../images/weather/03d.svg' },
-  '04d': { text: '흐림', icon: '../images/weather/04d.svg' },
-  '04n': { text: '흐린밤', icon: '../images/weather/04d.svg' },
-  '09d': { text: '소나기', icon: '../images/weather/09d.svg' },
-  '10d': { text: '비', icon: '../images/weather/10d.svg' },
-  '11d': { text: '번개', icon: '../images/weather/11d.svg' },
-  '13d': { text: '눈', icon: '../images/weather/13d.svg' },
-  '50d': { text: '안개', icon: '../images/weather/50d.svg' }
+  '01d': { text: '맑음', icon: './images/weather/01d.svg' },
+  '01n': { text: '맑은 밤', icon: './images/weather/01n.svg' },
+  '02d': { text: '구름 조금', icon: './images/weather/02d.svg' },
+  '02n': { text: '구름 조금', icon: './images/weather/02n.svg' },
+  '03d': { text: '구름 많음', icon: './images/weather/03d.svg' },
+  '03n': { text: '구름 많은 밤', icon: './images/weather/03d.svg' },
+  '04d': { text: '흐림', icon: './images/weather/04d.svg' },
+  '04n': { text: '흐린밤', icon: './images/weather/04d.svg' },
+  '09d': { text: '소나기', icon: './images/weather/09d.svg' },
+  '10d': { text: '비', icon: './images/weather/10d.svg' },
+  '11d': { text: '번개', icon: './images/weather/11d.svg' },
+  '13d': { text: '눈', icon: './images/weather/13d.svg' },
+  '50d': { text: '안개', icon: './images/weather/50d.svg' }
 };
 
 // 아이콘 코드로 날씨 정보 반환
 function getWeatherInfo(iconCode) {
   return weatherMap[iconCode] || {
     text: '날씨 정보 없음',
-    icon: '../images/weather/no_img.svg'
+    icon: './images/weather/no_img.svg'
   };
 }
 
@@ -436,36 +436,36 @@ applyBtn.addEventListener('click', function () {
 ======================================== */
 const travel = [
   // 랜드마크
-  {id: 'halla', name: '한라산', address: '제주 제주시 오라이동 산107-20',top: '43%', left: '50%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'udo', name: '우도', address: '제주 제주시 우도면', top: '15%', left: '98%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'Seongsan Ilchulbong', name: '성산일출봉', address: '제주 서귀포시 성산읍 성산리 1', top: '23%', left: '95%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'Seopjikoji', name: '섭지코지', address: '제주 서귀포시 성산읍 고성리', top: '28%', left: '93%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'SeongeupVillage', name: '성읍 민속마을', address: '제주 서귀포시 표선면 성읍리 3294', top: '39%', left: '84%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'DokkaebiRoad', name: '도깨비도로', address: '제주 제주시 노형동 291-17', top: '30%', left: '45%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'Cheonjiyeon', name: '천지연폭포', address: '제주 서귀포시 천지동 666-2', top: '63%', left: '55%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'Bijarim', name: '비자림', address: '제주 제주시 구좌읍 비자숲길 55', top: '24%', left: '85%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'Cheonjeyeon', name: '천제연폭포', address: '제주 서귀포시 천제연로 132', top: '68%', left: '43%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'Jusangjeolli', name: '대포주상절리', address: '제주 서귀포시 이어도로 36-24', top: '64%', left: '26%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'hallaAroretum', name: '한라수목원', address: '제주 제주시 수목원길 72', top: '25%', left: '48%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
-  {id: 'yongdo', name: '용두암', address: '제주 제주시 용두암길 15', top: '15%', left: '46%', type: 'landmark', icon: 'images/mainvisual/dot.png'},
+  {id: 'halla', name: '한라산', address: '제주 제주시 오라이동 산107-20',top: '43%', left: '50%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'udo', name: '우도', address: '제주 제주시 우도면', top: '15%', left: '98%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'Seongsan Ilchulbong', name: '성산일출봉', address: '제주 서귀포시 성산읍 성산리 1', top: '23%', left: '95%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'Seopjikoji', name: '섭지코지', address: '제주 서귀포시 성산읍 고성리', top: '28%', left: '93%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'SeongeupVillage', name: '성읍 민속마을', address: '제주 서귀포시 표선면 성읍리 3294', top: '39%', left: '84%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'DokkaebiRoad', name: '도깨비도로', address: '제주 제주시 노형동 291-17', top: '30%', left: '45%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'Cheonjiyeon', name: '천지연폭포', address: '제주 서귀포시 천지동 666-2', top: '63%', left: '55%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'Bijar./im', name: '비자림', address: '제주 제주시 구좌읍 비자숲길 55', top: '24%', left: '85%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'Cheonjeyeon', name: '천제연폭포', address: '제주 서귀포시 천제연로 132', top: '68%', left: '43%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'Jusangjeolli', name: '대포주상절리', address: '제주 서귀포시 이어도로 36-24', top: '64%', left: '26%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'hallaAroretum', name: '한라수목원', address: '제주 제주시 수목원길 72', top: '25%', left: '48%', type: 'landmark', icon: './images/mainvisual/dot.png'},
+  {id: 'yongdo', name: '용두암', address: '제주 제주시 용두암길 15', top: '15%', left: '46%', type: 'landmark', icon: './images/mainvisual/dot.png'},
   // 둘레길, 오름
-  {id: 'Salyeonisup', name: '사려니숲길', address: '사려니숲입구 → 물찻오름입구 → 붉은오름 입구 ', top: '37%', left: '58%', type: 'trail', icon: 'images/mainvisual/dot.png'},
-  {id: 'Donbaeg', name: '동백길', address: '무오법정사 입구 → 무오법정사 → 시오름 → 돈내코', top: '50%', left: '43%', type: 'trail', icon: 'images/mainvisual/dot.png'},
-  {id: 'CheonAsup', name: '천아숲길', address: '천아수원지 → 임도삼거리 → 노로오름 → 보림농장삼거리', top: '38%', left: '40%', type: 'trail', icon: 'images/mainvisual/dot.png'},
-  {id: 'Saebyeol', name: '새별오름', address: '제주 제주시 애월읍 봉성리 산59-8', top: '43%', left: '28%', type: 'trail', icon: 'images/mainvisual/dot.png'},
-  {id: 'Geum', name: '금오름', address: '제주 제주시 한림읍 금악리 산1-1', top: '48%', left: '21%', type: 'trail', icon: 'images/mainvisual/dot.png'},
-  {id: 'Baekyaki', name: '백약이오름', address: '제주 서귀포시 표선면 성읍리 산1', top: '30%', left: '75%', type: 'trail', icon: 'images/mainvisual/dot.png'},
-  {id: 'Byeoldobong', name: '별도봉', address: '제주 제주시 화북일동 4472', top: '14%', left: '48%', type: 'trail', icon: 'images/mainvisual/dot.png'},
-  {id: 'Udobong', name: '우도봉', address: '제주 제주시 우도면 연평리 산18-2', top: '18%', left: '99%', type: 'trail', icon: 'images/mainvisual/dot.png'},
+  {id: 'Salyeonisup', name: '사려니숲길', address: '사려니숲입구 → 물찻오름입구 → 붉은오름 입구 ', top: '37%', left: '58%', type: 'trail', icon: './images/mainvisual/dot.png'},
+  {id: 'Donbaeg', name: '동백길', address: '무오법정사 입구 → 무오법정사 → 시오름 → 돈내코', top: '50%', left: '43%', type: 'trail', icon: './images/mainvisual/dot.png'},
+  {id: 'CheonAsup', name: '천아숲길', address: '천아수원지 → 임도삼거리 → 노로오름 → 보림농장삼거리', top: '38%', left: '40%', type: 'trail', icon: './images/mainvisual/dot.png'},
+  {id: 'Saebyeol', name: '새별오름', address: '제주 제주시 애월읍 봉성리 산59-8', top: '43%', left: '28%', type: 'trail', icon: './images/mainvisual/dot.png'},
+  {id: 'Geum', name: '금오름', address: '제주 제주시 한림읍 금악리 산1-1', top: '48%', left: '21%', type: 'trail', icon: './images/mainvisual/dot.png'},
+  {id: 'Baekyaki', name: '백약이오름', address: '제주 서귀포시 표선면 성읍리 산1', top: '30%', left: '75%', type: 'trail', icon: './images/mainvisual/dot.png'},
+  {id: 'Byeoldobong', name: '별도봉', address: '제주 제주시 화북일동 4472', top: '14%', left: '48%', type: 'trail', icon: './images/mainvisual/dot.png'},
+  {id: 'Udobong', name: '우도봉', address: '제주 제주시 우도면 연평리 산18-2', top: '18%', left: '99%', type: 'trail', icon: './images/mainvisual/dot.png'},
   // 박물관 / 미술관
-  {id: 'Arario Museum', name: '아라리오뮤지엄', address: '제주 제주시 탑동로 14', top: '15%', left: '49%', type: 'museum', icon: 'images/mainvisual/dot.png'},
-  {id: 'Lee Jung-seop Art Museum', name: '이중섭미술관', address: '제주 서귀포시 이중섭로 27-3', top: '66%', left: '55%', type: 'museum', icon: 'images/mainvisual/dot.png'},
-  {id: 'Museum of Art', name: '제주도립미술관', address: '제주 제주시 1100로 2894-78', top: '28%', left: '50%', type: 'museum', icon: 'images/mainvisual/dot.png'},
-  {id: 'Museum of Contemporary Art', name: '제주현대미술관', address: '제주 제주시 저지14길 35', top: '46%', left: '21%', type: 'museum', icon: 'images/mainvisual/dot.png'},
-  {id: 'National Museum', name: '국립제주박물관', address: '제주 제주시 일주동로 17', top: '18%', left: '55%', type: 'museum', icon: 'images/mainvisual/dot.png'},
-  {id: 'Chocolate Museum', name: '초콜릿박물관', address: '제주 서귀포시 대정읍 일과리 551-18', top: '70%', left: '16%', type: 'museum', icon: 'images/mainvisual/dot.png'},
-  {id: 'Teddy Bear', name: '제주테디베어뮤지엄', address: '제주 서귀포시 중문관광로110번길 31', top: '66%', left: '30%', type: 'museum', icon: 'images/mainvisual/dot.png'},
-  {id: 'Jeju Folk Village', name: '제주민속촌박물관', address: '제주 서귀포시 표선면 민속해안로 631-34', top: '40%', left: '85%', type: 'museum', icon: 'images/mainvisual/dot.png'}
+  {id: 'Arario Museum', name: '아라리오뮤지엄', address: '제주 제주시 탑동로 14', top: '15%', left: '49%', type: 'museum', icon: './images/mainvisual/dot.png'},
+  {id: 'Lee Jung-seop Art Museum', name: '이중섭미술관', address: '제주 서귀포시 이중섭로 27-3', top: '66%', left: '55%', type: 'museum', icon: './images/mainvisual/dot.png'},
+  {id: 'Museum of Art', name: '제주도립미술관', address: '제주 제주시 1100로 2894-78', top: '28%', left: '50%', type: 'museum', icon: './images/mainvisual/dot.png'},
+  {id: 'Museum of Contemporary Art', name: '제주현대미술관', address: '제주 제주시 저지14길 35', top: '46%', left: '21%', type: 'museum', icon: './images/mainvisual/dot.png'},
+  {id: 'National Museum', name: '국립제주박물관', address: '제주 제주시 일주동로 17', top: '18%', left: '55%', type: 'museum', icon: './images/mainvisual/dot.png'},
+  {id: 'Chocolate Museum', name: '초콜릿박물관', address: '제주 서귀포시 대정읍 일과리 551-18', top: '70%', left: '16%', type: 'museum', icon: './images/mainvisual/dot.png'},
+  {id: 'Teddy Bear', name: '제주테디베어뮤지엄', address: '제주 서귀포시 중문관광로110번길 31', top: '66%', left: '30%', type: 'museum', icon: './images/mainvisual/dot.png'},
+  {id: 'Jeju Folk Village', name: '제주민속촌박물관', address: '제주 서귀포시 표선면 민속해안로 631-34', top: '40%', left: '85%', type: 'museum', icon: './images/mainvisual/dot.png'}
 ];
 
 const travelMap = document.getElementById('travelMap');
